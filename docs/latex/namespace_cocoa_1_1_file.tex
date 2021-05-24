@@ -1,0 +1,152 @@
+\hypertarget{namespace_cocoa_1_1_file}{}\doxysection{Cocoa\+::File Namespace Reference}
+\label{namespace_cocoa_1_1_file}\index{Cocoa::File@{Cocoa::File}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_file_handle}{File\+Handle}} $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_file_a4d7a445902453376f779d2ecf0f520dc}{Open\+File}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filename)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void \mbox{\hyperlink{namespace_cocoa_1_1_file_a266135df9e4d16db0a691315123a2170}{Close\+File}} (\mbox{\hyperlink{struct_cocoa_1_1_file_handle}{File\+Handle}} $\ast$file)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_afd67006fecd7a4626bad3306a8cbf342}{Write\+File}} (const char $\ast$data, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filename)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_ad2dd3b469f627d3d238b0b7fd3d88c68}{Create\+File}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filename, const char $\ast$ext\+To\+Append=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_a8520549fbaf46bca4437645489242a3e}{Delete\+File}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filename)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_a12d08e64bef67a7c9a2748ca0d359cdc}{Copy\+File}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&file\+To\+Copy, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&new\+File\+Location, const char $\ast$new\+Filename=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \mbox{\hyperlink{namespace_cocoa_1_1_file_aa753a0acbac5cf7f17ea1a8823f94259}{Get\+Cwd}} ()
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \mbox{\hyperlink{namespace_cocoa_1_1_file_a2b22d2f19fda446cc22f656469eaebc2}{Get\+Special\+App\+Folder}} ()
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \mbox{\hyperlink{namespace_cocoa_1_1_file_a6d474e758573ec1b09a5eb01f9c51d3e}{Get\+Executable\+Directory}} ()
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} std\+::vector$<$ \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} $>$ \mbox{\hyperlink{namespace_cocoa_1_1_file_a878827b5b586358a83c27ae5de8e6646}{Get\+Files\+In\+Dir}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&directory)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} std\+::vector$<$ \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} $>$ \mbox{\hyperlink{namespace_cocoa_1_1_file_a2dce824d85e9240399069159ae0e929f}{Get\+Folders\+In\+Dir}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&directory)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void \mbox{\hyperlink{namespace_cocoa_1_1_file_a0dc33cc5b9798a6014fbe2d7401b78e4}{Create\+Dir\+If\+Not\+Exists}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&directory)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_af684a7739ba985bc2e556c845d22fa6d}{Is\+File}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filepath)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_a6af2433ada4f2733ce69ed3a58fbbd5b}{Is\+Hidden}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filepath)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_ae68d7871e660f850faeb96305082b44e}{Is\+Directory}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&directory)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \mbox{\hyperlink{namespace_cocoa_1_1_file_a4a76c2990167cf112e4afab0f7b51c15}{Get\+Absolute\+Path}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_ab38d905d2b1e9fd077954d5c784df4e7}{Run\+Program}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path\+To\+Exe, const char $\ast$cmd\+Args=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_a9bf9051d6626af3a3958ac0b91269011}{Run\+Program}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path\+To\+Exe, const std\+::string \&cmd\+Args=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a266135df9e4d16db0a691315123a2170}\label{namespace_cocoa_1_1_file_a266135df9e4d16db0a691315123a2170}} 
+\index{Cocoa::File@{Cocoa::File}!CloseFile@{CloseFile}}
+\index{CloseFile@{CloseFile}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{CloseFile()}{CloseFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+File\+::\+Close\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_file_handle}{File\+Handle}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a12d08e64bef67a7c9a2748ca0d359cdc}\label{namespace_cocoa_1_1_file_a12d08e64bef67a7c9a2748ca0d359cdc}} 
+\index{Cocoa::File@{Cocoa::File}!CopyFile@{CopyFile}}
+\index{CopyFile@{CopyFile}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{CopyFile()}{CopyFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+File\+::\+Copy\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{file\+To\+Copy,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{new\+File\+Location,  }\item[{const char $\ast$}]{new\+Filename = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a0dc33cc5b9798a6014fbe2d7401b78e4}\label{namespace_cocoa_1_1_file_a0dc33cc5b9798a6014fbe2d7401b78e4}} 
+\index{Cocoa::File@{Cocoa::File}!CreateDirIfNotExists@{CreateDirIfNotExists}}
+\index{CreateDirIfNotExists@{CreateDirIfNotExists}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{CreateDirIfNotExists()}{CreateDirIfNotExists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+File\+::\+Create\+Dir\+If\+Not\+Exists (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{directory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_ad2dd3b469f627d3d238b0b7fd3d88c68}\label{namespace_cocoa_1_1_file_ad2dd3b469f627d3d238b0b7fd3d88c68}} 
+\index{Cocoa::File@{Cocoa::File}!CreateFile@{CreateFile}}
+\index{CreateFile@{CreateFile}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{CreateFile()}{CreateFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+File\+::\+Create\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filename,  }\item[{const char $\ast$}]{ext\+To\+Append = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a8520549fbaf46bca4437645489242a3e}\label{namespace_cocoa_1_1_file_a8520549fbaf46bca4437645489242a3e}} 
+\index{Cocoa::File@{Cocoa::File}!DeleteFile@{DeleteFile}}
+\index{DeleteFile@{DeleteFile}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{DeleteFile()}{DeleteFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+File\+::\+Delete\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a4a76c2990167cf112e4afab0f7b51c15}\label{namespace_cocoa_1_1_file_a4a76c2990167cf112e4afab0f7b51c15}} 
+\index{Cocoa::File@{Cocoa::File}!GetAbsolutePath@{GetAbsolutePath}}
+\index{GetAbsolutePath@{GetAbsolutePath}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{GetAbsolutePath()}{GetAbsolutePath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} Cocoa\+::\+File\+::\+Get\+Absolute\+Path (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_aa753a0acbac5cf7f17ea1a8823f94259}\label{namespace_cocoa_1_1_file_aa753a0acbac5cf7f17ea1a8823f94259}} 
+\index{Cocoa::File@{Cocoa::File}!GetCwd@{GetCwd}}
+\index{GetCwd@{GetCwd}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{GetCwd()}{GetCwd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} Cocoa\+::\+File\+::\+Get\+Cwd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a6d474e758573ec1b09a5eb01f9c51d3e}\label{namespace_cocoa_1_1_file_a6d474e758573ec1b09a5eb01f9c51d3e}} 
+\index{Cocoa::File@{Cocoa::File}!GetExecutableDirectory@{GetExecutableDirectory}}
+\index{GetExecutableDirectory@{GetExecutableDirectory}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{GetExecutableDirectory()}{GetExecutableDirectory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} Cocoa\+::\+File\+::\+Get\+Executable\+Directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a878827b5b586358a83c27ae5de8e6646}\label{namespace_cocoa_1_1_file_a878827b5b586358a83c27ae5de8e6646}} 
+\index{Cocoa::File@{Cocoa::File}!GetFilesInDir@{GetFilesInDir}}
+\index{GetFilesInDir@{GetFilesInDir}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{GetFilesInDir()}{GetFilesInDir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} std\+::vector$<$\mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}}$>$ Cocoa\+::\+File\+::\+Get\+Files\+In\+Dir (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{directory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a2dce824d85e9240399069159ae0e929f}\label{namespace_cocoa_1_1_file_a2dce824d85e9240399069159ae0e929f}} 
+\index{Cocoa::File@{Cocoa::File}!GetFoldersInDir@{GetFoldersInDir}}
+\index{GetFoldersInDir@{GetFoldersInDir}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{GetFoldersInDir()}{GetFoldersInDir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} std\+::vector$<$\mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}}$>$ Cocoa\+::\+File\+::\+Get\+Folders\+In\+Dir (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{directory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a2b22d2f19fda446cc22f656469eaebc2}\label{namespace_cocoa_1_1_file_a2b22d2f19fda446cc22f656469eaebc2}} 
+\index{Cocoa::File@{Cocoa::File}!GetSpecialAppFolder@{GetSpecialAppFolder}}
+\index{GetSpecialAppFolder@{GetSpecialAppFolder}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{GetSpecialAppFolder()}{GetSpecialAppFolder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} Cocoa\+::\+File\+::\+Get\+Special\+App\+Folder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_ae68d7871e660f850faeb96305082b44e}\label{namespace_cocoa_1_1_file_ae68d7871e660f850faeb96305082b44e}} 
+\index{Cocoa::File@{Cocoa::File}!IsDirectory@{IsDirectory}}
+\index{IsDirectory@{IsDirectory}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{IsDirectory()}{IsDirectory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+File\+::\+Is\+Directory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{directory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_af684a7739ba985bc2e556c845d22fa6d}\label{namespace_cocoa_1_1_file_af684a7739ba985bc2e556c845d22fa6d}} 
+\index{Cocoa::File@{Cocoa::File}!IsFile@{IsFile}}
+\index{IsFile@{IsFile}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{IsFile()}{IsFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+File\+::\+Is\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filepath }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a6af2433ada4f2733ce69ed3a58fbbd5b}\label{namespace_cocoa_1_1_file_a6af2433ada4f2733ce69ed3a58fbbd5b}} 
+\index{Cocoa::File@{Cocoa::File}!IsHidden@{IsHidden}}
+\index{IsHidden@{IsHidden}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{IsHidden()}{IsHidden()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+File\+::\+Is\+Hidden (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filepath }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a4d7a445902453376f779d2ecf0f520dc}\label{namespace_cocoa_1_1_file_a4d7a445902453376f779d2ecf0f520dc}} 
+\index{Cocoa::File@{Cocoa::File}!OpenFile@{OpenFile}}
+\index{OpenFile@{OpenFile}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{OpenFile()}{OpenFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_file_handle}{File\+Handle}}$\ast$ Cocoa\+::\+File\+::\+Open\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_ab38d905d2b1e9fd077954d5c784df4e7}\label{namespace_cocoa_1_1_file_ab38d905d2b1e9fd077954d5c784df4e7}} 
+\index{Cocoa::File@{Cocoa::File}!RunProgram@{RunProgram}}
+\index{RunProgram@{RunProgram}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{RunProgram()}{RunProgram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+File\+::\+Run\+Program (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path\+To\+Exe,  }\item[{const char $\ast$}]{cmd\+Args = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_a9bf9051d6626af3a3958ac0b91269011}\label{namespace_cocoa_1_1_file_a9bf9051d6626af3a3958ac0b91269011}} 
+\index{Cocoa::File@{Cocoa::File}!RunProgram@{RunProgram}}
+\index{RunProgram@{RunProgram}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{RunProgram()}{RunProgram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+File\+::\+Run\+Program (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path\+To\+Exe,  }\item[{const std\+::string \&}]{cmd\+Args = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_file_afd67006fecd7a4626bad3306a8cbf342}\label{namespace_cocoa_1_1_file_afd67006fecd7a4626bad3306a8cbf342}} 
+\index{Cocoa::File@{Cocoa::File}!WriteFile@{WriteFile}}
+\index{WriteFile@{WriteFile}!Cocoa::File@{Cocoa::File}}
+\doxysubsubsection{\texorpdfstring{WriteFile()}{WriteFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+File\+::\+Write\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filename }\end{DoxyParamCaption})}
+

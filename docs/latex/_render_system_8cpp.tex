@@ -1,0 +1,41 @@
+\hypertarget{_render_system_8cpp}{}\doxysection{Cocoa\+Engine/cpp/cocoa/systems/\+Render\+System.cpp File Reference}
+\label{_render_system_8cpp}\index{CocoaEngine/cpp/cocoa/systems/RenderSystem.cpp@{CocoaEngine/cpp/cocoa/systems/RenderSystem.cpp}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/systems/\+Render\+System.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Application.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Asset\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/commands/\+ICommand.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+CMath.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Dynamic\+Array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Debug\+Draw.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Camera\+Struct.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$nlohmann/json.\+hpp$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_render_system}{Cocoa\+::\+Render\+System}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_system_a8e21564b98a024caa586d792926de94a}{Cocoa\+::\+Render\+System\+::\+Init}} ()
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_system_a808d3ee81496cdb1f0a967fc4a0304d9}{Cocoa\+::\+Render\+System\+::\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_system_a513f8e12cb3961948886cd6bb10eadac}{Cocoa\+::\+Render\+System\+::\+Add\+Entity}} (const Transform\+Data \&transform, const Sprite\+Renderer \&spr)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_system_ae3213c1d00f37a8b35d6c69bc5118cf4}{Cocoa\+::\+Render\+System\+::\+Add\+Entity}} (const Transform\+Data \&transform, const Font\+Renderer \&font\+Renderer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_system_a9360673a569de8dab3412e51086f03a8}{Cocoa\+::\+Render\+System\+::\+Render}} (const Scene\+Data \&scene)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_system_a491b9b46c625c53278100b9ff84b77c6}{Cocoa\+::\+Render\+System\+::\+Serialize}} (\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity, const Sprite\+Renderer \&sprite\+Renderer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_system_afaf6bb36fc41d26632d98bf7e451aa3c}{Cocoa\+::\+Render\+System\+::\+Deserialize\+Sprite\+Renderer}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_system_a8f9367736e5ea346cdd4df8990169969}{Cocoa\+::\+Render\+System\+::\+Serialize}} (\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity, const Font\+Renderer \&font\+Renderer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_system_ac64de3b278d3ea67ad8e03f90bb6985b}{Cocoa\+::\+Render\+System\+::\+Deserialize\+Font\+Renderer}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity)
+\end{DoxyCompactItemize}

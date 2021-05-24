@@ -1,0 +1,134 @@
+\hypertarget{namespace_cocoa_1_1_texture_util}{}\doxysection{Cocoa\+::Texture\+Util Namespace Reference}
+\label{namespace_cocoa_1_1_texture_util}\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a023f827970d6ebd9cecf5bc668323e22}{To\+Gl}} (\mbox{\hyperlink{namespace_cocoa_a6aa5ac23f569208f82e7bbbe9c5e6274}{Wrap\+Mode}} wrap\+Mode)
+\item 
+\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_ad1f12a88a10a89601a16f4df60679f05}{To\+Gl}} (\mbox{\hyperlink{namespace_cocoa_ae948d1e807677177fefc8000c539c137}{Filter\+Mode}} filter\+Mode)
+\item 
+\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a54846aec2309f728682763916d578b2a}{To\+Gl}} (\mbox{\hyperlink{namespace_cocoa_af4331131adf5d09df9d915e4ae68db0b}{Byte\+Format}} format)
+\item 
+\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a5b3b6b8e07f6c49c0b341ac8f98b93dc}{To\+Gl\+Data\+Type}} (\mbox{\hyperlink{namespace_cocoa_af4331131adf5d09df9d915e4ae68db0b}{Byte\+Format}} format)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_abec5a0acd2a4684785a7146cfba59d2d}{Byte\+Format\+Is\+Int}} (\mbox{\hyperlink{namespace_cocoa_af4331131adf5d09df9d915e4ae68db0b}{Byte\+Format}} format)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a6752a1bdaffb51e64d07adfe930fb173}{Byte\+Format\+Is\+Rgb}} (\mbox{\hyperlink{namespace_cocoa_af4331131adf5d09df9d915e4ae68db0b}{Byte\+Format}} format)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_ad098ffb162ef4facbef78980fae3a6e1}{Generate}} (\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&texture, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a6e46ccba93e850e7e671c945044a7258}{Generate}} (\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&texture)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_aa52f37b944dc69b644c6772769f22743}{Is\+Null}} (const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&texture)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a97771f34e7501ddd98d48124c66e12fd}{Bind}} (const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&texture)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a989b4d96d8fba65ebe3990bd74266b6e}{Unbind}} (const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&texture)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_ac9bd08ddddd16d613f94800967007ae2}{Delete}} (\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&texture)
+\item 
+\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a47f5a2745b816eed9b76b89d2722c388}{Serialize}} (const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&texture)
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a579a3e6c4a619d8e52e19c4276aeda3c}{Deserialize}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a06283ddecb5f3be0edb0896ee3e4f61f}{Null\+Texture}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a97771f34e7501ddd98d48124c66e12fd}\label{namespace_cocoa_1_1_texture_util_a97771f34e7501ddd98d48124c66e12fd}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!Bind@{Bind}}
+\index{Bind@{Bind}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Texture\+Util\+::\+Bind (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_abec5a0acd2a4684785a7146cfba59d2d}\label{namespace_cocoa_1_1_texture_util_abec5a0acd2a4684785a7146cfba59d2d}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!ByteFormatIsInt@{ByteFormatIsInt}}
+\index{ByteFormatIsInt@{ByteFormatIsInt}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{ByteFormatIsInt()}{ByteFormatIsInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Texture\+Util\+::\+Byte\+Format\+Is\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_af4331131adf5d09df9d915e4ae68db0b}{Byte\+Format}}}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a6752a1bdaffb51e64d07adfe930fb173}\label{namespace_cocoa_1_1_texture_util_a6752a1bdaffb51e64d07adfe930fb173}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!ByteFormatIsRgb@{ByteFormatIsRgb}}
+\index{ByteFormatIsRgb@{ByteFormatIsRgb}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{ByteFormatIsRgb()}{ByteFormatIsRgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Texture\+Util\+::\+Byte\+Format\+Is\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_af4331131adf5d09df9d915e4ae68db0b}{Byte\+Format}}}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_ac9bd08ddddd16d613f94800967007ae2}\label{namespace_cocoa_1_1_texture_util_ac9bd08ddddd16d613f94800967007ae2}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!Delete@{Delete}}
+\index{Delete@{Delete}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Texture\+Util\+::\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a579a3e6c4a619d8e52e19c4276aeda3c}\label{namespace_cocoa_1_1_texture_util_a579a3e6c4a619d8e52e19c4276aeda3c}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} Cocoa\+::\+Texture\+Util\+::\+Deserialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a6e46ccba93e850e7e671c945044a7258}\label{namespace_cocoa_1_1_texture_util_a6e46ccba93e850e7e671c945044a7258}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!Generate@{Generate}}
+\index{Generate@{Generate}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Texture\+Util\+::\+Generate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_ad098ffb162ef4facbef78980fae3a6e1}\label{namespace_cocoa_1_1_texture_util_ad098ffb162ef4facbef78980fae3a6e1}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!Generate@{Generate}}
+\index{Generate@{Generate}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Texture\+Util\+::\+Generate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&}]{texture,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_aa52f37b944dc69b644c6772769f22743}\label{namespace_cocoa_1_1_texture_util_aa52f37b944dc69b644c6772769f22743}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!IsNull@{IsNull}}
+\index{IsNull@{IsNull}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{IsNull()}{IsNull()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Texture\+Util\+::\+Is\+Null (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a47f5a2745b816eed9b76b89d2722c388}\label{namespace_cocoa_1_1_texture_util_a47f5a2745b816eed9b76b89d2722c388}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} Cocoa\+::\+Texture\+Util\+::\+Serialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a54846aec2309f728682763916d578b2a}\label{namespace_cocoa_1_1_texture_util_a54846aec2309f728682763916d578b2a}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!ToGl@{ToGl}}
+\index{ToGl@{ToGl}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{ToGl()}{ToGl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+Texture\+Util\+::\+To\+Gl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_af4331131adf5d09df9d915e4ae68db0b}{Byte\+Format}}}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_ad1f12a88a10a89601a16f4df60679f05}\label{namespace_cocoa_1_1_texture_util_ad1f12a88a10a89601a16f4df60679f05}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!ToGl@{ToGl}}
+\index{ToGl@{ToGl}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{ToGl()}{ToGl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+Texture\+Util\+::\+To\+Gl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_ae948d1e807677177fefc8000c539c137}{Filter\+Mode}}}]{filter\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a023f827970d6ebd9cecf5bc668323e22}\label{namespace_cocoa_1_1_texture_util_a023f827970d6ebd9cecf5bc668323e22}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!ToGl@{ToGl}}
+\index{ToGl@{ToGl}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{ToGl()}{ToGl()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+Texture\+Util\+::\+To\+Gl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_a6aa5ac23f569208f82e7bbbe9c5e6274}{Wrap\+Mode}}}]{wrap\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a5b3b6b8e07f6c49c0b341ac8f98b93dc}\label{namespace_cocoa_1_1_texture_util_a5b3b6b8e07f6c49c0b341ac8f98b93dc}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!ToGlDataType@{ToGlDataType}}
+\index{ToGlDataType@{ToGlDataType}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{ToGlDataType()}{ToGlDataType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+Texture\+Util\+::\+To\+Gl\+Data\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_af4331131adf5d09df9d915e4ae68db0b}{Byte\+Format}}}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a989b4d96d8fba65ebe3990bd74266b6e}\label{namespace_cocoa_1_1_texture_util_a989b4d96d8fba65ebe3990bd74266b6e}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!Unbind@{Unbind}}
+\index{Unbind@{Unbind}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{Unbind()}{Unbind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Texture\+Util\+::\+Unbind (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_texture_util_a06283ddecb5f3be0edb0896ee3e4f61f}\label{namespace_cocoa_1_1_texture_util_a06283ddecb5f3be0edb0896ee3e4f61f}} 
+\index{Cocoa::TextureUtil@{Cocoa::TextureUtil}!NullTexture@{NullTexture}}
+\index{NullTexture@{NullTexture}!Cocoa::TextureUtil@{Cocoa::TextureUtil}}
+\doxysubsubsection{\texorpdfstring{NullTexture}{NullTexture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} Cocoa\+::\+Texture\+Util\+::\+Null\+Texture = \{\}}
+

@@ -1,0 +1,127 @@
+\hypertarget{namespace_cocoa_1_1_n_entity}{}\doxysection{Cocoa\+::NEntity Namespace Reference}
+\label{namespace_cocoa_1_1_n_entity}\index{Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a10316c82203a3acf1087f09903319563}{Create\+Entity}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} $\ast$scene)
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a7709e3efab797215001c383f9d6248c3}{Create\+Entity}} (entt\+::entity raw)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a20661080155d9914c7eb1c36ba0ecea4}{Set\+Scene}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} $\ast$scene)
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_adc0355f138367d86dcd690807458f5af}{Get\+Scene}} ()
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_abb3c038fc9a9f3272484806150bc1719}{Create\+Null}} ()
+\item 
+{\footnotesize template$<$typename Component $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a571a99227eaf28f436e6218ce2b6eb28}{Register\+Component\+Type}} ()
+\item 
+{\footnotesize template$<$typename Type $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a9ef628c96ebfa71521cd2afccdf9f4dc}{Clear}} ()
+\item 
+{\footnotesize template$<$typename... Component$>$ }\\bool \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_aff4537117489fdda25ce56cd290f6421}{Has\+Component}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\item 
+{\footnotesize template$<$typename T , typename ... Args$>$ }\\T \& \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a61d6508a9cf344351c6da7ba31aec352}{Add\+Component}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a29e6773874eee780f015473543e60f19}{Get\+Component}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_afea8dc0c4fc5da4fd03bf5032ac419ef}{Remove\+Component}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_afafb58a31dc92e5f34d1cba0b7bbd521}{Is\+Null}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\item 
+\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a2a8f3b192332679d6bd0ea3a56e9cca0}{Get\+ID}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a76fe11cefc3fc8c1f7e6218aba09df8e}{From\+Component}} (const T \&component)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_a61d6508a9cf344351c6da7ba31aec352}\label{namespace_cocoa_1_1_n_entity_a61d6508a9cf344351c6da7ba31aec352}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily template$<$typename T , typename ... Args$>$ \\
+T\& Cocoa\+::\+NEntity\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_a9ef628c96ebfa71521cd2afccdf9f4dc}\label{namespace_cocoa_1_1_n_entity_a9ef628c96ebfa71521cd2afccdf9f4dc}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!Clear@{Clear}}
+\index{Clear@{Clear}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+void Cocoa\+::\+NEntity\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_a7709e3efab797215001c383f9d6248c3}\label{namespace_cocoa_1_1_n_entity_a7709e3efab797215001c383f9d6248c3}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} Cocoa\+::\+NEntity\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{entt\+::entity}]{raw }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_a10316c82203a3acf1087f09903319563}\label{namespace_cocoa_1_1_n_entity_a10316c82203a3acf1087f09903319563}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} Cocoa\+::\+NEntity\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_abb3c038fc9a9f3272484806150bc1719}\label{namespace_cocoa_1_1_n_entity_abb3c038fc9a9f3272484806150bc1719}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!CreateNull@{CreateNull}}
+\index{CreateNull@{CreateNull}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{CreateNull()}{CreateNull()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} Cocoa\+::\+NEntity\+::\+Create\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_a76fe11cefc3fc8c1f7e6218aba09df8e}\label{namespace_cocoa_1_1_n_entity_a76fe11cefc3fc8c1f7e6218aba09df8e}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!FromComponent@{FromComponent}}
+\index{FromComponent@{FromComponent}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{FromComponent()}{FromComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} Cocoa\+::\+NEntity\+::\+From\+Component (\begin{DoxyParamCaption}\item[{const T \&}]{component }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_a29e6773874eee780f015473543e60f19}\label{namespace_cocoa_1_1_n_entity_a29e6773874eee780f015473543e60f19}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!GetComponent@{GetComponent}}
+\index{GetComponent@{GetComponent}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{GetComponent()}{GetComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& Cocoa\+::\+NEntity\+::\+Get\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_a2a8f3b192332679d6bd0ea3a56e9cca0}\label{namespace_cocoa_1_1_n_entity_a2a8f3b192332679d6bd0ea3a56e9cca0}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!GetID@{GetID}}
+\index{GetID@{GetID}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+NEntity\+::\+Get\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_adc0355f138367d86dcd690807458f5af}\label{namespace_cocoa_1_1_n_entity_adc0355f138367d86dcd690807458f5af}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!GetScene@{GetScene}}
+\index{GetScene@{GetScene}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{GetScene()}{GetScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} $\ast$ Cocoa\+::\+NEntity\+::\+Get\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_aff4537117489fdda25ce56cd290f6421}\label{namespace_cocoa_1_1_n_entity_aff4537117489fdda25ce56cd290f6421}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!HasComponent@{HasComponent}}
+\index{HasComponent@{HasComponent}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{HasComponent()}{HasComponent()}}
+{\footnotesize\ttfamily template$<$typename... Component$>$ \\
+bool Cocoa\+::\+NEntity\+::\+Has\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_afafb58a31dc92e5f34d1cba0b7bbd521}\label{namespace_cocoa_1_1_n_entity_afafb58a31dc92e5f34d1cba0b7bbd521}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!IsNull@{IsNull}}
+\index{IsNull@{IsNull}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{IsNull()}{IsNull()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+NEntity\+::\+Is\+Null (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_a571a99227eaf28f436e6218ce2b6eb28}\label{namespace_cocoa_1_1_n_entity_a571a99227eaf28f436e6218ce2b6eb28}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!RegisterComponentType@{RegisterComponentType}}
+\index{RegisterComponentType@{RegisterComponentType}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{RegisterComponentType()}{RegisterComponentType()}}
+{\footnotesize\ttfamily template$<$typename Component $>$ \\
+void Cocoa\+::\+NEntity\+::\+Register\+Component\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_afea8dc0c4fc5da4fd03bf5032ac419ef}\label{namespace_cocoa_1_1_n_entity_afea8dc0c4fc5da4fd03bf5032ac419ef}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!RemoveComponent@{RemoveComponent}}
+\index{RemoveComponent@{RemoveComponent}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{RemoveComponent()}{RemoveComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cocoa\+::\+NEntity\+::\+Remove\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_entity_a20661080155d9914c7eb1c36ba0ecea4}\label{namespace_cocoa_1_1_n_entity_a20661080155d9914c7eb1c36ba0ecea4}} 
+\index{Cocoa::NEntity@{Cocoa::NEntity}!SetScene@{SetScene}}
+\index{SetScene@{SetScene}!Cocoa::NEntity@{Cocoa::NEntity}}
+\doxysubsubsection{\texorpdfstring{SetScene()}{SetScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NEntity\+::\+Set\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} $\ast$}]{scene }\end{DoxyParamCaption})}
+

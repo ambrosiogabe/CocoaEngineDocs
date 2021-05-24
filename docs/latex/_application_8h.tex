@@ -1,0 +1,36 @@
+\hypertarget{_application_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/core/\+Application.h File Reference}
+\label{_application_8h}\index{CocoaEngine/include/cocoa/core/Application.h@{CocoaEngine/include/cocoa/core/Application.h}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+CWindow.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/events/\+Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/events/\+Window\+Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/scenes/\+Scene\+Data.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cocoa_1_1_application_data}{Cocoa\+::\+Application\+Data}}
+\begin{DoxyCompactList}\small\item\em The main application\textquotesingle{}s DLL data. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_cocoa_1_1_application}{Cocoa\+::\+Application}}
+\begin{DoxyCompactList}\small\item\em The main application class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_a69223625c84faff63e7c4fc6787f1e5b}{Cocoa\+::\+App\+On\+Update\+Fn}}) (Scene\+Data \&scene, float dt)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_a0f40415e834df6ab751ac923c5b30964}{Cocoa\+::\+App\+On\+Attach\+Fn}}) (Scene\+Data \&scene)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_aa07cee4aea52f47132d13cb17d78f126}{Cocoa\+::\+App\+On\+Render\+Fn}}) (Scene\+Data \&scene)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_afe5781215ce2647186979e30e981fe05}{Cocoa\+::\+App\+On\+Event\+Fn}}) (Scene\+Data \&scene, Event \&e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Application $\ast$ \mbox{\hyperlink{namespace_cocoa_ad051166bd3f2086cd5111780c98c7aba}{Cocoa\+::\+Create\+Application}} ()
+\end{DoxyCompactItemize}

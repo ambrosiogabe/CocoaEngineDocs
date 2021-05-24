@@ -1,0 +1,68 @@
+\hypertarget{_scene_8cpp}{}\doxysection{Cocoa\+Engine/cpp/cocoa/scenes/\+Scene.cpp File Reference}
+\label{_scene_8cpp}\index{CocoaEngine/cpp/cocoa/scenes/Scene.cpp@{CocoaEngine/cpp/cocoa/scenes/Scene.cpp}}
+{\ttfamily \#include \char`\"{}cocoa/scenes/\+Scene.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/file/\+Output\+Archive.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/file/\+File.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Settings.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Entity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/components/\+Transform.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/components/\+Tag.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/components/\+No\+Serialize.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/systems/\+Script\+System.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/systems/\+Transform\+System.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/scenes/\+Scene\+Initializer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Asset\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Debug\+Draw.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$nlohmann/json.\+hpp$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_scene}{Cocoa\+::\+Scene}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Scene\+Data \mbox{\hyperlink{namespace_cocoa_1_1_scene_a914f42f69e784110ba848d1282c739a6}{Cocoa\+::\+Scene\+::\+Create}} (Scene\+Initializer $\ast$scene\+Initializer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a2c10cae6ee836189bc35e10c5f90dcbe}{Cocoa\+::\+Scene\+::\+Init}} (Scene\+Data \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a040a56a5e270d362e1a3f9480c561f7f}{Cocoa\+::\+Scene\+::\+Start}} (Scene\+Data \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a2b12dd8a61c115d61d5fb54b84e24788}{Cocoa\+::\+Scene\+::\+Update}} (Scene\+Data \&data, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_acdfe7d2bc1bb078b975e2d1e1a27600b}{Cocoa\+::\+Scene\+::\+Editor\+Update}} (Scene\+Data \&data, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a55a5eda35ac57ca8aa6c6a5f06644a54}{Cocoa\+::\+Scene\+::\+On\+Event}} (Scene\+Data \&data, const Event \&e)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a6d2cfb35f742c24383a37e2293048295}{Cocoa\+::\+Scene\+::\+Render}} (Scene\+Data \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a49cd14bc0ab5daae526be0110b8493bb}{Cocoa\+::\+Scene\+::\+Free\+Resources}} (Scene\+Data \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_ad2aa40ae10c4d4f91d86d6cb9e3ff159}{Cocoa\+::\+Scene\+::\+Play}} (Scene\+Data \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_acc869ad098e6d354cfb4da2c805b8b09}{Cocoa\+::\+Scene\+::\+Stop}} (Scene\+Data \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a1433307b20dff2b7f25a078b6503441e}{Cocoa\+::\+Scene\+::\+Serialize\+Entity}} (\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} $\ast$j, Entity entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_aeeb098e3dc7ccaf13b2f69ffdc15d351}{Cocoa\+::\+Scene\+::\+Deserialize\+Entities}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Scene\+Data \&scene)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_aeaa53ec25af5436dc14689a3972e3d28}{Cocoa\+::\+Scene\+::\+Save}} (Scene\+Data \&data, const CPath \&filename)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a376d168187dc8e69816b20c3fcd9fd8f}{Cocoa\+::\+Scene\+::\+Load}} (Scene\+Data \&data, const CPath \&filename, bool set\+As\+Current\+Scene)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a0bac0cb4bd3db20dc572291eccbe4a5b}{Cocoa\+::\+Scene\+::\+Load\+Scripts\+Only}} (Scene\+Data \&data, const CPath \&filename)
+\item 
+Entity \mbox{\hyperlink{namespace_cocoa_1_1_scene_ace58192194adebf1e3063fc4c5bc78a1}{Cocoa\+::\+Scene\+::\+Create\+Entity}} (Scene\+Data \&data)
+\item 
+Entity \mbox{\hyperlink{namespace_cocoa_1_1_scene_a9ea086f72ebc0e5afaff42f881028bf6}{Cocoa\+::\+Scene\+::\+Duplicate\+Entity}} (Scene\+Data \&data, Entity entity)
+\item 
+Entity \mbox{\hyperlink{namespace_cocoa_1_1_scene_a4c65a58522bb9f11e2d8ff1ea61ef75e}{Cocoa\+::\+Scene\+::\+Get\+Entity}} (Scene\+Data \&data, uint32 id)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_scene_a2883fdbf53d61d01e8c33dbd9f105150}{Cocoa\+::\+Scene\+::\+Is\+Valid}} (Scene\+Data \&scene, uint32 entity\+Id)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_scene_a36eb6335c68fc2dc8fe6504351142b36}{Cocoa\+::\+Scene\+::\+Is\+Valid}} (Scene\+Data \&scene, Entity entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_ad4edc787f36e0e71c4a00f250ec15caf}{Cocoa\+::\+Scene\+::\+Delete\+Entity}} (Scene\+Data \&scene, Entity entity)
+\end{DoxyCompactItemize}

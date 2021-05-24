@@ -1,0 +1,178 @@
+\hypertarget{class_cocoa_1_1_input}{}\doxysection{Cocoa\+::Input Class Reference}
+\label{class_cocoa_1_1_input}\index{Cocoa::Input@{Cocoa::Input}}
+
+
+{\ttfamily \#include $<$Input.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_input_af8c4dba779a763d8dd5a3e6f6da7b2bd}{Init}} ()
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_input_a56431be631e526cfa6f7fad7f93680f4}{Key\+Callback}} (int key, int scancode, int action, int mods)
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_input_a63b97b767a1508b0c17b6eaa43fe423e}{Cursor\+Callback}} (double xpos, double ypos)
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_input_a5ffa430d0d9235eedf0ee2b3ec77ea45}{Mouse\+Button\+Callback}} (int button, int action, int mods)
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_input_a56b7cdac803fb8bca56bb7ea4c04b9da}{Scroll\+Callback}} (double xoffset, double yoffset)
+\item 
+static bool \mbox{\hyperlink{class_cocoa_1_1_input_a4c540e11116e971ae16851245eb3312a}{Key\+Pressed}} (int key\+Code)
+\item 
+static bool \mbox{\hyperlink{class_cocoa_1_1_input_a6e5baf508b8dde8ff05837629931a0eb}{Mouse\+Button\+Pressed}} (int mouse\+Button)
+\item 
+static float \mbox{\hyperlink{class_cocoa_1_1_input_aad0805aeab9f41be30356cdf86f6e7fc}{MouseX}} ()
+\item 
+static float \mbox{\hyperlink{class_cocoa_1_1_input_ae5535f117b561256f44ae8e11caf466a}{MouseY}} ()
+\item 
+static float \mbox{\hyperlink{class_cocoa_1_1_input_aae1c7c622a80537835d4205931cae733}{ScrollX}} ()
+\item 
+static float \mbox{\hyperlink{class_cocoa_1_1_input_aaad60813a1b1c6acc61407879701f91c}{ScrollY}} ()
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_input_ad8639b5862fc194872742a20539752d8}{End\+Frame}} ()
+\item 
+static glm\+::vec2 \mbox{\hyperlink{class_cocoa_1_1_input_a2b05bac8db87607dc588ea498b0b3efc}{Mouse\+Pos}} ()
+\item 
+static float \mbox{\hyperlink{class_cocoa_1_1_input_ae1c52d6b4e4fa1352f2a6fd649cab3bc}{Ortho\+MouseX}} (const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera)
+\item 
+static float \mbox{\hyperlink{class_cocoa_1_1_input_a77af323d3ce4cd7e753e90e7800927a2}{Ortho\+MouseY}} (const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera)
+\item 
+static glm\+::vec2 \mbox{\hyperlink{class_cocoa_1_1_input_a0e5b7161a09a1151c83a8b1814b45d7a}{Screen\+To\+Ortho}} (const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera)
+\item 
+static glm\+::vec2 \mbox{\hyperlink{class_cocoa_1_1_input_a5f299ab96fbe61365a976cddc8eacb10}{Normalized\+Mouse\+Pos}} ()
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_input_a606f66583f026d7624c041de11146715}{Set\+Game\+View\+Pos}} (const glm\+::vec2 \&position)
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_input_a578246a0f73a764874e6646966a6cc11}{Set\+Game\+View\+Size}} (const glm\+::vec2 \&size)
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_input_aa3a7614cb0af0fa88c9ac14c006c17df}{Set\+Game\+View\+Mouse\+Pos}} (const glm\+::vec2 \&mouse\+Pos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_input_a63b97b767a1508b0c17b6eaa43fe423e}\label{class_cocoa_1_1_input_a63b97b767a1508b0c17b6eaa43fe423e}} 
+\index{Cocoa::Input@{Cocoa::Input}!CursorCallback@{CursorCallback}}
+\index{CursorCallback@{CursorCallback}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{CursorCallback()}{CursorCallback()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Input\+::\+Cursor\+Callback (\begin{DoxyParamCaption}\item[{double}]{xpos,  }\item[{double}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_ad8639b5862fc194872742a20539752d8}\label{class_cocoa_1_1_input_ad8639b5862fc194872742a20539752d8}} 
+\index{Cocoa::Input@{Cocoa::Input}!EndFrame@{EndFrame}}
+\index{EndFrame@{EndFrame}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{EndFrame()}{EndFrame()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Input\+::\+End\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_af8c4dba779a763d8dd5a3e6f6da7b2bd}\label{class_cocoa_1_1_input_af8c4dba779a763d8dd5a3e6f6da7b2bd}} 
+\index{Cocoa::Input@{Cocoa::Input}!Init@{Init}}
+\index{Init@{Init}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Input\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a56431be631e526cfa6f7fad7f93680f4}\label{class_cocoa_1_1_input_a56431be631e526cfa6f7fad7f93680f4}} 
+\index{Cocoa::Input@{Cocoa::Input}!KeyCallback@{KeyCallback}}
+\index{KeyCallback@{KeyCallback}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{KeyCallback()}{KeyCallback()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Input\+::\+Key\+Callback (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{scancode,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a4c540e11116e971ae16851245eb3312a}\label{class_cocoa_1_1_input_a4c540e11116e971ae16851245eb3312a}} 
+\index{Cocoa::Input@{Cocoa::Input}!KeyPressed@{KeyPressed}}
+\index{KeyPressed@{KeyPressed}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{KeyPressed()}{KeyPressed()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Input\+::\+Key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a5ffa430d0d9235eedf0ee2b3ec77ea45}\label{class_cocoa_1_1_input_a5ffa430d0d9235eedf0ee2b3ec77ea45}} 
+\index{Cocoa::Input@{Cocoa::Input}!MouseButtonCallback@{MouseButtonCallback}}
+\index{MouseButtonCallback@{MouseButtonCallback}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{MouseButtonCallback()}{MouseButtonCallback()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Input\+::\+Mouse\+Button\+Callback (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a6e5baf508b8dde8ff05837629931a0eb}\label{class_cocoa_1_1_input_a6e5baf508b8dde8ff05837629931a0eb}} 
+\index{Cocoa::Input@{Cocoa::Input}!MouseButtonPressed@{MouseButtonPressed}}
+\index{MouseButtonPressed@{MouseButtonPressed}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{MouseButtonPressed()}{MouseButtonPressed()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Input\+::\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{int}]{mouse\+Button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a2b05bac8db87607dc588ea498b0b3efc}\label{class_cocoa_1_1_input_a2b05bac8db87607dc588ea498b0b3efc}} 
+\index{Cocoa::Input@{Cocoa::Input}!MousePos@{MousePos}}
+\index{MousePos@{MousePos}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{MousePos()}{MousePos()}}
+{\footnotesize\ttfamily glm\+::vec2 Cocoa\+::\+Input\+::\+Mouse\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_aad0805aeab9f41be30356cdf86f6e7fc}\label{class_cocoa_1_1_input_aad0805aeab9f41be30356cdf86f6e7fc}} 
+\index{Cocoa::Input@{Cocoa::Input}!MouseX@{MouseX}}
+\index{MouseX@{MouseX}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{MouseX()}{MouseX()}}
+{\footnotesize\ttfamily float Cocoa\+::\+Input\+::\+MouseX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_ae5535f117b561256f44ae8e11caf466a}\label{class_cocoa_1_1_input_ae5535f117b561256f44ae8e11caf466a}} 
+\index{Cocoa::Input@{Cocoa::Input}!MouseY@{MouseY}}
+\index{MouseY@{MouseY}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{MouseY()}{MouseY()}}
+{\footnotesize\ttfamily float Cocoa\+::\+Input\+::\+MouseY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a5f299ab96fbe61365a976cddc8eacb10}\label{class_cocoa_1_1_input_a5f299ab96fbe61365a976cddc8eacb10}} 
+\index{Cocoa::Input@{Cocoa::Input}!NormalizedMousePos@{NormalizedMousePos}}
+\index{NormalizedMousePos@{NormalizedMousePos}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{NormalizedMousePos()}{NormalizedMousePos()}}
+{\footnotesize\ttfamily glm\+::vec2 Cocoa\+::\+Input\+::\+Normalized\+Mouse\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_ae1c52d6b4e4fa1352f2a6fd649cab3bc}\label{class_cocoa_1_1_input_ae1c52d6b4e4fa1352f2a6fd649cab3bc}} 
+\index{Cocoa::Input@{Cocoa::Input}!OrthoMouseX@{OrthoMouseX}}
+\index{OrthoMouseX@{OrthoMouseX}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{OrthoMouseX()}{OrthoMouseX()}}
+{\footnotesize\ttfamily float Cocoa\+::\+Input\+::\+Ortho\+MouseX (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a77af323d3ce4cd7e753e90e7800927a2}\label{class_cocoa_1_1_input_a77af323d3ce4cd7e753e90e7800927a2}} 
+\index{Cocoa::Input@{Cocoa::Input}!OrthoMouseY@{OrthoMouseY}}
+\index{OrthoMouseY@{OrthoMouseY}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{OrthoMouseY()}{OrthoMouseY()}}
+{\footnotesize\ttfamily float Cocoa\+::\+Input\+::\+Ortho\+MouseY (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a0e5b7161a09a1151c83a8b1814b45d7a}\label{class_cocoa_1_1_input_a0e5b7161a09a1151c83a8b1814b45d7a}} 
+\index{Cocoa::Input@{Cocoa::Input}!ScreenToOrtho@{ScreenToOrtho}}
+\index{ScreenToOrtho@{ScreenToOrtho}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{ScreenToOrtho()}{ScreenToOrtho()}}
+{\footnotesize\ttfamily glm\+::vec2 Cocoa\+::\+Input\+::\+Screen\+To\+Ortho (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a56b7cdac803fb8bca56bb7ea4c04b9da}\label{class_cocoa_1_1_input_a56b7cdac803fb8bca56bb7ea4c04b9da}} 
+\index{Cocoa::Input@{Cocoa::Input}!ScrollCallback@{ScrollCallback}}
+\index{ScrollCallback@{ScrollCallback}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{ScrollCallback()}{ScrollCallback()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Input\+::\+Scroll\+Callback (\begin{DoxyParamCaption}\item[{double}]{xoffset,  }\item[{double}]{yoffset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_aae1c7c622a80537835d4205931cae733}\label{class_cocoa_1_1_input_aae1c7c622a80537835d4205931cae733}} 
+\index{Cocoa::Input@{Cocoa::Input}!ScrollX@{ScrollX}}
+\index{ScrollX@{ScrollX}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{ScrollX()}{ScrollX()}}
+{\footnotesize\ttfamily float Cocoa\+::\+Input\+::\+ScrollX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_aaad60813a1b1c6acc61407879701f91c}\label{class_cocoa_1_1_input_aaad60813a1b1c6acc61407879701f91c}} 
+\index{Cocoa::Input@{Cocoa::Input}!ScrollY@{ScrollY}}
+\index{ScrollY@{ScrollY}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{ScrollY()}{ScrollY()}}
+{\footnotesize\ttfamily float Cocoa\+::\+Input\+::\+ScrollY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_aa3a7614cb0af0fa88c9ac14c006c17df}\label{class_cocoa_1_1_input_aa3a7614cb0af0fa88c9ac14c006c17df}} 
+\index{Cocoa::Input@{Cocoa::Input}!SetGameViewMousePos@{SetGameViewMousePos}}
+\index{SetGameViewMousePos@{SetGameViewMousePos}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{SetGameViewMousePos()}{SetGameViewMousePos()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Input\+::\+Set\+Game\+View\+Mouse\+Pos (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{mouse\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a606f66583f026d7624c041de11146715}\label{class_cocoa_1_1_input_a606f66583f026d7624c041de11146715}} 
+\index{Cocoa::Input@{Cocoa::Input}!SetGameViewPos@{SetGameViewPos}}
+\index{SetGameViewPos@{SetGameViewPos}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{SetGameViewPos()}{SetGameViewPos()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Input\+::\+Set\+Game\+View\+Pos (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_input_a578246a0f73a764874e6646966a6cc11}\label{class_cocoa_1_1_input_a578246a0f73a764874e6646966a6cc11}} 
+\index{Cocoa::Input@{Cocoa::Input}!SetGameViewSize@{SetGameViewSize}}
+\index{SetGameViewSize@{SetGameViewSize}!Cocoa::Input@{Cocoa::Input}}
+\doxysubsubsection{\texorpdfstring{SetGameViewSize()}{SetGameViewSize()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Input\+::\+Set\+Game\+View\+Size (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/events/\mbox{\hyperlink{_input_8h}{Input.\+h}}\item 
+Cocoa\+Engine/cpp/cocoa/events/\mbox{\hyperlink{_input_8cpp}{Input.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{_script_system_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/systems/\+Script\+System.h File Reference}
+\label{_script_system_8h}\index{CocoaEngine/include/cocoa/systems/ScriptSystem.h@{CocoaEngine/include/cocoa/systems/ScriptSystem.h}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/scenes/\+Scene.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Entity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/scenes/\+Scene\+Data.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_script_system}{Cocoa\+::\+Script\+System}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_a89b340c3c337f818e9501a7fad825dbb}{Cocoa\+::\+Add\+Component\+Fn}}) (entt\+::registry \&, std\+::string, entt\+::entity)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_af84a177ccc982303d8fa222d8b597122}{Cocoa\+::\+Update\+Script\+Fn}}) (entt\+::registry \&, float)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_a5ccddc97f520599e147b15c32fb6b501}{Cocoa\+::\+Editor\+Update\+Script\+Fn}}) (entt\+::registry \&, float)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_acec1a1eb76689b3ea3287d4459d8b18c}{Cocoa\+::\+Save\+Scripts\+Fn}}) (entt\+::registry \&, \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&, Scene\+Data $\ast$)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_af25a9ddbf91b0c642f245082b4f87e17}{Cocoa\+::\+Load\+Script\+Fn}}) (entt\+::registry \&, const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&, Entity)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_a19c56ccc8a491a064c26b702e35317af}{Cocoa\+::\+Init\+Scripts\+Fn}}) (Scene\+Data $\ast$)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_a360b241ce715af547b6d8d3a1f5b075a}{Cocoa\+::\+Init\+Im\+Gui\+Fn}}) (void $\ast$)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_af822d86a89667e56a393800e52eee1fe}{Cocoa\+::\+Im\+Gui\+Fn}}) (entt\+::registry \&, Entity)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_a473f6693fc11a7fafb15a647dc7cc877}{Cocoa\+::\+Delete\+Scripts\+Fn}}) ()
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_a974f5fd9774e5f6c309ebea184b456ff}{Cocoa\+::\+Notify\+Begin\+Contact\+Fn}}) (Entity, Entity)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{namespace_cocoa_a11ecb79d563feb509b389c7c9133922c}{Cocoa\+::\+Notify\+End\+Contact\+Fn}}) (Entity, Entity)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_ad786d3e05b1632beaa114106f6b82a14}{Cocoa\+::\+Script\+System\+::\+Init}} (Scene\+Data \&scene)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a85ab38ea5d582af1ed6dcf00252fd275}{Cocoa\+::\+Script\+System\+::\+Update}} (Scene\+Data \&scene, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a18c0d7a629518aadd56bf05593eb7c24}{Cocoa\+::\+Script\+System\+::\+Editor\+Update}} (Scene\+Data \&scene, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a97687cb54a27276fd28fe1a1fdb61e32}{Cocoa\+::\+Script\+System\+::\+Im\+Gui}} (Scene\+Data \&scene, Entity entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a95b95f4f782e708919450175c9080d47}{Cocoa\+::\+Script\+System\+::\+Init\+Im\+Gui}} (void $\ast$context)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a7e34e03c54015a8f22b5dc60a8274786}{Cocoa\+::\+Script\+System\+::\+Notify\+Begin\+Contact}} (Entity entityA, Entity entityB)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a20b7fb1069583f0f5fe485341f6aa788}{Cocoa\+::\+Script\+System\+::\+Notify\+End\+Contact}} (Entity entityA, Entity entityB)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_aa9ce03c68a9ba9d25dc0328a0af68d19}{Cocoa\+::\+Script\+System\+::\+Reload}} (Scene\+Data \&scene, bool delete\+Script\+Components)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a615fd81cfe4b5f7221cb8515726dde2c}{Cocoa\+::\+Script\+System\+::\+Save\+Scripts}} (Scene\+Data \&scene, \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a99a97447336b02346101a6bf58a90f90}{Cocoa\+::\+Script\+System\+::\+Deserialize}} (Scene\+Data \&scene, const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_script_system_aef7a180ccbac92abf30a63a338015e4f}{Cocoa\+::\+Script\+System\+::\+Free\+Script\+Library}} (Scene\+Data \&scene, bool delete\+Script\+Components)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a148708635b47a09e8c29e6d2e9ac3e5f}{Cocoa\+::\+Script\+System\+::\+Add\+Component\+From\+String}} (std\+::string class\+Name, entt\+::entity entity, entt\+::registry \&registry)
+\end{DoxyCompactItemize}

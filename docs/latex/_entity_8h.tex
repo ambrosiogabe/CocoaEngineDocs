@@ -1,0 +1,52 @@
+\hypertarget{_entity_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/core/\+Entity.h File Reference}
+\label{_entity_8h}\index{CocoaEngine/include/cocoa/core/Entity.h@{CocoaEngine/include/cocoa/core/Entity.h}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/scenes/\+Scene\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Entity\+Struct.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$entt/core/type\+\_\+info.\+hpp$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_n_entity}{Cocoa\+::\+NEntity}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Entity \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a7709e3efab797215001c383f9d6248c3}{Cocoa\+::\+NEntity\+::\+Create\+Entity}} (entt\+::entity raw)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a20661080155d9914c7eb1c36ba0ecea4}{Cocoa\+::\+NEntity\+::\+Set\+Scene}} (Scene\+Data $\ast$scene)
+\item 
+Scene\+Data $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_adc0355f138367d86dcd690807458f5af}{Cocoa\+::\+NEntity\+::\+Get\+Scene}} ()
+\item 
+Entity \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_abb3c038fc9a9f3272484806150bc1719}{Cocoa\+::\+NEntity\+::\+Create\+Null}} ()
+\item 
+{\footnotesize template$<$typename Component $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a571a99227eaf28f436e6218ce2b6eb28}{Cocoa\+::\+NEntity\+::\+Register\+Component\+Type}} ()
+\item 
+{\footnotesize template$<$typename Type $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a9ef628c96ebfa71521cd2afccdf9f4dc}{Cocoa\+::\+NEntity\+::\+Clear}} ()
+\item 
+{\footnotesize template$<$typename... Component$>$ }\\bool \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_aff4537117489fdda25ce56cd290f6421}{Cocoa\+::\+NEntity\+::\+Has\+Component}} (Entity entity)
+\item 
+{\footnotesize template$<$typename T , typename ... Args$>$ }\\T \& \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a61d6508a9cf344351c6da7ba31aec352}{Cocoa\+::\+NEntity\+::\+Add\+Component}} (Entity entity, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a29e6773874eee780f015473543e60f19}{Cocoa\+::\+NEntity\+::\+Get\+Component}} (Entity entity)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_afea8dc0c4fc5da4fd03bf5032ac419ef}{Cocoa\+::\+NEntity\+::\+Remove\+Component}} (Entity entity)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_afafb58a31dc92e5f34d1cba0b7bbd521}{Cocoa\+::\+NEntity\+::\+Is\+Null}} (Entity entity)
+\item 
+uint32 \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a2a8f3b192332679d6bd0ea3a56e9cca0}{Cocoa\+::\+NEntity\+::\+Get\+ID}} (Entity entity)
+\item 
+{\footnotesize template$<$typename T $>$ }\\Entity \mbox{\hyperlink{namespace_cocoa_1_1_n_entity_a76fe11cefc3fc8c1f7e6218aba09df8e}{Cocoa\+::\+NEntity\+::\+From\+Component}} (const T \&component)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_a9d5fd3193207d451372d6c4a1a143aba}{Cocoa\+::operator==}} (const Entity \&a, const Entity \&b)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_a8e81871fce291aa7b76a07e3123fbc6f}{Cocoa\+::operator==}} (Entity \&a, Entity \&b)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_a2096d11ef0d43690da6bd222211b9fa8}{Cocoa\+::operator!=}} (const Entity \&a, const Entity \&b)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_aa4790ddcd531b5f60c409289638af432}{Cocoa\+::operator!=}} (Entity \&a, Entity \&b)
+\end{DoxyCompactItemize}

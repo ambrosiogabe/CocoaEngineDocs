@@ -1,0 +1,161 @@
+\hypertarget{class_cocoa_1_1_file_system_watcher}{}\doxysection{Cocoa\+::File\+System\+Watcher Class Reference}
+\label{class_cocoa_1_1_file_system_watcher}\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+
+
+{\ttfamily \#include $<$File\+System\+Watcher.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_aa87ea06c7cf4cd9018fbc202e30b8b80}{On\+Changed}}) (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&file)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a2d567b36dbde16139dd072ff49b57385}{On\+Renamed}}) (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&file)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a3371acbe2197af0126e25d0363ce471c}{On\+Deleted}}) (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&file)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a32f31389a07366fe3408b1ccb4ca275e}{On\+Created}}) (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&file)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_accb5bc8fedc23f835128ff275b0a4446}{File\+System\+Watcher}} ()
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_ae9b20c6dc6d162d8a5fce72510add005}{$\sim$\+File\+System\+Watcher}} ()
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a077a89b63630aecb7bc62c79f8817be3}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a9c2b7a287f5e3f6ac528733ca0c21ef2}{Stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_aa87ea06c7cf4cd9018fbc202e30b8b80}{On\+Changed}} \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a123b800c6db11c6307c9ab8409719586}{m\+\_\+\+On\+Changed}} = nullptr
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a2d567b36dbde16139dd072ff49b57385}{On\+Renamed}} \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a00d2da68912ccaa333c22736bad6ef22}{m\+\_\+\+On\+Renamed}} = nullptr
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a3371acbe2197af0126e25d0363ce471c}{On\+Deleted}} \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a3f1429f0950b228b92c4a612f7467452}{m\+\_\+\+On\+Deleted}} = nullptr
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a32f31389a07366fe3408b1ccb4ca275e}{On\+Created}} \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_ae43f86d8d1e9a45f14f2b2b694d5e432}{m\+\_\+\+On\+Created}} = nullptr
+\item 
+int \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a32f209cb8835c89e3fb9325cc4215104}{m\+\_\+\+Notify\+Filters}} = 0
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a86e276395e9ceaa206640bb37adf40fb}{m\+\_\+\+Include\+Subdirectories}} = false
+\item 
+std\+::string \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a587f4c91009224118b923cd0b8331095}{m\+\_\+\+Filter}} = \char`\"{}\char`\"{}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a4121ccba4d10e13ad71b355d73b6231e}{m\+\_\+\+Path}} = \mbox{\hyperlink{namespace_cocoa_1_1_n_c_path_a0a1b7b6e3c1a50b8740005d2e49883e6}{NCPath\+::\+Create\+Path}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_aa87ea06c7cf4cd9018fbc202e30b8b80}\label{class_cocoa_1_1_file_system_watcher_aa87ea06c7cf4cd9018fbc202e30b8b80}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!OnChanged@{OnChanged}}
+\index{OnChanged@{OnChanged}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{OnChanged}{OnChanged}}
+{\footnotesize\ttfamily typedef void($\ast$ Cocoa\+::\+File\+System\+Watcher\+::\+On\+Changed) (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&file)}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a32f31389a07366fe3408b1ccb4ca275e}\label{class_cocoa_1_1_file_system_watcher_a32f31389a07366fe3408b1ccb4ca275e}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!OnCreated@{OnCreated}}
+\index{OnCreated@{OnCreated}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{OnCreated}{OnCreated}}
+{\footnotesize\ttfamily typedef void($\ast$ Cocoa\+::\+File\+System\+Watcher\+::\+On\+Created) (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&file)}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a3371acbe2197af0126e25d0363ce471c}\label{class_cocoa_1_1_file_system_watcher_a3371acbe2197af0126e25d0363ce471c}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!OnDeleted@{OnDeleted}}
+\index{OnDeleted@{OnDeleted}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{OnDeleted}{OnDeleted}}
+{\footnotesize\ttfamily typedef void($\ast$ Cocoa\+::\+File\+System\+Watcher\+::\+On\+Deleted) (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&file)}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a2d567b36dbde16139dd072ff49b57385}\label{class_cocoa_1_1_file_system_watcher_a2d567b36dbde16139dd072ff49b57385}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!OnRenamed@{OnRenamed}}
+\index{OnRenamed@{OnRenamed}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{OnRenamed}{OnRenamed}}
+{\footnotesize\ttfamily typedef void($\ast$ Cocoa\+::\+File\+System\+Watcher\+::\+On\+Renamed) (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&file)}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_accb5bc8fedc23f835128ff275b0a4446}\label{class_cocoa_1_1_file_system_watcher_accb5bc8fedc23f835128ff275b0a4446}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!FileSystemWatcher@{FileSystemWatcher}}
+\index{FileSystemWatcher@{FileSystemWatcher}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{FileSystemWatcher()}{FileSystemWatcher()}}
+{\footnotesize\ttfamily Cocoa\+::\+File\+System\+Watcher\+::\+File\+System\+Watcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_ae9b20c6dc6d162d8a5fce72510add005}\label{class_cocoa_1_1_file_system_watcher_ae9b20c6dc6d162d8a5fce72510add005}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!````~FileSystemWatcher@{$\sim$FileSystemWatcher}}
+\index{````~FileSystemWatcher@{$\sim$FileSystemWatcher}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$FileSystemWatcher()}{~FileSystemWatcher()}}
+{\footnotesize\ttfamily Cocoa\+::\+File\+System\+Watcher\+::$\sim$\+File\+System\+Watcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a077a89b63630aecb7bc62c79f8817be3}\label{class_cocoa_1_1_file_system_watcher_a077a89b63630aecb7bc62c79f8817be3}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!Start@{Start}}
+\index{Start@{Start}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Cocoa\+::\+File\+System\+Watcher\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a9c2b7a287f5e3f6ac528733ca0c21ef2}\label{class_cocoa_1_1_file_system_watcher_a9c2b7a287f5e3f6ac528733ca0c21ef2}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!Stop@{Stop}}
+\index{Stop@{Stop}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Cocoa\+::\+File\+System\+Watcher\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a587f4c91009224118b923cd0b8331095}\label{class_cocoa_1_1_file_system_watcher_a587f4c91009224118b923cd0b8331095}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!m\_Filter@{m\_Filter}}
+\index{m\_Filter@{m\_Filter}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{m\_Filter}{m\_Filter}}
+{\footnotesize\ttfamily std\+::string Cocoa\+::\+File\+System\+Watcher\+::m\+\_\+\+Filter = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a86e276395e9ceaa206640bb37adf40fb}\label{class_cocoa_1_1_file_system_watcher_a86e276395e9ceaa206640bb37adf40fb}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!m\_IncludeSubdirectories@{m\_IncludeSubdirectories}}
+\index{m\_IncludeSubdirectories@{m\_IncludeSubdirectories}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{m\_IncludeSubdirectories}{m\_IncludeSubdirectories}}
+{\footnotesize\ttfamily bool Cocoa\+::\+File\+System\+Watcher\+::m\+\_\+\+Include\+Subdirectories = false}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a32f209cb8835c89e3fb9325cc4215104}\label{class_cocoa_1_1_file_system_watcher_a32f209cb8835c89e3fb9325cc4215104}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!m\_NotifyFilters@{m\_NotifyFilters}}
+\index{m\_NotifyFilters@{m\_NotifyFilters}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{m\_NotifyFilters}{m\_NotifyFilters}}
+{\footnotesize\ttfamily int Cocoa\+::\+File\+System\+Watcher\+::m\+\_\+\+Notify\+Filters = 0}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a123b800c6db11c6307c9ab8409719586}\label{class_cocoa_1_1_file_system_watcher_a123b800c6db11c6307c9ab8409719586}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!m\_OnChanged@{m\_OnChanged}}
+\index{m\_OnChanged@{m\_OnChanged}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{m\_OnChanged}{m\_OnChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_aa87ea06c7cf4cd9018fbc202e30b8b80}{On\+Changed}} Cocoa\+::\+File\+System\+Watcher\+::m\+\_\+\+On\+Changed = nullptr}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_ae43f86d8d1e9a45f14f2b2b694d5e432}\label{class_cocoa_1_1_file_system_watcher_ae43f86d8d1e9a45f14f2b2b694d5e432}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!m\_OnCreated@{m\_OnCreated}}
+\index{m\_OnCreated@{m\_OnCreated}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{m\_OnCreated}{m\_OnCreated}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a32f31389a07366fe3408b1ccb4ca275e}{On\+Created}} Cocoa\+::\+File\+System\+Watcher\+::m\+\_\+\+On\+Created = nullptr}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a3f1429f0950b228b92c4a612f7467452}\label{class_cocoa_1_1_file_system_watcher_a3f1429f0950b228b92c4a612f7467452}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!m\_OnDeleted@{m\_OnDeleted}}
+\index{m\_OnDeleted@{m\_OnDeleted}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{m\_OnDeleted}{m\_OnDeleted}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a3371acbe2197af0126e25d0363ce471c}{On\+Deleted}} Cocoa\+::\+File\+System\+Watcher\+::m\+\_\+\+On\+Deleted = nullptr}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a00d2da68912ccaa333c22736bad6ef22}\label{class_cocoa_1_1_file_system_watcher_a00d2da68912ccaa333c22736bad6ef22}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!m\_OnRenamed@{m\_OnRenamed}}
+\index{m\_OnRenamed@{m\_OnRenamed}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{m\_OnRenamed}{m\_OnRenamed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_file_system_watcher_a2d567b36dbde16139dd072ff49b57385}{On\+Renamed}} Cocoa\+::\+File\+System\+Watcher\+::m\+\_\+\+On\+Renamed = nullptr}
+
+\mbox{\Hypertarget{class_cocoa_1_1_file_system_watcher_a4121ccba4d10e13ad71b355d73b6231e}\label{class_cocoa_1_1_file_system_watcher_a4121ccba4d10e13ad71b355d73b6231e}} 
+\index{Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}!m\_Path@{m\_Path}}
+\index{m\_Path@{m\_Path}!Cocoa::FileSystemWatcher@{Cocoa::FileSystemWatcher}}
+\doxysubsubsection{\texorpdfstring{m\_Path}{m\_Path}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} Cocoa\+::\+File\+System\+Watcher\+::m\+\_\+\+Path = \mbox{\hyperlink{namespace_cocoa_1_1_n_c_path_a0a1b7b6e3c1a50b8740005d2e49883e6}{NCPath\+::\+Create\+Path}}()}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/file/\mbox{\hyperlink{_file_system_watcher_8h}{File\+System\+Watcher.\+h}}\item 
+Cocoa\+Engine/cpp/cocoa/file/\mbox{\hyperlink{_file_system_watcher_8cpp}{File\+System\+Watcher.\+cpp}}\end{DoxyCompactItemize}

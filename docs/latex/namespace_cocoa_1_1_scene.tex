@@ -1,0 +1,176 @@
+\hypertarget{namespace_cocoa_1_1_scene}{}\doxysection{Cocoa\+::Scene Namespace Reference}
+\label{namespace_cocoa_1_1_scene}\index{Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \mbox{\hyperlink{namespace_cocoa_1_1_scene_a914f42f69e784110ba848d1282c739a6}{Create}} (\mbox{\hyperlink{class_cocoa_1_1_scene_initializer}{Scene\+Initializer}} $\ast$scene\+Initializer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a2c10cae6ee836189bc35e10c5f90dcbe}{Init}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a040a56a5e270d362e1a3f9480c561f7f}{Start}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a2b12dd8a61c115d61d5fb54b84e24788}{Update}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_acdfe7d2bc1bb078b975e2d1e1a27600b}{Editor\+Update}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a55a5eda35ac57ca8aa6c6a5f06644a54}{On\+Event}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data, const \mbox{\hyperlink{class_cocoa_1_1_event}{Event}} \&e)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a6d2cfb35f742c24383a37e2293048295}{Render}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a49cd14bc0ab5daae526be0110b8493bb}{Free\+Resources}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_ad2aa40ae10c4d4f91d86d6cb9e3ff159}{Play}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_acc869ad098e6d354cfb4da2c805b8b09}{Stop}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a1433307b20dff2b7f25a078b6503441e}{Serialize\+Entity}} (\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} $\ast$j, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_aeeb098e3dc7ccaf13b2f69ffdc15d351}{Deserialize\+Entities}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, \mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_aeaa53ec25af5436dc14689a3972e3d28}{Save}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filename)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a376d168187dc8e69816b20c3fcd9fd8f}{Load}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filename, bool set\+As\+Current\+Scene)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_a0bac0cb4bd3db20dc572291eccbe4a5b}{Load\+Scripts\+Only}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filename)
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} \mbox{\hyperlink{namespace_cocoa_1_1_scene_ace58192194adebf1e3063fc4c5bc78a1}{Create\+Entity}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data)
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} \mbox{\hyperlink{namespace_cocoa_1_1_scene_a9ea086f72ebc0e5afaff42f881028bf6}{Duplicate\+Entity}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} \mbox{\hyperlink{namespace_cocoa_1_1_scene_a4c65a58522bb9f11e2d8ff1ea61ef75e}{Get\+Entity}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&data, \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} id)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_scene_a2883fdbf53d61d01e8c33dbd9f105150}{Is\+Valid}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} entity\+Id)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_scene_a36eb6335c68fc2dc8fe6504351142b36}{Is\+Valid}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_scene_ad4edc787f36e0e71c4a00f250ec15caf}{Delete\+Entity}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a914f42f69e784110ba848d1282c739a6}\label{namespace_cocoa_1_1_scene_a914f42f69e784110ba848d1282c739a6}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!Create@{Create}}
+\index{Create@{Create}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} Cocoa\+::\+Scene\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cocoa_1_1_scene_initializer}{Scene\+Initializer}} $\ast$}]{scene\+Initializer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_ace58192194adebf1e3063fc4c5bc78a1}\label{namespace_cocoa_1_1_scene_ace58192194adebf1e3063fc4c5bc78a1}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} Cocoa\+::\+Scene\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_ad4edc787f36e0e71c4a00f250ec15caf}\label{namespace_cocoa_1_1_scene_ad4edc787f36e0e71c4a00f250ec15caf}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!DeleteEntity@{DeleteEntity}}
+\index{DeleteEntity@{DeleteEntity}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{DeleteEntity()}{DeleteEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Delete\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_aeeb098e3dc7ccaf13b2f69ffdc15d351}\label{namespace_cocoa_1_1_scene_aeeb098e3dc7ccaf13b2f69ffdc15d351}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!DeserializeEntities@{DeserializeEntities}}
+\index{DeserializeEntities@{DeserializeEntities}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{DeserializeEntities()}{DeserializeEntities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Deserialize\+Entities (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a9ea086f72ebc0e5afaff42f881028bf6}\label{namespace_cocoa_1_1_scene_a9ea086f72ebc0e5afaff42f881028bf6}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!DuplicateEntity@{DuplicateEntity}}
+\index{DuplicateEntity@{DuplicateEntity}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{DuplicateEntity()}{DuplicateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} Cocoa\+::\+Scene\+::\+Duplicate\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_acdfe7d2bc1bb078b975e2d1e1a27600b}\label{namespace_cocoa_1_1_scene_acdfe7d2bc1bb078b975e2d1e1a27600b}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!EditorUpdate@{EditorUpdate}}
+\index{EditorUpdate@{EditorUpdate}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{EditorUpdate()}{EditorUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Editor\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data,  }\item[{float}]{dt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a49cd14bc0ab5daae526be0110b8493bb}\label{namespace_cocoa_1_1_scene_a49cd14bc0ab5daae526be0110b8493bb}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!FreeResources@{FreeResources}}
+\index{FreeResources@{FreeResources}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{FreeResources()}{FreeResources()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Free\+Resources (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a4c65a58522bb9f11e2d8ff1ea61ef75e}\label{namespace_cocoa_1_1_scene_a4c65a58522bb9f11e2d8ff1ea61ef75e}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!GetEntity@{GetEntity}}
+\index{GetEntity@{GetEntity}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{GetEntity()}{GetEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} Cocoa\+::\+Scene\+::\+Get\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data,  }\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a2c10cae6ee836189bc35e10c5f90dcbe}\label{namespace_cocoa_1_1_scene_a2c10cae6ee836189bc35e10c5f90dcbe}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!Init@{Init}}
+\index{Init@{Init}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a36eb6335c68fc2dc8fe6504351142b36}\label{namespace_cocoa_1_1_scene_a36eb6335c68fc2dc8fe6504351142b36}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{IsValid()}{IsValid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Scene\+::\+Is\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a2883fdbf53d61d01e8c33dbd9f105150}\label{namespace_cocoa_1_1_scene_a2883fdbf53d61d01e8c33dbd9f105150}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{IsValid()}{IsValid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Scene\+::\+Is\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{entity\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a376d168187dc8e69816b20c3fcd9fd8f}\label{namespace_cocoa_1_1_scene_a376d168187dc8e69816b20c3fcd9fd8f}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!Load@{Load}}
+\index{Load@{Load}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filename,  }\item[{bool}]{set\+As\+Current\+Scene }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a0bac0cb4bd3db20dc572291eccbe4a5b}\label{namespace_cocoa_1_1_scene_a0bac0cb4bd3db20dc572291eccbe4a5b}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!LoadScriptsOnly@{LoadScriptsOnly}}
+\index{LoadScriptsOnly@{LoadScriptsOnly}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{LoadScriptsOnly()}{LoadScriptsOnly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Load\+Scripts\+Only (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a55a5eda35ac57ca8aa6c6a5f06644a54}\label{namespace_cocoa_1_1_scene_a55a5eda35ac57ca8aa6c6a5f06644a54}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!OnEvent@{OnEvent}}
+\index{OnEvent@{OnEvent}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{OnEvent()}{OnEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+On\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data,  }\item[{const \mbox{\hyperlink{class_cocoa_1_1_event}{Event}} \&}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_ad2aa40ae10c4d4f91d86d6cb9e3ff159}\label{namespace_cocoa_1_1_scene_ad2aa40ae10c4d4f91d86d6cb9e3ff159}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!Play@{Play}}
+\index{Play@{Play}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Play (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a6d2cfb35f742c24383a37e2293048295}\label{namespace_cocoa_1_1_scene_a6d2cfb35f742c24383a37e2293048295}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!Render@{Render}}
+\index{Render@{Render}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_aeaa53ec25af5436dc14689a3972e3d28}\label{namespace_cocoa_1_1_scene_aeaa53ec25af5436dc14689a3972e3d28}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!Save@{Save}}
+\index{Save@{Save}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a1433307b20dff2b7f25a078b6503441e}\label{namespace_cocoa_1_1_scene_a1433307b20dff2b7f25a078b6503441e}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!SerializeEntity@{SerializeEntity}}
+\index{SerializeEntity@{SerializeEntity}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{SerializeEntity()}{SerializeEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Serialize\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} $\ast$}]{j,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a040a56a5e270d362e1a3f9480c561f7f}\label{namespace_cocoa_1_1_scene_a040a56a5e270d362e1a3f9480c561f7f}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!Start@{Start}}
+\index{Start@{Start}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_acc869ad098e6d354cfb4da2c805b8b09}\label{namespace_cocoa_1_1_scene_acc869ad098e6d354cfb4da2c805b8b09}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!Stop@{Stop}}
+\index{Stop@{Stop}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_scene_a2b12dd8a61c115d61d5fb54b84e24788}\label{namespace_cocoa_1_1_scene_a2b12dd8a61c115d61d5fb54b84e24788}} 
+\index{Cocoa::Scene@{Cocoa::Scene}!Update@{Update}}
+\index{Update@{Update}!Cocoa::Scene@{Cocoa::Scene}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Scene\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{data,  }\item[{float}]{dt }\end{DoxyParamCaption})}
+

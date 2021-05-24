@@ -1,0 +1,53 @@
+\hypertarget{_memory_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/core/\+Memory.h File Reference}
+\label{_memory_8h}\index{CocoaEngine/include/cocoa/core/Memory.h@{CocoaEngine/include/cocoa/core/Memory.h}}
+{\ttfamily \#include \char`\"{}cocoa/core/\+Core.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_memory}{Cocoa\+::\+Memory}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_memory_8h_a9cd2e70ab9e3e80f3b054be976008593}{Alloc\+Mem}}(num\+Bytes)~\mbox{\hyperlink{namespace_cocoa_1_1_memory_aeb42edd87bf3398483dc2b21730448a2}{Cocoa\+::\+Memory\+::\+\_\+\+Allocate}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, num\+Bytes)
+\item 
+\#define \mbox{\hyperlink{_memory_8h_a9b92f99b3cdfe453b9d4009fbd320f79}{Realloc\+Mem}}(memory,  new\+Size)~\mbox{\hyperlink{namespace_cocoa_1_1_memory_a38eddcfbbfe3c51514d4e7df155b0a1f}{Cocoa\+::\+Memory\+::\+\_\+\+Realloc}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, memory, new\+Size)
+\item 
+\#define \mbox{\hyperlink{_memory_8h_a4d76aece7dfa4f31749ddc9ac25bf4f4}{Free\+Mem}}(memory)~\mbox{\hyperlink{namespace_cocoa_1_1_memory_a4d7f09c49e6cee21a98a53409fd061bf}{Cocoa\+::\+Memory\+::\+\_\+\+Free}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, memory)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_memory_aeb42edd87bf3398483dc2b21730448a2}{Cocoa\+::\+Memory\+::\+\_\+\+Allocate}} (const char $\ast$filename, int line, size\+\_\+t num\+Bytes)
+\item 
+void $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_memory_a38eddcfbbfe3c51514d4e7df155b0a1f}{Cocoa\+::\+Memory\+::\+\_\+\+Realloc}} (const char $\ast$filename, int line, void $\ast$old\+Memory, size\+\_\+t num\+Bytes)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_memory_a4d7f09c49e6cee21a98a53409fd061bf}{Cocoa\+::\+Memory\+::\+\_\+\+Free}} (const char $\ast$filename, int line, void $\ast$memory)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_memory_a951d6cdbac5e22aace0e561ef7c3a6b2}{Cocoa\+::\+Memory\+::\+Init}} ()
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_memory_aaa79d4d6394b7b0592ed49b5af69a5f5}{Cocoa\+::\+Memory\+::\+Destroy}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_memory_8h_a9cd2e70ab9e3e80f3b054be976008593}\label{_memory_8h_a9cd2e70ab9e3e80f3b054be976008593}} 
+\index{Memory.h@{Memory.h}!AllocMem@{AllocMem}}
+\index{AllocMem@{AllocMem}!Memory.h@{Memory.h}}
+\doxysubsubsection{\texorpdfstring{AllocMem}{AllocMem}}
+{\footnotesize\ttfamily \#define Alloc\+Mem(\begin{DoxyParamCaption}\item[{}]{num\+Bytes }\end{DoxyParamCaption})~\mbox{\hyperlink{namespace_cocoa_1_1_memory_aeb42edd87bf3398483dc2b21730448a2}{Cocoa\+::\+Memory\+::\+\_\+\+Allocate}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, num\+Bytes)}
+
+\mbox{\Hypertarget{_memory_8h_a4d76aece7dfa4f31749ddc9ac25bf4f4}\label{_memory_8h_a4d76aece7dfa4f31749ddc9ac25bf4f4}} 
+\index{Memory.h@{Memory.h}!FreeMem@{FreeMem}}
+\index{FreeMem@{FreeMem}!Memory.h@{Memory.h}}
+\doxysubsubsection{\texorpdfstring{FreeMem}{FreeMem}}
+{\footnotesize\ttfamily \#define Free\+Mem(\begin{DoxyParamCaption}\item[{}]{memory }\end{DoxyParamCaption})~\mbox{\hyperlink{namespace_cocoa_1_1_memory_a4d7f09c49e6cee21a98a53409fd061bf}{Cocoa\+::\+Memory\+::\+\_\+\+Free}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, memory)}
+
+\mbox{\Hypertarget{_memory_8h_a9b92f99b3cdfe453b9d4009fbd320f79}\label{_memory_8h_a9b92f99b3cdfe453b9d4009fbd320f79}} 
+\index{Memory.h@{Memory.h}!ReallocMem@{ReallocMem}}
+\index{ReallocMem@{ReallocMem}!Memory.h@{Memory.h}}
+\doxysubsubsection{\texorpdfstring{ReallocMem}{ReallocMem}}
+{\footnotesize\ttfamily \#define Realloc\+Mem(\begin{DoxyParamCaption}\item[{}]{memory,  }\item[{}]{new\+Size }\end{DoxyParamCaption})~\mbox{\hyperlink{namespace_cocoa_1_1_memory_a38eddcfbbfe3c51514d4e7df155b0a1f}{Cocoa\+::\+Memory\+::\+\_\+\+Realloc}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, memory, new\+Size)}
+

@@ -1,0 +1,214 @@
+\hypertarget{class_cocoa_1_1_c_window}{}\doxysection{Cocoa\+::CWindow Class Reference}
+\label{class_cocoa_1_1_c_window}\index{Cocoa::CWindow@{Cocoa::CWindow}}
+
+
+{\ttfamily \#include $<$CWindow.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_cocoa_1_1_c_window_a3a4a7c443e503897198d4b52f075e4d6}{Event\+Callback\+Fn}} = std\+::function$<$ void(\mbox{\hyperlink{class_cocoa_1_1_event}{Event}} \&)$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_c_window_a66b11ff106381586a9bcf2308db5bda9}{CWindow}} (\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} width, \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} height, const std\+::string \&name)
+\item 
+virtual \mbox{\hyperlink{class_cocoa_1_1_c_window_ad4dcd8d089008e56d7fc53772c1cc937}{$\sim$\+CWindow}} ()
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_c_window_a4f975186d06b3573d3047f5f60fe7598}{Init}} (\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} width, \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} height, const std\+::string \&name)
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_c_window_a6f5473d23072c47ec90a4a094e67aca9}{On\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_c_window_a74ba361eb1b27e40e95d740b6c58aaaf}{Set\+VSync}} (bool enabled)
+\item 
+virtual bool \mbox{\hyperlink{class_cocoa_1_1_c_window_a5c6902eeeb0bd95ad8c2db48d7cef936}{Is\+VSync}} () const
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_cocoa_1_1_c_window_a305598256c2afc59c85247ff90fd80b9}{Get\+Native\+Window}} () const
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_c_window_a1cb59d52f7ef4f090c4bbfff2bd1a6fb}{Is\+Running}} ()
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_c_window_a90248e3032125bdde7959cbf34cb0cfa}{Set\+Event\+Callback}} (const \mbox{\hyperlink{class_cocoa_1_1_c_window_a3a4a7c443e503897198d4b52f075e4d6}{Event\+Callback\+Fn}} \&callback)
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_cocoa_1_1_c_window_a18592e12414d664a5e848692f3ef5946}{Get\+Window\+Pos}} ()
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_c_window_a9b0d05a7ffdd41ce73de92667d583f0a}{Set\+Width}} (int new\+Width)
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_c_window_aaa0bafe80e1b8d9865f4d42630ac8adb}{Set\+Height}} (int new\+Height)
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_c_window_ae385006efc692f1c85f16b7c1cf35ab2}{Set\+Size}} (const glm\+::vec2 \&size)
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_c_window_aa45c5ff5bf1f38504fd3e971caacd100}{Set\+Title}} (const char $\ast$new\+Title)
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_cocoa_1_1_c_window_affa906831e58d5bdb9217e9e83e52639}{Get\+Monitor\+Size}} ()
+\item 
+int \mbox{\hyperlink{class_cocoa_1_1_c_window_a3a1ea439ca13a16e8bb2a22858978c91}{Get\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_cocoa_1_1_c_window_a8d05a6056a24b4d093bfdc653dd376a7}{Get\+Height}} ()
+\item 
+const glm\+::vec2 \& \mbox{\hyperlink{class_cocoa_1_1_c_window_af01f0a572b8220efe78f711f290fb9ff}{Get\+Size}} ()
+\item 
+float \mbox{\hyperlink{class_cocoa_1_1_c_window_a3cf9f6a067e8b38a01a759c1675b58f1}{Get\+Target\+Aspect\+Ratio}} ()
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_c_window_a172dec4c5707a6f64f8051c0caab0217}{Render}} ()
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_c_window_a3c31ae52ac82f5010d879288756f5228}{Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_c_window}{CWindow}} $\ast$ \mbox{\hyperlink{class_cocoa_1_1_c_window_afeb934bd00c34f18cd38a482f9f54afe}{Create}} (\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} width, \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} height, const std\+::string \&name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a3a4a7c443e503897198d4b52f075e4d6}\label{class_cocoa_1_1_c_window_a3a4a7c443e503897198d4b52f075e4d6}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!EventCallbackFn@{EventCallbackFn}}
+\index{EventCallbackFn@{EventCallbackFn}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{EventCallbackFn}{EventCallbackFn}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_cocoa_1_1_c_window_a3a4a7c443e503897198d4b52f075e4d6}{Cocoa\+::\+CWindow\+::\+Event\+Callback\+Fn}} =  std\+::function$<$void(\mbox{\hyperlink{class_cocoa_1_1_event}{Event}}\&)$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a66b11ff106381586a9bcf2308db5bda9}\label{class_cocoa_1_1_c_window_a66b11ff106381586a9bcf2308db5bda9}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!CWindow@{CWindow}}
+\index{CWindow@{CWindow}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{CWindow()}{CWindow()}}
+{\footnotesize\ttfamily Cocoa\+::\+CWindow\+::\+CWindow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{width,  }\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{height,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_ad4dcd8d089008e56d7fc53772c1cc937}\label{class_cocoa_1_1_c_window_ad4dcd8d089008e56d7fc53772c1cc937}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!````~CWindow@{$\sim$CWindow}}
+\index{````~CWindow@{$\sim$CWindow}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$CWindow()}{~CWindow()}}
+{\footnotesize\ttfamily virtual Cocoa\+::\+CWindow\+::$\sim$\+CWindow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_afeb934bd00c34f18cd38a482f9f54afe}\label{class_cocoa_1_1_c_window_afeb934bd00c34f18cd38a482f9f54afe}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!Create@{Create}}
+\index{Create@{Create}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_c_window}{CWindow}} $\ast$ Cocoa\+::\+CWindow\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{width,  }\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{height,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a3c31ae52ac82f5010d879288756f5228}\label{class_cocoa_1_1_c_window_a3c31ae52ac82f5010d879288756f5228}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a8d05a6056a24b4d093bfdc653dd376a7}\label{class_cocoa_1_1_c_window_a8d05a6056a24b4d093bfdc653dd376a7}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily int Cocoa\+::\+CWindow\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_affa906831e58d5bdb9217e9e83e52639}\label{class_cocoa_1_1_c_window_affa906831e58d5bdb9217e9e83e52639}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!GetMonitorSize@{GetMonitorSize}}
+\index{GetMonitorSize@{GetMonitorSize}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{GetMonitorSize()}{GetMonitorSize()}}
+{\footnotesize\ttfamily glm\+::vec2 Cocoa\+::\+CWindow\+::\+Get\+Monitor\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a305598256c2afc59c85247ff90fd80b9}\label{class_cocoa_1_1_c_window_a305598256c2afc59c85247ff90fd80b9}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!GetNativeWindow@{GetNativeWindow}}
+\index{GetNativeWindow@{GetNativeWindow}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{GetNativeWindow()}{GetNativeWindow()}}
+{\footnotesize\ttfamily void $\ast$ Cocoa\+::\+CWindow\+::\+Get\+Native\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_af01f0a572b8220efe78f711f290fb9ff}\label{class_cocoa_1_1_c_window_af01f0a572b8220efe78f711f290fb9ff}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily const glm\+::vec2\& Cocoa\+::\+CWindow\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a3cf9f6a067e8b38a01a759c1675b58f1}\label{class_cocoa_1_1_c_window_a3cf9f6a067e8b38a01a759c1675b58f1}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!GetTargetAspectRatio@{GetTargetAspectRatio}}
+\index{GetTargetAspectRatio@{GetTargetAspectRatio}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{GetTargetAspectRatio()}{GetTargetAspectRatio()}}
+{\footnotesize\ttfamily float Cocoa\+::\+CWindow\+::\+Get\+Target\+Aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a3a1ea439ca13a16e8bb2a22858978c91}\label{class_cocoa_1_1_c_window_a3a1ea439ca13a16e8bb2a22858978c91}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily int Cocoa\+::\+CWindow\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a18592e12414d664a5e848692f3ef5946}\label{class_cocoa_1_1_c_window_a18592e12414d664a5e848692f3ef5946}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!GetWindowPos@{GetWindowPos}}
+\index{GetWindowPos@{GetWindowPos}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{GetWindowPos()}{GetWindowPos()}}
+{\footnotesize\ttfamily glm\+::vec2 Cocoa\+::\+CWindow\+::\+Get\+Window\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a4f975186d06b3573d3047f5f60fe7598}\label{class_cocoa_1_1_c_window_a4f975186d06b3573d3047f5f60fe7598}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!Init@{Init}}
+\index{Init@{Init}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{width,  }\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{height,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a1cb59d52f7ef4f090c4bbfff2bd1a6fb}\label{class_cocoa_1_1_c_window_a1cb59d52f7ef4f090c4bbfff2bd1a6fb}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!IsRunning@{IsRunning}}
+\index{IsRunning@{IsRunning}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{IsRunning()}{IsRunning()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+CWindow\+::\+Is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a5c6902eeeb0bd95ad8c2db48d7cef936}\label{class_cocoa_1_1_c_window_a5c6902eeeb0bd95ad8c2db48d7cef936}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!IsVSync@{IsVSync}}
+\index{IsVSync@{IsVSync}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{IsVSync()}{IsVSync()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+CWindow\+::\+Is\+VSync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a6f5473d23072c47ec90a4a094e67aca9}\label{class_cocoa_1_1_c_window_a6f5473d23072c47ec90a4a094e67aca9}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!OnUpdate@{OnUpdate}}
+\index{OnUpdate@{OnUpdate}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{OnUpdate()}{OnUpdate()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a172dec4c5707a6f64f8051c0caab0217}\label{class_cocoa_1_1_c_window_a172dec4c5707a6f64f8051c0caab0217}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!Render@{Render}}
+\index{Render@{Render}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a90248e3032125bdde7959cbf34cb0cfa}\label{class_cocoa_1_1_c_window_a90248e3032125bdde7959cbf34cb0cfa}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!SetEventCallback@{SetEventCallback}}
+\index{SetEventCallback@{SetEventCallback}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{SetEventCallback()}{SetEventCallback()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+Set\+Event\+Callback (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cocoa_1_1_c_window_a3a4a7c443e503897198d4b52f075e4d6}{Event\+Callback\+Fn}} \&}]{callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_aaa0bafe80e1b8d9865f4d42630ac8adb}\label{class_cocoa_1_1_c_window_aaa0bafe80e1b8d9865f4d42630ac8adb}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!SetHeight@{SetHeight}}
+\index{SetHeight@{SetHeight}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{SetHeight()}{SetHeight()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+Set\+Height (\begin{DoxyParamCaption}\item[{int}]{new\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_ae385006efc692f1c85f16b7c1cf35ab2}\label{class_cocoa_1_1_c_window_ae385006efc692f1c85f16b7c1cf35ab2}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!SetSize@{SetSize}}
+\index{SetSize@{SetSize}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{SetSize()}{SetSize()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_aa45c5ff5bf1f38504fd3e971caacd100}\label{class_cocoa_1_1_c_window_aa45c5ff5bf1f38504fd3e971caacd100}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!SetTitle@{SetTitle}}
+\index{SetTitle@{SetTitle}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{SetTitle()}{SetTitle()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+Set\+Title (\begin{DoxyParamCaption}\item[{const char $\ast$}]{new\+Title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a74ba361eb1b27e40e95d740b6c58aaaf}\label{class_cocoa_1_1_c_window_a74ba361eb1b27e40e95d740b6c58aaaf}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!SetVSync@{SetVSync}}
+\index{SetVSync@{SetVSync}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{SetVSync()}{SetVSync()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+Set\+VSync (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_c_window_a9b0d05a7ffdd41ce73de92667d583f0a}\label{class_cocoa_1_1_c_window_a9b0d05a7ffdd41ce73de92667d583f0a}} 
+\index{Cocoa::CWindow@{Cocoa::CWindow}!SetWidth@{SetWidth}}
+\index{SetWidth@{SetWidth}!Cocoa::CWindow@{Cocoa::CWindow}}
+\doxysubsubsection{\texorpdfstring{SetWidth()}{SetWidth()}}
+{\footnotesize\ttfamily void Cocoa\+::\+CWindow\+::\+Set\+Width (\begin{DoxyParamCaption}\item[{int}]{new\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/core/\mbox{\hyperlink{_c_window_8h}{CWindow.\+h}}\item 
+Cocoa\+Engine/cpp/cocoa/core/\mbox{\hyperlink{_c_window_8cpp}{CWindow.\+cpp}}\end{DoxyCompactItemize}

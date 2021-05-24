@@ -1,0 +1,1721 @@
+\hypertarget{_core_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/core/\+Core.h File Reference}
+\label{_core_8h}\index{CocoaEngine/include/cocoa/core/Core.h@{CocoaEngine/include/cocoa/core/Core.h}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a985dbeda070e1af138ad16fdd4f70e1c}{C\+\_\+\+EXTERN}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_afb87a5cbe11a33825e3953d7c6dba257}{COCOA\+\_\+\+SCRIPT}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a853de1c5e7cb714c383472ad9c2255b1}{COCOA\+\_\+\+TEMPLATE\+\_\+\+EXTERN}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a0f0b61260ab178e7df0069f14ecb9f82}{UPROPERTY}}(...)~;
+\item 
+\#define \mbox{\hyperlink{_core_8h_ae5f1e35d10ebc5ce3e5bf2f36bcc64f8}{UCLASS}}(...)~;
+\item 
+\#define \mbox{\hyperlink{_core_8h_af3c7826680f0c0d7bc3434f9bb7c60e5}{USTRUCT}}(...)~;
+\item 
+\#define \mbox{\hyperlink{_core_8h_a86f9baa58824ee9424400dfe6e3c37db}{COCOA\+\_\+\+RELEASE}}~0
+\item 
+\#define \mbox{\hyperlink{_core_8h_a0a5d298e381aec4bb83c4eb3fe9bf2ba}{COCOA\+\_\+\+PRESS}}~1
+\item 
+\#define \mbox{\hyperlink{_core_8h_a50d63caa750f7e78efc94923fced656d}{COCOA\+\_\+\+REPEAT}}~2
+\item 
+\#define \mbox{\hyperlink{_core_8h_ae9273142e126e8e94374a5306ec848e0}{COCOA\+\_\+\+DOUBLE\+\_\+\+CLICK}}~3
+\item 
+\#define \mbox{\hyperlink{_core_8h_a4ef439d3dee4413a8e0683427bbb851c}{COCOA\+\_\+\+KEY\+\_\+\+UNKNOWN}}~-\/1
+\item 
+\#define \mbox{\hyperlink{_core_8h_a29cab71ac2dc6b1448031db4108db3b6}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+0}}~20
+\item 
+\#define \mbox{\hyperlink{_core_8h_a3019e70b29355dee0b5b7c87f2d79834}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+1}}~21
+\item 
+\#define \mbox{\hyperlink{_core_8h_adfbbdc0d2abaf494d9fa4032031957c1}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+2}}~22
+\item 
+\#define \mbox{\hyperlink{_core_8h_a9aadfe09b5e89b3d59898a5b08a7504e}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+3}}~23
+\item 
+\#define \mbox{\hyperlink{_core_8h_aef5218a692233b0602bcfefc670363d3}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+4}}~24
+\item 
+\#define \mbox{\hyperlink{_core_8h_a02f7c2216757ec4c8d36c2e59465e4dd}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+5}}~25
+\item 
+\#define \mbox{\hyperlink{_core_8h_a2be8790d6d3451bb7abd229f1834bfae}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+6}}~26
+\item 
+\#define \mbox{\hyperlink{_core_8h_a235c230ee81248620cdcd9657d65154c}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+7}}~27
+\item 
+\#define \mbox{\hyperlink{_core_8h_a19d6e7302726020e92f2ca7e7dc5d0bc}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+8}}~28
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab58c5f1c127f781bae0c9cd54104c3e3}{COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+9}}~29
+\item 
+\#define \mbox{\hyperlink{_core_8h_a1bd3479b0ad420fbbca4ef6edb4acc9a}{COCOA\+\_\+\+KEY\+\_\+\+SPACE}}~32
+\item 
+\#define \mbox{\hyperlink{_core_8h_aa3e0982c8cba3ccd7c64557f2aff5d9d}{COCOA\+\_\+\+KEY\+\_\+\+APOSTROPHE}}~39  /$\ast$ \textquotesingle{} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_afc7901da984dbae3b7a80c4e8950fc6d}{COCOA\+\_\+\+KEY\+\_\+\+COMMA}}~44  /$\ast$ , $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_a1c97b240e78a8f502f29a2168680d533}{COCOA\+\_\+\+KEY\+\_\+\+MINUS}}~45  /$\ast$ -\/ $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_a0566f8ba0476141e73ba4d6dbc2f9973}{COCOA\+\_\+\+KEY\+\_\+\+PERIOD}}~46  /$\ast$ . $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_a24bd5cce7327c1427387ce3b0a4074ce}{COCOA\+\_\+\+KEY\+\_\+\+SLASH}}~47  /$\ast$ / $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_a792754abdf7af664442511eb102753a9}{COCOA\+\_\+\+KEY\+\_\+0}}~48
+\item 
+\#define \mbox{\hyperlink{_core_8h_a2b0ddd3dfb3826af72a42c1217e79f50}{COCOA\+\_\+\+KEY\+\_\+1}}~49
+\item 
+\#define \mbox{\hyperlink{_core_8h_a3e686e13178022763cb40fb00c1b77b2}{COCOA\+\_\+\+KEY\+\_\+2}}~50
+\item 
+\#define \mbox{\hyperlink{_core_8h_a7afe3136e49abf30b934c24030b6fa5e}{COCOA\+\_\+\+KEY\+\_\+3}}~51
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab6575a0c09dfc0f6574b63811ecee563}{COCOA\+\_\+\+KEY\+\_\+4}}~52
+\item 
+\#define \mbox{\hyperlink{_core_8h_a22a4e1ce3dc2cd840385f759e295b32c}{COCOA\+\_\+\+KEY\+\_\+5}}~53
+\item 
+\#define \mbox{\hyperlink{_core_8h_acb5c6f1cf5e78fe1cf78a9192b36012a}{COCOA\+\_\+\+KEY\+\_\+6}}~54
+\item 
+\#define \mbox{\hyperlink{_core_8h_aec6bb53a6bdc9f0e13b300e7c1eefffe}{COCOA\+\_\+\+KEY\+\_\+7}}~55
+\item 
+\#define \mbox{\hyperlink{_core_8h_aa4fce349fe95b687155d15ac8b239e45}{COCOA\+\_\+\+KEY\+\_\+8}}~56
+\item 
+\#define \mbox{\hyperlink{_core_8h_ae1c1cb3847178769cbce7394488c38ef}{COCOA\+\_\+\+KEY\+\_\+9}}~57
+\item 
+\#define \mbox{\hyperlink{_core_8h_aff591f603fb218e5a5fe6f9cf9556d42}{COCOA\+\_\+\+KEY\+\_\+\+SEMICOLON}}~59  /$\ast$ ; $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_a34c8d0d88e9bc626073ef38462c4f03b}{COCOA\+\_\+\+KEY\+\_\+\+EQUAL}}~61  /$\ast$ = $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_a915ead06a292374fd74a1cdadef18e50}{COCOA\+\_\+\+KEY\+\_\+A}}~65
+\item 
+\#define \mbox{\hyperlink{_core_8h_a1c1274d86242a31d361c657f7768758c}{COCOA\+\_\+\+KEY\+\_\+B}}~66
+\item 
+\#define \mbox{\hyperlink{_core_8h_a736514a2c28b62e5a783ee9582af78dd}{COCOA\+\_\+\+KEY\+\_\+C}}~67
+\item 
+\#define \mbox{\hyperlink{_core_8h_a6c18d6022a1eb31146354aabd83b0804}{COCOA\+\_\+\+KEY\+\_\+D}}~68
+\item 
+\#define \mbox{\hyperlink{_core_8h_abc4d4a50fef0e449836e285091f02ec9}{COCOA\+\_\+\+KEY\+\_\+E}}~69
+\item 
+\#define \mbox{\hyperlink{_core_8h_a7f0822fbe9efa820777e1116f18bdb24}{COCOA\+\_\+\+KEY\+\_\+F}}~70
+\item 
+\#define \mbox{\hyperlink{_core_8h_a564becdc35eb67ff69346393a8d5c329}{COCOA\+\_\+\+KEY\+\_\+G}}~71
+\item 
+\#define \mbox{\hyperlink{_core_8h_acb73f591ca0ce6952e9e1e305cbccad0}{COCOA\+\_\+\+KEY\+\_\+H}}~72
+\item 
+\#define \mbox{\hyperlink{_core_8h_a3df86598d558e1641ba0e13c1bb7942e}{COCOA\+\_\+\+KEY\+\_\+I}}~73
+\item 
+\#define \mbox{\hyperlink{_core_8h_a235d6e652a0d8b6e128093016bbb5cf0}{COCOA\+\_\+\+KEY\+\_\+J}}~74
+\item 
+\#define \mbox{\hyperlink{_core_8h_a90750bbabd761ba0a1d8af3908daf149}{COCOA\+\_\+\+KEY\+\_\+K}}~75
+\item 
+\#define \mbox{\hyperlink{_core_8h_a2cbb84477c51f71b7d1e366280dc94c3}{COCOA\+\_\+\+KEY\+\_\+L}}~76
+\item 
+\#define \mbox{\hyperlink{_core_8h_adaccb5e5035b79dd2c7c262c4f7f66b4}{COCOA\+\_\+\+KEY\+\_\+M}}~77
+\item 
+\#define \mbox{\hyperlink{_core_8h_a33a8f503ba1b110b231b0c273d07e8ff}{COCOA\+\_\+\+KEY\+\_\+N}}~78
+\item 
+\#define \mbox{\hyperlink{_core_8h_a5e1a82c7123c999e6318a3b64fc1012e}{COCOA\+\_\+\+KEY\+\_\+O}}~79
+\item 
+\#define \mbox{\hyperlink{_core_8h_ae588902a3655329194054460a6011745}{COCOA\+\_\+\+KEY\+\_\+P}}~80
+\item 
+\#define \mbox{\hyperlink{_core_8h_a76332775856f9abdfb7662061390c992}{COCOA\+\_\+\+KEY\+\_\+Q}}~81
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab9e75019fc5ca59b8e8b20a8511a8eff}{COCOA\+\_\+\+KEY\+\_\+R}}~82
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab144d1cc579862b4f17538ab83d7de05}{COCOA\+\_\+\+KEY\+\_\+S}}~83
+\item 
+\#define \mbox{\hyperlink{_core_8h_a3ba7a115e733e27047f76781afade737}{COCOA\+\_\+\+KEY\+\_\+T}}~84
+\item 
+\#define \mbox{\hyperlink{_core_8h_acbab78c393843c1fa789428e3e144f22}{COCOA\+\_\+\+KEY\+\_\+U}}~85
+\item 
+\#define \mbox{\hyperlink{_core_8h_a584a15deec4b752337a05730dee5dffd}{COCOA\+\_\+\+KEY\+\_\+V}}~86
+\item 
+\#define \mbox{\hyperlink{_core_8h_a49acc060836677aa5821e4c6ae329522}{COCOA\+\_\+\+KEY\+\_\+W}}~87
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab91667653c4f7620c8cb4eab1e85b317}{COCOA\+\_\+\+KEY\+\_\+X}}~88
+\item 
+\#define \mbox{\hyperlink{_core_8h_a2591384765719f0e05abed88e931e75f}{COCOA\+\_\+\+KEY\+\_\+Y}}~89
+\item 
+\#define \mbox{\hyperlink{_core_8h_aac9a61f415d53425ffaa00b144b3a07e}{COCOA\+\_\+\+KEY\+\_\+Z}}~90
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab7ff008df41832fc7ed3969ac374bd4d}{COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+BRACKET}}~91  /$\ast$ \mbox{[} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_acc47167d31221756a22ba9e803d62e32}{COCOA\+\_\+\+KEY\+\_\+\+BACKSLASH}}~92  /$\ast$ \textbackslash{} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_a567e608658b060fd777692bed612c113}{COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+BRACKET}}~93  /$\ast$ \mbox{]} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_a54ec2bbd03ac6e6290ba6b63fe5d03ea}{COCOA\+\_\+\+KEY\+\_\+\+GRAVE\+\_\+\+ACCENT}}~96  /$\ast$ \`{} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab2944633e33f091fc9897b199baf906f}{COCOA\+\_\+\+KEY\+\_\+\+WORLD\+\_\+1}}~161 /$\ast$ non-\/US \#1 $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_adced3e2d6178e78d7298c2611e8c9d42}{COCOA\+\_\+\+KEY\+\_\+\+WORLD\+\_\+2}}~162 /$\ast$ non-\/US \#2 $\ast$/
+\item 
+\#define \mbox{\hyperlink{_core_8h_a95e4caa19cc2860a33e8b6aa4ea6555e}{COCOA\+\_\+\+KEY\+\_\+\+ESCAPE}}~256
+\item 
+\#define \mbox{\hyperlink{_core_8h_a976a240874a40708ff5c31329c6d1dcc}{COCOA\+\_\+\+KEY\+\_\+\+ENTER}}~257
+\item 
+\#define \mbox{\hyperlink{_core_8h_a156092487afb5e2e4824d4973a53ddcd}{COCOA\+\_\+\+KEY\+\_\+\+TAB}}~258
+\item 
+\#define \mbox{\hyperlink{_core_8h_aaaef93f67296105b3b47a913773a8096}{COCOA\+\_\+\+KEY\+\_\+\+BACKSPACE}}~259
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab2ab337106ec8526609d3158be8ecf67}{COCOA\+\_\+\+KEY\+\_\+\+INSERT}}~260
+\item 
+\#define \mbox{\hyperlink{_core_8h_a93174a61ebe5ed73b8f90b05c295ad70}{COCOA\+\_\+\+KEY\+\_\+\+DELETE}}~261
+\item 
+\#define \mbox{\hyperlink{_core_8h_aee3e54b87b312bb8acedd5a00051b528}{COCOA\+\_\+\+KEY\+\_\+\+RIGHT}}~262
+\item 
+\#define \mbox{\hyperlink{_core_8h_a9b6674740252cafb340a2588d7c5970b}{COCOA\+\_\+\+KEY\+\_\+\+LEFT}}~263
+\item 
+\#define \mbox{\hyperlink{_core_8h_a387c5af5596d4caaa47a2e1a8a92373f}{COCOA\+\_\+\+KEY\+\_\+\+DOWN}}~264
+\item 
+\#define \mbox{\hyperlink{_core_8h_adb5df5d3793235ac5390ff4e25a31eb9}{COCOA\+\_\+\+KEY\+\_\+\+UP}}~265
+\item 
+\#define \mbox{\hyperlink{_core_8h_aa0791d7524de887935324541477a20fc}{COCOA\+\_\+\+KEY\+\_\+\+PAGE\+\_\+\+UP}}~266
+\item 
+\#define \mbox{\hyperlink{_core_8h_a5ee5d5c6657f5a0ca61faa0f3f225030}{COCOA\+\_\+\+KEY\+\_\+\+PAGE\+\_\+\+DOWN}}~267
+\item 
+\#define \mbox{\hyperlink{_core_8h_a89a2bfc709ac3740083701391e59a832}{COCOA\+\_\+\+KEY\+\_\+\+HOME}}~268
+\item 
+\#define \mbox{\hyperlink{_core_8h_a9e2c27c0394581c4738b0cd6b0bd2fa3}{COCOA\+\_\+\+KEY\+\_\+\+END}}~269
+\item 
+\#define \mbox{\hyperlink{_core_8h_a72d4cad8cf0581bb5aa550f790c30606}{COCOA\+\_\+\+KEY\+\_\+\+CAPS\+\_\+\+LOCK}}~280
+\item 
+\#define \mbox{\hyperlink{_core_8h_a6f3c04b8e7a030a8c777d46e16a0e1c0}{COCOA\+\_\+\+KEY\+\_\+\+SCROLL\+\_\+\+LOCK}}~281
+\item 
+\#define \mbox{\hyperlink{_core_8h_a0024b32e1e4569f6a5f9391e4014b765}{COCOA\+\_\+\+KEY\+\_\+\+NUM\+\_\+\+LOCK}}~282
+\item 
+\#define \mbox{\hyperlink{_core_8h_ae8e7e01be0d61d3aff4f349bad514f9c}{COCOA\+\_\+\+KEY\+\_\+\+PRINT\+\_\+\+SCREEN}}~283
+\item 
+\#define \mbox{\hyperlink{_core_8h_a4cbe74b8501dc60f8c886478c4c3385b}{COCOA\+\_\+\+KEY\+\_\+\+PAUSE}}~284
+\item 
+\#define \mbox{\hyperlink{_core_8h_a6c6e853792c550608fbae10c64502b49}{COCOA\+\_\+\+KEY\+\_\+\+F1}}~290
+\item 
+\#define \mbox{\hyperlink{_core_8h_a445960b4fd68f23aa7100e96dad1eb48}{COCOA\+\_\+\+KEY\+\_\+\+F2}}~291
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad76a4c2539dfa8ff4fcc99b7566cad45}{COCOA\+\_\+\+KEY\+\_\+\+F3}}~292
+\item 
+\#define \mbox{\hyperlink{_core_8h_ac7af9b192a987ca0477fee0522d7cdf5}{COCOA\+\_\+\+KEY\+\_\+\+F4}}~293
+\item 
+\#define \mbox{\hyperlink{_core_8h_a6207e448623875c74a99a81bdba2a0df}{COCOA\+\_\+\+KEY\+\_\+\+F5}}~294
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad8f9737c4d0941b570c79aeae4729ad3}{COCOA\+\_\+\+KEY\+\_\+\+F6}}~295
+\item 
+\#define \mbox{\hyperlink{_core_8h_a2d337b5ee44c215238beab2147e9267a}{COCOA\+\_\+\+KEY\+\_\+\+F7}}~296
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad77438e256e7164d242211c5065519a6}{COCOA\+\_\+\+KEY\+\_\+\+F8}}~297
+\item 
+\#define \mbox{\hyperlink{_core_8h_a7017d183e10e4eb234376f8ba7c59e8c}{COCOA\+\_\+\+KEY\+\_\+\+F9}}~298
+\item 
+\#define \mbox{\hyperlink{_core_8h_a12ecd246996fecb432b0b7731980ccc2}{COCOA\+\_\+\+KEY\+\_\+\+F10}}~299
+\item 
+\#define \mbox{\hyperlink{_core_8h_a70445354480a1e6909d1c6d091740773}{COCOA\+\_\+\+KEY\+\_\+\+F11}}~300
+\item 
+\#define \mbox{\hyperlink{_core_8h_a79978bd3db0bddd563232aaebaf81a78}{COCOA\+\_\+\+KEY\+\_\+\+F12}}~301
+\item 
+\#define \mbox{\hyperlink{_core_8h_a658ab92a83bb869da153dfc4bf7618b4}{COCOA\+\_\+\+KEY\+\_\+\+F13}}~302
+\item 
+\#define \mbox{\hyperlink{_core_8h_ae3dc7e66caed03ae993259834b30898a}{COCOA\+\_\+\+KEY\+\_\+\+F14}}~303
+\item 
+\#define \mbox{\hyperlink{_core_8h_aa716923ab7c04f9551d0d9febe4818ad}{COCOA\+\_\+\+KEY\+\_\+\+F15}}~304
+\item 
+\#define \mbox{\hyperlink{_core_8h_a7479f1c1a4f4bdf4f573c5b501bc5bca}{COCOA\+\_\+\+KEY\+\_\+\+F16}}~305
+\item 
+\#define \mbox{\hyperlink{_core_8h_a064a90955967d26ef62f14cf3ed2e37e}{COCOA\+\_\+\+KEY\+\_\+\+F17}}~306
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab232aff28fbb6cded9dd152d9bd31007}{COCOA\+\_\+\+KEY\+\_\+\+F18}}~307
+\item 
+\#define \mbox{\hyperlink{_core_8h_ab7a586dd0dfacde3e42b8320ea58afff}{COCOA\+\_\+\+KEY\+\_\+\+F19}}~308
+\item 
+\#define \mbox{\hyperlink{_core_8h_a6f149c652bcbe9fd2d5a7536e7f12419}{COCOA\+\_\+\+KEY\+\_\+\+F20}}~309
+\item 
+\#define \mbox{\hyperlink{_core_8h_a55082c871bc88999b2969f9ee0bf648a}{COCOA\+\_\+\+KEY\+\_\+\+F21}}~310
+\item 
+\#define \mbox{\hyperlink{_core_8h_a708fa165670a97ffd4d71243981d579a}{COCOA\+\_\+\+KEY\+\_\+\+F22}}~311
+\item 
+\#define \mbox{\hyperlink{_core_8h_aa161a25dc5f6569651056c9a67162b68}{COCOA\+\_\+\+KEY\+\_\+\+F23}}~312
+\item 
+\#define \mbox{\hyperlink{_core_8h_a539ca4c3c207d0fa95d9f80db38e3172}{COCOA\+\_\+\+KEY\+\_\+\+F24}}~313
+\item 
+\#define \mbox{\hyperlink{_core_8h_aa5a0a93d30784b9ff712eaa18ac3ea00}{COCOA\+\_\+\+KEY\+\_\+\+F25}}~314
+\item 
+\#define \mbox{\hyperlink{_core_8h_a8d885631a6d5c718093bd952a7cfaab6}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+0}}~320
+\item 
+\#define \mbox{\hyperlink{_core_8h_afe353d557e3b5b67cbec0af0a870d3b2}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+1}}~321
+\item 
+\#define \mbox{\hyperlink{_core_8h_a84299921b30ff75de623755c630771a0}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+2}}~322
+\item 
+\#define \mbox{\hyperlink{_core_8h_a78cc5cc43993938bf5dd522ba3e0acde}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+3}}~323
+\item 
+\#define \mbox{\hyperlink{_core_8h_abf5de4db3ec04482711ddb2062833799}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+4}}~324
+\item 
+\#define \mbox{\hyperlink{_core_8h_a06238c8c21d67381db615d8df3a4a70a}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+5}}~325
+\item 
+\#define \mbox{\hyperlink{_core_8h_a7f527aa069528ba1d55bc020169a7164}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+6}}~326
+\item 
+\#define \mbox{\hyperlink{_core_8h_aded16c254bb02cd89751d363f2220db1}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+7}}~327
+\item 
+\#define \mbox{\hyperlink{_core_8h_a5c5eebb6aa26809009f09fabc55b376e}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+8}}~328
+\item 
+\#define \mbox{\hyperlink{_core_8h_a8ccc269abd311673906372fdf9b6a707}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+9}}~329
+\item 
+\#define \mbox{\hyperlink{_core_8h_ae18ffc2e5c13a7187ab07c76567360ba}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+DECIMAL}}~330
+\item 
+\#define \mbox{\hyperlink{_core_8h_afdb6ef38f7431aaaea80188dffceef4a}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+DIVIDE}}~331
+\item 
+\#define \mbox{\hyperlink{_core_8h_a68e293049b52724c27a3ec92cfd72769}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+MULTIPLY}}~332
+\item 
+\#define \mbox{\hyperlink{_core_8h_aa089cf48d13acbe4816e512c422ec308}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+SUBTRACT}}~333
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad3af43a01a486ba7ff9b93e350c95ad3}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+ADD}}~334
+\item 
+\#define \mbox{\hyperlink{_core_8h_a344bbc8c351c72583d907b23094272bf}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+ENTER}}~335
+\item 
+\#define \mbox{\hyperlink{_core_8h_ac120a067675f8fb1018e71853716ab08}{COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+EQUAL}}~336
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad82aff850196b809a4aed2254d691dd9}{COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+SHIFT}}~340
+\item 
+\#define \mbox{\hyperlink{_core_8h_a0c92527a9a12f7d44f03a9213ecaf37d}{COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+CONTROL}}~341
+\item 
+\#define \mbox{\hyperlink{_core_8h_a7321f467483683c70c0fe3489c3fc927}{COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+ALT}}~342
+\item 
+\#define \mbox{\hyperlink{_core_8h_a21f14f621ff65dd3b4857584772be499}{COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+SUPER}}~343
+\item 
+\#define \mbox{\hyperlink{_core_8h_a71841d740ad21d0be41743d4b4e6177e}{COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+SHIFT}}~344
+\item 
+\#define \mbox{\hyperlink{_core_8h_af765dbdae1472046c8d12971e899b477}{COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+CONTROL}}~345
+\item 
+\#define \mbox{\hyperlink{_core_8h_a92ea3b084ee79ffa083dcc2b71d1eb8b}{COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+ALT}}~346
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad354cca6597fbdae4151c0f7a6e7403c}{COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+SUPER}}~347
+\item 
+\#define \mbox{\hyperlink{_core_8h_aaeb2cafb04cb6016207b5a3613ff2c91}{COCOA\+\_\+\+KEY\+\_\+\+MENU}}~348
+\item 
+\#define \mbox{\hyperlink{_core_8h_af93fbe027a45f177d673f584a553b00d}{COCOA\+\_\+\+KEY\+\_\+\+LAST}}~\mbox{\hyperlink{_core_8h_aaeb2cafb04cb6016207b5a3613ff2c91}{COCOA\+\_\+\+KEY\+\_\+\+MENU}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_abf3ae96d18cb110ca681dbcbcce0619b}{COCOA\+\_\+\+MOD\+\_\+\+SHIFT}}~0x0001
+\item 
+\#define \mbox{\hyperlink{_core_8h_af381df505ef1251c894ef3298ccd9e36}{COCOA\+\_\+\+MOD\+\_\+\+CONTROL}}~0x0002
+\item 
+\#define \mbox{\hyperlink{_core_8h_afac48a74acb47a3c338932dc3a1f99ea}{COCOA\+\_\+\+MOD\+\_\+\+ALT}}~0x0004
+\item 
+\#define \mbox{\hyperlink{_core_8h_a458e7edc5a348881c61cedcb1429565d}{COCOA\+\_\+\+MOD\+\_\+\+SUPER}}~0x0008
+\item 
+\#define \mbox{\hyperlink{_core_8h_aeeb993574db8a9edb01d7e0ac642ed41}{COCOA\+\_\+\+MOD\+\_\+\+CAPS\+\_\+\+LOCK}}~0x0010
+\item 
+\#define \mbox{\hyperlink{_core_8h_add3477166d2f085fe158355ff1b20e44}{COCOA\+\_\+\+MOD\+\_\+\+NUM\+\_\+\+LOCK}}~0x0020
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad4925fb160c1eb75751ab4c9fbb2dad4}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+1}}~0
+\item 
+\#define \mbox{\hyperlink{_core_8h_a21b99a21e266cef323b57a3d303ff34e}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+2}}~1
+\item 
+\#define \mbox{\hyperlink{_core_8h_a3d3228bb15f368c15afb481f826cbc56}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+3}}~2
+\item 
+\#define \mbox{\hyperlink{_core_8h_ac7d19a8949011ee4867e73fabf5fe827}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+4}}~3
+\item 
+\#define \mbox{\hyperlink{_core_8h_a925d390bde58d99f25a44bea93d743ef}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+5}}~4
+\item 
+\#define \mbox{\hyperlink{_core_8h_aeb15a53842786d095618fac06a3c21fe}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+6}}~5
+\item 
+\#define \mbox{\hyperlink{_core_8h_aae734d6a6a3835b1ecc7d136b910ac7b}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+7}}~6
+\item 
+\#define \mbox{\hyperlink{_core_8h_a4c8db4e4eb2fff0ac370e41adc1d844b}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+8}}~7
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad88f98b62477435ef5afc556092664ac}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+\+LAST}}~\mbox{\hyperlink{_core_8h_a4c8db4e4eb2fff0ac370e41adc1d844b}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+8}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a671410941cbc7185decdfdd55ad91c3d}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+\+LEFT}}~\mbox{\hyperlink{_core_8h_ad4925fb160c1eb75751ab4c9fbb2dad4}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+1}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a7d229911489d40020bf2c213ee2e39fe}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+\+RIGHT}}~\mbox{\hyperlink{_core_8h_a21b99a21e266cef323b57a3d303ff34e}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+2}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a26846716e26ba865c6d0f9c723f13a78}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+\+MIDDLE}}~\mbox{\hyperlink{_core_8h_a3d3228bb15f368c15afb481f826cbc56}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+3}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_ae01fae1ca7c7b12e75756d1aa4a637ca}{COCOA\+\_\+\+JOYSTICK\+\_\+1}}~0
+\item 
+\#define \mbox{\hyperlink{_core_8h_af9b2198eed1caed4164a06427c0ec550}{COCOA\+\_\+\+JOYSTICK\+\_\+2}}~1
+\item 
+\#define \mbox{\hyperlink{_core_8h_a4f31eb22881169c2084c6e4ef78ba546}{COCOA\+\_\+\+JOYSTICK\+\_\+3}}~2
+\item 
+\#define \mbox{\hyperlink{_core_8h_a1f2f83726320991efbcc76707b10f85d}{COCOA\+\_\+\+JOYSTICK\+\_\+4}}~3
+\item 
+\#define \mbox{\hyperlink{_core_8h_a2ba568c06753227c0767be785b74452a}{COCOA\+\_\+\+JOYSTICK\+\_\+5}}~4
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad10725c242be48aa5dc28f8a219c5688}{COCOA\+\_\+\+JOYSTICK\+\_\+6}}~5
+\item 
+\#define \mbox{\hyperlink{_core_8h_ac8d8e2cde9f430b949fcec721b09628e}{COCOA\+\_\+\+JOYSTICK\+\_\+7}}~6
+\item 
+\#define \mbox{\hyperlink{_core_8h_a8fc545e16340102366f1e14bbfe73eb4}{COCOA\+\_\+\+JOYSTICK\+\_\+8}}~7
+\item 
+\#define \mbox{\hyperlink{_core_8h_a72e53df974f649569e28e520dba0b4e0}{COCOA\+\_\+\+JOYSTICK\+\_\+9}}~8
+\item 
+\#define \mbox{\hyperlink{_core_8h_afd84814565d0e2dac8cba00fd6723000}{COCOA\+\_\+\+JOYSTICK\+\_\+10}}~9
+\item 
+\#define \mbox{\hyperlink{_core_8h_a72e6ef8d4d38f1bea44ae81530824342}{COCOA\+\_\+\+JOYSTICK\+\_\+11}}~10
+\item 
+\#define \mbox{\hyperlink{_core_8h_a10b98ec1d33b1d50269ae5bc54f6b25f}{COCOA\+\_\+\+JOYSTICK\+\_\+12}}~11
+\item 
+\#define \mbox{\hyperlink{_core_8h_a116475838d990c02f7c3df1de63c10cb}{COCOA\+\_\+\+JOYSTICK\+\_\+13}}~12
+\item 
+\#define \mbox{\hyperlink{_core_8h_a6740c22336501e85d1cff10b1c8d8e32}{COCOA\+\_\+\+JOYSTICK\+\_\+14}}~13
+\item 
+\#define \mbox{\hyperlink{_core_8h_a289669c081deb4a241932ed4a4d407b4}{COCOA\+\_\+\+JOYSTICK\+\_\+15}}~14
+\item 
+\#define \mbox{\hyperlink{_core_8h_a6aa8c5a43d8518b375492aa986a6e8ed}{COCOA\+\_\+\+JOYSTICK\+\_\+16}}~15
+\item 
+\#define \mbox{\hyperlink{_core_8h_a3e6f5b2fc0bef068357a00409d88dd5a}{COCOA\+\_\+\+JOYSTICK\+\_\+\+LAST}}~JADE\+\_\+\+JOYSTICK\+\_\+16
+\item 
+\#define \mbox{\hyperlink{_core_8h_a15b1f9af4be0367fafddcc8e1c9436c1}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+A}}~0
+\item 
+\#define \mbox{\hyperlink{_core_8h_a268c6560b3852758b63e2ba1abd6a05c}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+B}}~1
+\item 
+\#define \mbox{\hyperlink{_core_8h_a5a1892481b97f81dc259b421fabc96ef}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+X}}~2
+\item 
+\#define \mbox{\hyperlink{_core_8h_ad247aad931bfe501de6857ae3ec05542}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+Y}}~3
+\item 
+\#define \mbox{\hyperlink{_core_8h_a723442ce78442b523faa4486bf96f3b0}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+LEFT\+\_\+\+BUMPER}}~4
+\item 
+\#define \mbox{\hyperlink{_core_8h_a4ae5b56a0654fdee849e715489204568}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+RIGHT\+\_\+\+BUMPER}}~5
+\item 
+\#define \mbox{\hyperlink{_core_8h_afaa6e179011a4b9fad9c053c05860f3e}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+BACK}}~6
+\item 
+\#define \mbox{\hyperlink{_core_8h_a9fd164568dd6a5e2c13217daa2a03120}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+START}}~7
+\item 
+\#define \mbox{\hyperlink{_core_8h_ae6391b06de8bbb7cd6e60f75e31bca2f}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+GUIDE}}~8
+\item 
+\#define \mbox{\hyperlink{_core_8h_af6fb121db9c0c1df3ede8203a0b504e9}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+LEFT\+\_\+\+THUMB}}~9
+\item 
+\#define \mbox{\hyperlink{_core_8h_a4150e122a4326a83f7604e3e6ff39b16}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+RIGHT\+\_\+\+THUMB}}~10
+\item 
+\#define \mbox{\hyperlink{_core_8h_afefd2f0832805a33bac9aa305d46d496}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+UP}}~11
+\item 
+\#define \mbox{\hyperlink{_core_8h_a305813c9273aa2a124d7a3d446fd72f2}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+RIGHT}}~12
+\item 
+\#define \mbox{\hyperlink{_core_8h_a725b3d5830eae35b912ead5f19583087}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+DOWN}}~13
+\item 
+\#define \mbox{\hyperlink{_core_8h_a5c2cfc8913343761b7f241600a48cd84}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+LEFT}}~14
+\item 
+\#define \mbox{\hyperlink{_core_8h_aa19a4f7859023ac5eff46f70e23e9968}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+LAST}}~\mbox{\hyperlink{_core_8h_a5c2cfc8913343761b7f241600a48cd84}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+LEFT}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a809f88307bf2aba23f12d8243a0600c9}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+CROSS}}~\mbox{\hyperlink{_core_8h_a15b1f9af4be0367fafddcc8e1c9436c1}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+A}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_adab9859b96285a3cc06e397e0b3a1d2a}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+CIRCLE}}~\mbox{\hyperlink{_core_8h_a268c6560b3852758b63e2ba1abd6a05c}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+B}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a2eea43c980480739627f2fe5d6868c84}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+SQUARE}}~\mbox{\hyperlink{_core_8h_a5a1892481b97f81dc259b421fabc96ef}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+X}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a9a552a54673e01abbe50707e624c15b9}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+TRIANGLE}}~\mbox{\hyperlink{_core_8h_ad247aad931bfe501de6857ae3ec05542}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+Y}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_a22404869adc6b02766af935a1e4b5f0f}{COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+LEFT\+\_\+X}}~0
+\item 
+\#define \mbox{\hyperlink{_core_8h_a4e4b8ede421af2f985f6056825d94af1}{COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+LEFT\+\_\+Y}}~1
+\item 
+\#define \mbox{\hyperlink{_core_8h_afa0555db3ab0216d6e26f85cb51fdb92}{COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+RIGHT\+\_\+X}}~2
+\item 
+\#define \mbox{\hyperlink{_core_8h_a4362b1dc1b046fca2fbfd738d992df8e}{COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+RIGHT\+\_\+Y}}~3
+\item 
+\#define \mbox{\hyperlink{_core_8h_aab778f5b477a9495f6458ce1d23750c4}{COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+LEFT\+\_\+\+TRIGGER}}~4
+\item 
+\#define \mbox{\hyperlink{_core_8h_a5cd70ab7b088ddd7b240eb3a34fb91aa}{COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+RIGHT\+\_\+\+TRIGGER}}~5
+\item 
+\#define \mbox{\hyperlink{_core_8h_a3292c65cbeba8bab0d290cdf8ff71302}{COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+LAST}}~\mbox{\hyperlink{_core_8h_a5cd70ab7b088ddd7b240eb3a34fb91aa}{COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+RIGHT\+\_\+\+TRIGGER}}
+\item 
+\#define \mbox{\hyperlink{_core_8h_abf3ae96d18cb110ca681dbcbcce0619b}{COCOA\+\_\+\+MOD\+\_\+\+SHIFT}}~0x0001
+\item 
+\#define \mbox{\hyperlink{_core_8h_af381df505ef1251c894ef3298ccd9e36}{COCOA\+\_\+\+MOD\+\_\+\+CONTROL}}~0x0002
+\item 
+\#define \mbox{\hyperlink{_core_8h_afac48a74acb47a3c338932dc3a1f99ea}{COCOA\+\_\+\+MOD\+\_\+\+ALT}}~0x0004
+\item 
+\#define \mbox{\hyperlink{_core_8h_a458e7edc5a348881c61cedcb1429565d}{COCOA\+\_\+\+MOD\+\_\+\+SUPER}}~0x0008
+\item 
+\#define \mbox{\hyperlink{_core_8h_aeeb993574db8a9edb01d7e0ac642ed41}{COCOA\+\_\+\+MOD\+\_\+\+CAPS\+\_\+\+LOCK}}~0x0010
+\item 
+\#define \mbox{\hyperlink{_core_8h_add3477166d2f085fe158355ff1b20e44}{COCOA\+\_\+\+MOD\+\_\+\+NUM\+\_\+\+LOCK}}~0x0020
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int8\+\_\+t \mbox{\hyperlink{namespace_cocoa_a5781b3b08d380162b59f5eb994d6c780}{Cocoa\+::int8}}
+\item 
+typedef int16\+\_\+t \mbox{\hyperlink{namespace_cocoa_a4d8bf9b37c51d49658140646b02eec52}{Cocoa\+::int16}}
+\item 
+typedef int32\+\_\+t \mbox{\hyperlink{namespace_cocoa_a97848b16fd1f28b96fb2ddd10503391e}{Cocoa\+::int32}}
+\item 
+typedef int64\+\_\+t \mbox{\hyperlink{namespace_cocoa_aa85c808034d28207bd48b5b1a8f1d2eb}{Cocoa\+::int64}}
+\item 
+typedef uint8\+\_\+t \mbox{\hyperlink{namespace_cocoa_a28251d0df95506170548309eb69888e4}{Cocoa\+::uint8}}
+\item 
+typedef uint16\+\_\+t \mbox{\hyperlink{namespace_cocoa_a095ba1e02a381d7c6736f93a31eae624}{Cocoa\+::uint16}}
+\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{Cocoa\+::uint32}}
+\item 
+typedef uint64\+\_\+t \mbox{\hyperlink{namespace_cocoa_af4441e5e595667d02b1c7abd4494b4e3}{Cocoa\+::uint64}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_core_8h_a985dbeda070e1af138ad16fdd4f70e1c}\label{_core_8h_a985dbeda070e1af138ad16fdd4f70e1c}} 
+\index{Core.h@{Core.h}!C\_EXTERN@{C\_EXTERN}}
+\index{C\_EXTERN@{C\_EXTERN}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{C\_EXTERN}{C\_EXTERN}}
+{\footnotesize\ttfamily \#define C\+\_\+\+EXTERN}
+
+\mbox{\Hypertarget{_core_8h_a8040f01d272e531943005957fa9929b8}\label{_core_8h_a8040f01d272e531943005957fa9929b8}} 
+\index{Core.h@{Core.h}!COCOA@{COCOA}}
+\index{COCOA@{COCOA}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA}{COCOA}}
+{\footnotesize\ttfamily \#define COCOA}
+
+\mbox{\Hypertarget{_core_8h_ae9273142e126e8e94374a5306ec848e0}\label{_core_8h_ae9273142e126e8e94374a5306ec848e0}} 
+\index{Core.h@{Core.h}!COCOA\_DOUBLE\_CLICK@{COCOA\_DOUBLE\_CLICK}}
+\index{COCOA\_DOUBLE\_CLICK@{COCOA\_DOUBLE\_CLICK}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_DOUBLE\_CLICK}{COCOA\_DOUBLE\_CLICK}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+DOUBLE\+\_\+\+CLICK~3}
+
+\mbox{\Hypertarget{_core_8h_a3292c65cbeba8bab0d290cdf8ff71302}\label{_core_8h_a3292c65cbeba8bab0d290cdf8ff71302}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_AXIS\_LAST@{COCOA\_GAMEPAD\_AXIS\_LAST}}
+\index{COCOA\_GAMEPAD\_AXIS\_LAST@{COCOA\_GAMEPAD\_AXIS\_LAST}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_AXIS\_LAST}{COCOA\_GAMEPAD\_AXIS\_LAST}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+LAST~\mbox{\hyperlink{_core_8h_a5cd70ab7b088ddd7b240eb3a34fb91aa}{COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+RIGHT\+\_\+\+TRIGGER}}}
+
+\mbox{\Hypertarget{_core_8h_aab778f5b477a9495f6458ce1d23750c4}\label{_core_8h_aab778f5b477a9495f6458ce1d23750c4}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_AXIS\_LEFT\_TRIGGER@{COCOA\_GAMEPAD\_AXIS\_LEFT\_TRIGGER}}
+\index{COCOA\_GAMEPAD\_AXIS\_LEFT\_TRIGGER@{COCOA\_GAMEPAD\_AXIS\_LEFT\_TRIGGER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_AXIS\_LEFT\_TRIGGER}{COCOA\_GAMEPAD\_AXIS\_LEFT\_TRIGGER}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+LEFT\+\_\+\+TRIGGER~4}
+
+\mbox{\Hypertarget{_core_8h_a22404869adc6b02766af935a1e4b5f0f}\label{_core_8h_a22404869adc6b02766af935a1e4b5f0f}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_AXIS\_LEFT\_X@{COCOA\_GAMEPAD\_AXIS\_LEFT\_X}}
+\index{COCOA\_GAMEPAD\_AXIS\_LEFT\_X@{COCOA\_GAMEPAD\_AXIS\_LEFT\_X}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_AXIS\_LEFT\_X}{COCOA\_GAMEPAD\_AXIS\_LEFT\_X}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+LEFT\+\_\+X~0}
+
+\mbox{\Hypertarget{_core_8h_a4e4b8ede421af2f985f6056825d94af1}\label{_core_8h_a4e4b8ede421af2f985f6056825d94af1}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_AXIS\_LEFT\_Y@{COCOA\_GAMEPAD\_AXIS\_LEFT\_Y}}
+\index{COCOA\_GAMEPAD\_AXIS\_LEFT\_Y@{COCOA\_GAMEPAD\_AXIS\_LEFT\_Y}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_AXIS\_LEFT\_Y}{COCOA\_GAMEPAD\_AXIS\_LEFT\_Y}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+LEFT\+\_\+Y~1}
+
+\mbox{\Hypertarget{_core_8h_a5cd70ab7b088ddd7b240eb3a34fb91aa}\label{_core_8h_a5cd70ab7b088ddd7b240eb3a34fb91aa}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_AXIS\_RIGHT\_TRIGGER@{COCOA\_GAMEPAD\_AXIS\_RIGHT\_TRIGGER}}
+\index{COCOA\_GAMEPAD\_AXIS\_RIGHT\_TRIGGER@{COCOA\_GAMEPAD\_AXIS\_RIGHT\_TRIGGER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_AXIS\_RIGHT\_TRIGGER}{COCOA\_GAMEPAD\_AXIS\_RIGHT\_TRIGGER}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+RIGHT\+\_\+\+TRIGGER~5}
+
+\mbox{\Hypertarget{_core_8h_afa0555db3ab0216d6e26f85cb51fdb92}\label{_core_8h_afa0555db3ab0216d6e26f85cb51fdb92}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_AXIS\_RIGHT\_X@{COCOA\_GAMEPAD\_AXIS\_RIGHT\_X}}
+\index{COCOA\_GAMEPAD\_AXIS\_RIGHT\_X@{COCOA\_GAMEPAD\_AXIS\_RIGHT\_X}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_AXIS\_RIGHT\_X}{COCOA\_GAMEPAD\_AXIS\_RIGHT\_X}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+RIGHT\+\_\+X~2}
+
+\mbox{\Hypertarget{_core_8h_a4362b1dc1b046fca2fbfd738d992df8e}\label{_core_8h_a4362b1dc1b046fca2fbfd738d992df8e}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_AXIS\_RIGHT\_Y@{COCOA\_GAMEPAD\_AXIS\_RIGHT\_Y}}
+\index{COCOA\_GAMEPAD\_AXIS\_RIGHT\_Y@{COCOA\_GAMEPAD\_AXIS\_RIGHT\_Y}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_AXIS\_RIGHT\_Y}{COCOA\_GAMEPAD\_AXIS\_RIGHT\_Y}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+AXIS\+\_\+\+RIGHT\+\_\+Y~3}
+
+\mbox{\Hypertarget{_core_8h_a15b1f9af4be0367fafddcc8e1c9436c1}\label{_core_8h_a15b1f9af4be0367fafddcc8e1c9436c1}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_A@{COCOA\_GAMEPAD\_BUTTON\_A}}
+\index{COCOA\_GAMEPAD\_BUTTON\_A@{COCOA\_GAMEPAD\_BUTTON\_A}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_A}{COCOA\_GAMEPAD\_BUTTON\_A}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+A~0}
+
+\mbox{\Hypertarget{_core_8h_a268c6560b3852758b63e2ba1abd6a05c}\label{_core_8h_a268c6560b3852758b63e2ba1abd6a05c}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_B@{COCOA\_GAMEPAD\_BUTTON\_B}}
+\index{COCOA\_GAMEPAD\_BUTTON\_B@{COCOA\_GAMEPAD\_BUTTON\_B}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_B}{COCOA\_GAMEPAD\_BUTTON\_B}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+B~1}
+
+\mbox{\Hypertarget{_core_8h_afaa6e179011a4b9fad9c053c05860f3e}\label{_core_8h_afaa6e179011a4b9fad9c053c05860f3e}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_BACK@{COCOA\_GAMEPAD\_BUTTON\_BACK}}
+\index{COCOA\_GAMEPAD\_BUTTON\_BACK@{COCOA\_GAMEPAD\_BUTTON\_BACK}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_BACK}{COCOA\_GAMEPAD\_BUTTON\_BACK}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+BACK~6}
+
+\mbox{\Hypertarget{_core_8h_adab9859b96285a3cc06e397e0b3a1d2a}\label{_core_8h_adab9859b96285a3cc06e397e0b3a1d2a}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_CIRCLE@{COCOA\_GAMEPAD\_BUTTON\_CIRCLE}}
+\index{COCOA\_GAMEPAD\_BUTTON\_CIRCLE@{COCOA\_GAMEPAD\_BUTTON\_CIRCLE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_CIRCLE}{COCOA\_GAMEPAD\_BUTTON\_CIRCLE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+CIRCLE~\mbox{\hyperlink{_core_8h_a268c6560b3852758b63e2ba1abd6a05c}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+B}}}
+
+\mbox{\Hypertarget{_core_8h_a809f88307bf2aba23f12d8243a0600c9}\label{_core_8h_a809f88307bf2aba23f12d8243a0600c9}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_CROSS@{COCOA\_GAMEPAD\_BUTTON\_CROSS}}
+\index{COCOA\_GAMEPAD\_BUTTON\_CROSS@{COCOA\_GAMEPAD\_BUTTON\_CROSS}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_CROSS}{COCOA\_GAMEPAD\_BUTTON\_CROSS}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+CROSS~\mbox{\hyperlink{_core_8h_a15b1f9af4be0367fafddcc8e1c9436c1}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+A}}}
+
+\mbox{\Hypertarget{_core_8h_a725b3d5830eae35b912ead5f19583087}\label{_core_8h_a725b3d5830eae35b912ead5f19583087}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_DPAD\_DOWN@{COCOA\_GAMEPAD\_BUTTON\_DPAD\_DOWN}}
+\index{COCOA\_GAMEPAD\_BUTTON\_DPAD\_DOWN@{COCOA\_GAMEPAD\_BUTTON\_DPAD\_DOWN}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_DPAD\_DOWN}{COCOA\_GAMEPAD\_BUTTON\_DPAD\_DOWN}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+DOWN~13}
+
+\mbox{\Hypertarget{_core_8h_a5c2cfc8913343761b7f241600a48cd84}\label{_core_8h_a5c2cfc8913343761b7f241600a48cd84}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_DPAD\_LEFT@{COCOA\_GAMEPAD\_BUTTON\_DPAD\_LEFT}}
+\index{COCOA\_GAMEPAD\_BUTTON\_DPAD\_LEFT@{COCOA\_GAMEPAD\_BUTTON\_DPAD\_LEFT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_DPAD\_LEFT}{COCOA\_GAMEPAD\_BUTTON\_DPAD\_LEFT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+LEFT~14}
+
+\mbox{\Hypertarget{_core_8h_a305813c9273aa2a124d7a3d446fd72f2}\label{_core_8h_a305813c9273aa2a124d7a3d446fd72f2}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_DPAD\_RIGHT@{COCOA\_GAMEPAD\_BUTTON\_DPAD\_RIGHT}}
+\index{COCOA\_GAMEPAD\_BUTTON\_DPAD\_RIGHT@{COCOA\_GAMEPAD\_BUTTON\_DPAD\_RIGHT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_DPAD\_RIGHT}{COCOA\_GAMEPAD\_BUTTON\_DPAD\_RIGHT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+RIGHT~12}
+
+\mbox{\Hypertarget{_core_8h_afefd2f0832805a33bac9aa305d46d496}\label{_core_8h_afefd2f0832805a33bac9aa305d46d496}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_DPAD\_UP@{COCOA\_GAMEPAD\_BUTTON\_DPAD\_UP}}
+\index{COCOA\_GAMEPAD\_BUTTON\_DPAD\_UP@{COCOA\_GAMEPAD\_BUTTON\_DPAD\_UP}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_DPAD\_UP}{COCOA\_GAMEPAD\_BUTTON\_DPAD\_UP}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+UP~11}
+
+\mbox{\Hypertarget{_core_8h_ae6391b06de8bbb7cd6e60f75e31bca2f}\label{_core_8h_ae6391b06de8bbb7cd6e60f75e31bca2f}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_GUIDE@{COCOA\_GAMEPAD\_BUTTON\_GUIDE}}
+\index{COCOA\_GAMEPAD\_BUTTON\_GUIDE@{COCOA\_GAMEPAD\_BUTTON\_GUIDE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_GUIDE}{COCOA\_GAMEPAD\_BUTTON\_GUIDE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+GUIDE~8}
+
+\mbox{\Hypertarget{_core_8h_aa19a4f7859023ac5eff46f70e23e9968}\label{_core_8h_aa19a4f7859023ac5eff46f70e23e9968}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_LAST@{COCOA\_GAMEPAD\_BUTTON\_LAST}}
+\index{COCOA\_GAMEPAD\_BUTTON\_LAST@{COCOA\_GAMEPAD\_BUTTON\_LAST}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_LAST}{COCOA\_GAMEPAD\_BUTTON\_LAST}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+LAST~\mbox{\hyperlink{_core_8h_a5c2cfc8913343761b7f241600a48cd84}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+DPAD\+\_\+\+LEFT}}}
+
+\mbox{\Hypertarget{_core_8h_a723442ce78442b523faa4486bf96f3b0}\label{_core_8h_a723442ce78442b523faa4486bf96f3b0}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_LEFT\_BUMPER@{COCOA\_GAMEPAD\_BUTTON\_LEFT\_BUMPER}}
+\index{COCOA\_GAMEPAD\_BUTTON\_LEFT\_BUMPER@{COCOA\_GAMEPAD\_BUTTON\_LEFT\_BUMPER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_LEFT\_BUMPER}{COCOA\_GAMEPAD\_BUTTON\_LEFT\_BUMPER}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+LEFT\+\_\+\+BUMPER~4}
+
+\mbox{\Hypertarget{_core_8h_af6fb121db9c0c1df3ede8203a0b504e9}\label{_core_8h_af6fb121db9c0c1df3ede8203a0b504e9}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_LEFT\_THUMB@{COCOA\_GAMEPAD\_BUTTON\_LEFT\_THUMB}}
+\index{COCOA\_GAMEPAD\_BUTTON\_LEFT\_THUMB@{COCOA\_GAMEPAD\_BUTTON\_LEFT\_THUMB}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_LEFT\_THUMB}{COCOA\_GAMEPAD\_BUTTON\_LEFT\_THUMB}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+LEFT\+\_\+\+THUMB~9}
+
+\mbox{\Hypertarget{_core_8h_a4ae5b56a0654fdee849e715489204568}\label{_core_8h_a4ae5b56a0654fdee849e715489204568}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_RIGHT\_BUMPER@{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_BUMPER}}
+\index{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_BUMPER@{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_BUMPER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_BUMPER}{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_BUMPER}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+RIGHT\+\_\+\+BUMPER~5}
+
+\mbox{\Hypertarget{_core_8h_a4150e122a4326a83f7604e3e6ff39b16}\label{_core_8h_a4150e122a4326a83f7604e3e6ff39b16}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_RIGHT\_THUMB@{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_THUMB}}
+\index{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_THUMB@{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_THUMB}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_THUMB}{COCOA\_GAMEPAD\_BUTTON\_RIGHT\_THUMB}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+RIGHT\+\_\+\+THUMB~10}
+
+\mbox{\Hypertarget{_core_8h_a2eea43c980480739627f2fe5d6868c84}\label{_core_8h_a2eea43c980480739627f2fe5d6868c84}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_SQUARE@{COCOA\_GAMEPAD\_BUTTON\_SQUARE}}
+\index{COCOA\_GAMEPAD\_BUTTON\_SQUARE@{COCOA\_GAMEPAD\_BUTTON\_SQUARE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_SQUARE}{COCOA\_GAMEPAD\_BUTTON\_SQUARE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+SQUARE~\mbox{\hyperlink{_core_8h_a5a1892481b97f81dc259b421fabc96ef}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+X}}}
+
+\mbox{\Hypertarget{_core_8h_a9fd164568dd6a5e2c13217daa2a03120}\label{_core_8h_a9fd164568dd6a5e2c13217daa2a03120}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_START@{COCOA\_GAMEPAD\_BUTTON\_START}}
+\index{COCOA\_GAMEPAD\_BUTTON\_START@{COCOA\_GAMEPAD\_BUTTON\_START}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_START}{COCOA\_GAMEPAD\_BUTTON\_START}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+START~7}
+
+\mbox{\Hypertarget{_core_8h_a9a552a54673e01abbe50707e624c15b9}\label{_core_8h_a9a552a54673e01abbe50707e624c15b9}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_TRIANGLE@{COCOA\_GAMEPAD\_BUTTON\_TRIANGLE}}
+\index{COCOA\_GAMEPAD\_BUTTON\_TRIANGLE@{COCOA\_GAMEPAD\_BUTTON\_TRIANGLE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_TRIANGLE}{COCOA\_GAMEPAD\_BUTTON\_TRIANGLE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+\+TRIANGLE~\mbox{\hyperlink{_core_8h_ad247aad931bfe501de6857ae3ec05542}{COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+Y}}}
+
+\mbox{\Hypertarget{_core_8h_a5a1892481b97f81dc259b421fabc96ef}\label{_core_8h_a5a1892481b97f81dc259b421fabc96ef}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_X@{COCOA\_GAMEPAD\_BUTTON\_X}}
+\index{COCOA\_GAMEPAD\_BUTTON\_X@{COCOA\_GAMEPAD\_BUTTON\_X}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_X}{COCOA\_GAMEPAD\_BUTTON\_X}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+X~2}
+
+\mbox{\Hypertarget{_core_8h_ad247aad931bfe501de6857ae3ec05542}\label{_core_8h_ad247aad931bfe501de6857ae3ec05542}} 
+\index{Core.h@{Core.h}!COCOA\_GAMEPAD\_BUTTON\_Y@{COCOA\_GAMEPAD\_BUTTON\_Y}}
+\index{COCOA\_GAMEPAD\_BUTTON\_Y@{COCOA\_GAMEPAD\_BUTTON\_Y}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_GAMEPAD\_BUTTON\_Y}{COCOA\_GAMEPAD\_BUTTON\_Y}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+GAMEPAD\+\_\+\+BUTTON\+\_\+Y~3}
+
+\mbox{\Hypertarget{_core_8h_ae01fae1ca7c7b12e75756d1aa4a637ca}\label{_core_8h_ae01fae1ca7c7b12e75756d1aa4a637ca}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_1@{COCOA\_JOYSTICK\_1}}
+\index{COCOA\_JOYSTICK\_1@{COCOA\_JOYSTICK\_1}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_1}{COCOA\_JOYSTICK\_1}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+1~0}
+
+\mbox{\Hypertarget{_core_8h_afd84814565d0e2dac8cba00fd6723000}\label{_core_8h_afd84814565d0e2dac8cba00fd6723000}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_10@{COCOA\_JOYSTICK\_10}}
+\index{COCOA\_JOYSTICK\_10@{COCOA\_JOYSTICK\_10}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_10}{COCOA\_JOYSTICK\_10}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+10~9}
+
+\mbox{\Hypertarget{_core_8h_a72e6ef8d4d38f1bea44ae81530824342}\label{_core_8h_a72e6ef8d4d38f1bea44ae81530824342}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_11@{COCOA\_JOYSTICK\_11}}
+\index{COCOA\_JOYSTICK\_11@{COCOA\_JOYSTICK\_11}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_11}{COCOA\_JOYSTICK\_11}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+11~10}
+
+\mbox{\Hypertarget{_core_8h_a10b98ec1d33b1d50269ae5bc54f6b25f}\label{_core_8h_a10b98ec1d33b1d50269ae5bc54f6b25f}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_12@{COCOA\_JOYSTICK\_12}}
+\index{COCOA\_JOYSTICK\_12@{COCOA\_JOYSTICK\_12}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_12}{COCOA\_JOYSTICK\_12}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+12~11}
+
+\mbox{\Hypertarget{_core_8h_a116475838d990c02f7c3df1de63c10cb}\label{_core_8h_a116475838d990c02f7c3df1de63c10cb}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_13@{COCOA\_JOYSTICK\_13}}
+\index{COCOA\_JOYSTICK\_13@{COCOA\_JOYSTICK\_13}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_13}{COCOA\_JOYSTICK\_13}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+13~12}
+
+\mbox{\Hypertarget{_core_8h_a6740c22336501e85d1cff10b1c8d8e32}\label{_core_8h_a6740c22336501e85d1cff10b1c8d8e32}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_14@{COCOA\_JOYSTICK\_14}}
+\index{COCOA\_JOYSTICK\_14@{COCOA\_JOYSTICK\_14}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_14}{COCOA\_JOYSTICK\_14}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+14~13}
+
+\mbox{\Hypertarget{_core_8h_a289669c081deb4a241932ed4a4d407b4}\label{_core_8h_a289669c081deb4a241932ed4a4d407b4}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_15@{COCOA\_JOYSTICK\_15}}
+\index{COCOA\_JOYSTICK\_15@{COCOA\_JOYSTICK\_15}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_15}{COCOA\_JOYSTICK\_15}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+15~14}
+
+\mbox{\Hypertarget{_core_8h_a6aa8c5a43d8518b375492aa986a6e8ed}\label{_core_8h_a6aa8c5a43d8518b375492aa986a6e8ed}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_16@{COCOA\_JOYSTICK\_16}}
+\index{COCOA\_JOYSTICK\_16@{COCOA\_JOYSTICK\_16}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_16}{COCOA\_JOYSTICK\_16}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+16~15}
+
+\mbox{\Hypertarget{_core_8h_af9b2198eed1caed4164a06427c0ec550}\label{_core_8h_af9b2198eed1caed4164a06427c0ec550}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_2@{COCOA\_JOYSTICK\_2}}
+\index{COCOA\_JOYSTICK\_2@{COCOA\_JOYSTICK\_2}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_2}{COCOA\_JOYSTICK\_2}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+2~1}
+
+\mbox{\Hypertarget{_core_8h_a4f31eb22881169c2084c6e4ef78ba546}\label{_core_8h_a4f31eb22881169c2084c6e4ef78ba546}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_3@{COCOA\_JOYSTICK\_3}}
+\index{COCOA\_JOYSTICK\_3@{COCOA\_JOYSTICK\_3}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_3}{COCOA\_JOYSTICK\_3}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+3~2}
+
+\mbox{\Hypertarget{_core_8h_a1f2f83726320991efbcc76707b10f85d}\label{_core_8h_a1f2f83726320991efbcc76707b10f85d}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_4@{COCOA\_JOYSTICK\_4}}
+\index{COCOA\_JOYSTICK\_4@{COCOA\_JOYSTICK\_4}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_4}{COCOA\_JOYSTICK\_4}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+4~3}
+
+\mbox{\Hypertarget{_core_8h_a2ba568c06753227c0767be785b74452a}\label{_core_8h_a2ba568c06753227c0767be785b74452a}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_5@{COCOA\_JOYSTICK\_5}}
+\index{COCOA\_JOYSTICK\_5@{COCOA\_JOYSTICK\_5}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_5}{COCOA\_JOYSTICK\_5}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+5~4}
+
+\mbox{\Hypertarget{_core_8h_ad10725c242be48aa5dc28f8a219c5688}\label{_core_8h_ad10725c242be48aa5dc28f8a219c5688}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_6@{COCOA\_JOYSTICK\_6}}
+\index{COCOA\_JOYSTICK\_6@{COCOA\_JOYSTICK\_6}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_6}{COCOA\_JOYSTICK\_6}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+6~5}
+
+\mbox{\Hypertarget{_core_8h_ac8d8e2cde9f430b949fcec721b09628e}\label{_core_8h_ac8d8e2cde9f430b949fcec721b09628e}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_7@{COCOA\_JOYSTICK\_7}}
+\index{COCOA\_JOYSTICK\_7@{COCOA\_JOYSTICK\_7}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_7}{COCOA\_JOYSTICK\_7}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+7~6}
+
+\mbox{\Hypertarget{_core_8h_a8fc545e16340102366f1e14bbfe73eb4}\label{_core_8h_a8fc545e16340102366f1e14bbfe73eb4}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_8@{COCOA\_JOYSTICK\_8}}
+\index{COCOA\_JOYSTICK\_8@{COCOA\_JOYSTICK\_8}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_8}{COCOA\_JOYSTICK\_8}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+8~7}
+
+\mbox{\Hypertarget{_core_8h_a72e53df974f649569e28e520dba0b4e0}\label{_core_8h_a72e53df974f649569e28e520dba0b4e0}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_9@{COCOA\_JOYSTICK\_9}}
+\index{COCOA\_JOYSTICK\_9@{COCOA\_JOYSTICK\_9}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_9}{COCOA\_JOYSTICK\_9}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+9~8}
+
+\mbox{\Hypertarget{_core_8h_a3e6f5b2fc0bef068357a00409d88dd5a}\label{_core_8h_a3e6f5b2fc0bef068357a00409d88dd5a}} 
+\index{Core.h@{Core.h}!COCOA\_JOYSTICK\_LAST@{COCOA\_JOYSTICK\_LAST}}
+\index{COCOA\_JOYSTICK\_LAST@{COCOA\_JOYSTICK\_LAST}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_JOYSTICK\_LAST}{COCOA\_JOYSTICK\_LAST}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+JOYSTICK\+\_\+\+LAST~JADE\+\_\+\+JOYSTICK\+\_\+16}
+
+\mbox{\Hypertarget{_core_8h_a792754abdf7af664442511eb102753a9}\label{_core_8h_a792754abdf7af664442511eb102753a9}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_0@{COCOA\_KEY\_0}}
+\index{COCOA\_KEY\_0@{COCOA\_KEY\_0}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_0}{COCOA\_KEY\_0}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+0~48}
+
+\mbox{\Hypertarget{_core_8h_a2b0ddd3dfb3826af72a42c1217e79f50}\label{_core_8h_a2b0ddd3dfb3826af72a42c1217e79f50}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_1@{COCOA\_KEY\_1}}
+\index{COCOA\_KEY\_1@{COCOA\_KEY\_1}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_1}{COCOA\_KEY\_1}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+1~49}
+
+\mbox{\Hypertarget{_core_8h_a3e686e13178022763cb40fb00c1b77b2}\label{_core_8h_a3e686e13178022763cb40fb00c1b77b2}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_2@{COCOA\_KEY\_2}}
+\index{COCOA\_KEY\_2@{COCOA\_KEY\_2}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_2}{COCOA\_KEY\_2}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+2~50}
+
+\mbox{\Hypertarget{_core_8h_a7afe3136e49abf30b934c24030b6fa5e}\label{_core_8h_a7afe3136e49abf30b934c24030b6fa5e}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_3@{COCOA\_KEY\_3}}
+\index{COCOA\_KEY\_3@{COCOA\_KEY\_3}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_3}{COCOA\_KEY\_3}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+3~51}
+
+\mbox{\Hypertarget{_core_8h_ab6575a0c09dfc0f6574b63811ecee563}\label{_core_8h_ab6575a0c09dfc0f6574b63811ecee563}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_4@{COCOA\_KEY\_4}}
+\index{COCOA\_KEY\_4@{COCOA\_KEY\_4}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_4}{COCOA\_KEY\_4}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+4~52}
+
+\mbox{\Hypertarget{_core_8h_a22a4e1ce3dc2cd840385f759e295b32c}\label{_core_8h_a22a4e1ce3dc2cd840385f759e295b32c}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_5@{COCOA\_KEY\_5}}
+\index{COCOA\_KEY\_5@{COCOA\_KEY\_5}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_5}{COCOA\_KEY\_5}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+5~53}
+
+\mbox{\Hypertarget{_core_8h_acb5c6f1cf5e78fe1cf78a9192b36012a}\label{_core_8h_acb5c6f1cf5e78fe1cf78a9192b36012a}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_6@{COCOA\_KEY\_6}}
+\index{COCOA\_KEY\_6@{COCOA\_KEY\_6}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_6}{COCOA\_KEY\_6}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+6~54}
+
+\mbox{\Hypertarget{_core_8h_aec6bb53a6bdc9f0e13b300e7c1eefffe}\label{_core_8h_aec6bb53a6bdc9f0e13b300e7c1eefffe}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_7@{COCOA\_KEY\_7}}
+\index{COCOA\_KEY\_7@{COCOA\_KEY\_7}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_7}{COCOA\_KEY\_7}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+7~55}
+
+\mbox{\Hypertarget{_core_8h_aa4fce349fe95b687155d15ac8b239e45}\label{_core_8h_aa4fce349fe95b687155d15ac8b239e45}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_8@{COCOA\_KEY\_8}}
+\index{COCOA\_KEY\_8@{COCOA\_KEY\_8}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_8}{COCOA\_KEY\_8}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+8~56}
+
+\mbox{\Hypertarget{_core_8h_ae1c1cb3847178769cbce7394488c38ef}\label{_core_8h_ae1c1cb3847178769cbce7394488c38ef}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_9@{COCOA\_KEY\_9}}
+\index{COCOA\_KEY\_9@{COCOA\_KEY\_9}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_9}{COCOA\_KEY\_9}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+9~57}
+
+\mbox{\Hypertarget{_core_8h_a915ead06a292374fd74a1cdadef18e50}\label{_core_8h_a915ead06a292374fd74a1cdadef18e50}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_A@{COCOA\_KEY\_A}}
+\index{COCOA\_KEY\_A@{COCOA\_KEY\_A}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_A}{COCOA\_KEY\_A}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+A~65}
+
+\mbox{\Hypertarget{_core_8h_aa3e0982c8cba3ccd7c64557f2aff5d9d}\label{_core_8h_aa3e0982c8cba3ccd7c64557f2aff5d9d}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_APOSTROPHE@{COCOA\_KEY\_APOSTROPHE}}
+\index{COCOA\_KEY\_APOSTROPHE@{COCOA\_KEY\_APOSTROPHE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_APOSTROPHE}{COCOA\_KEY\_APOSTROPHE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+APOSTROPHE~39  /$\ast$ \textquotesingle{} $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_a1c1274d86242a31d361c657f7768758c}\label{_core_8h_a1c1274d86242a31d361c657f7768758c}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_B@{COCOA\_KEY\_B}}
+\index{COCOA\_KEY\_B@{COCOA\_KEY\_B}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_B}{COCOA\_KEY\_B}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+B~66}
+
+\mbox{\Hypertarget{_core_8h_acc47167d31221756a22ba9e803d62e32}\label{_core_8h_acc47167d31221756a22ba9e803d62e32}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_BACKSLASH@{COCOA\_KEY\_BACKSLASH}}
+\index{COCOA\_KEY\_BACKSLASH@{COCOA\_KEY\_BACKSLASH}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_BACKSLASH}{COCOA\_KEY\_BACKSLASH}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+BACKSLASH~92  /$\ast$ \textbackslash{} $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_aaaef93f67296105b3b47a913773a8096}\label{_core_8h_aaaef93f67296105b3b47a913773a8096}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_BACKSPACE@{COCOA\_KEY\_BACKSPACE}}
+\index{COCOA\_KEY\_BACKSPACE@{COCOA\_KEY\_BACKSPACE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_BACKSPACE}{COCOA\_KEY\_BACKSPACE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+BACKSPACE~259}
+
+\mbox{\Hypertarget{_core_8h_a736514a2c28b62e5a783ee9582af78dd}\label{_core_8h_a736514a2c28b62e5a783ee9582af78dd}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_C@{COCOA\_KEY\_C}}
+\index{COCOA\_KEY\_C@{COCOA\_KEY\_C}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_C}{COCOA\_KEY\_C}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+C~67}
+
+\mbox{\Hypertarget{_core_8h_a72d4cad8cf0581bb5aa550f790c30606}\label{_core_8h_a72d4cad8cf0581bb5aa550f790c30606}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_CAPS\_LOCK@{COCOA\_KEY\_CAPS\_LOCK}}
+\index{COCOA\_KEY\_CAPS\_LOCK@{COCOA\_KEY\_CAPS\_LOCK}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_CAPS\_LOCK}{COCOA\_KEY\_CAPS\_LOCK}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+CAPS\+\_\+\+LOCK~280}
+
+\mbox{\Hypertarget{_core_8h_afc7901da984dbae3b7a80c4e8950fc6d}\label{_core_8h_afc7901da984dbae3b7a80c4e8950fc6d}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_COMMA@{COCOA\_KEY\_COMMA}}
+\index{COCOA\_KEY\_COMMA@{COCOA\_KEY\_COMMA}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_COMMA}{COCOA\_KEY\_COMMA}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+COMMA~44  /$\ast$ , $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_a6c18d6022a1eb31146354aabd83b0804}\label{_core_8h_a6c18d6022a1eb31146354aabd83b0804}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_D@{COCOA\_KEY\_D}}
+\index{COCOA\_KEY\_D@{COCOA\_KEY\_D}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_D}{COCOA\_KEY\_D}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+D~68}
+
+\mbox{\Hypertarget{_core_8h_a93174a61ebe5ed73b8f90b05c295ad70}\label{_core_8h_a93174a61ebe5ed73b8f90b05c295ad70}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_DELETE@{COCOA\_KEY\_DELETE}}
+\index{COCOA\_KEY\_DELETE@{COCOA\_KEY\_DELETE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_DELETE}{COCOA\_KEY\_DELETE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+DELETE~261}
+
+\mbox{\Hypertarget{_core_8h_a387c5af5596d4caaa47a2e1a8a92373f}\label{_core_8h_a387c5af5596d4caaa47a2e1a8a92373f}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_DOWN@{COCOA\_KEY\_DOWN}}
+\index{COCOA\_KEY\_DOWN@{COCOA\_KEY\_DOWN}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_DOWN}{COCOA\_KEY\_DOWN}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+DOWN~264}
+
+\mbox{\Hypertarget{_core_8h_abc4d4a50fef0e449836e285091f02ec9}\label{_core_8h_abc4d4a50fef0e449836e285091f02ec9}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_E@{COCOA\_KEY\_E}}
+\index{COCOA\_KEY\_E@{COCOA\_KEY\_E}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_E}{COCOA\_KEY\_E}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+E~69}
+
+\mbox{\Hypertarget{_core_8h_a9e2c27c0394581c4738b0cd6b0bd2fa3}\label{_core_8h_a9e2c27c0394581c4738b0cd6b0bd2fa3}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_END@{COCOA\_KEY\_END}}
+\index{COCOA\_KEY\_END@{COCOA\_KEY\_END}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_END}{COCOA\_KEY\_END}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+END~269}
+
+\mbox{\Hypertarget{_core_8h_a976a240874a40708ff5c31329c6d1dcc}\label{_core_8h_a976a240874a40708ff5c31329c6d1dcc}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_ENTER@{COCOA\_KEY\_ENTER}}
+\index{COCOA\_KEY\_ENTER@{COCOA\_KEY\_ENTER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_ENTER}{COCOA\_KEY\_ENTER}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+ENTER~257}
+
+\mbox{\Hypertarget{_core_8h_a34c8d0d88e9bc626073ef38462c4f03b}\label{_core_8h_a34c8d0d88e9bc626073ef38462c4f03b}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_EQUAL@{COCOA\_KEY\_EQUAL}}
+\index{COCOA\_KEY\_EQUAL@{COCOA\_KEY\_EQUAL}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_EQUAL}{COCOA\_KEY\_EQUAL}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+EQUAL~61  /$\ast$ = $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_a95e4caa19cc2860a33e8b6aa4ea6555e}\label{_core_8h_a95e4caa19cc2860a33e8b6aa4ea6555e}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_ESCAPE@{COCOA\_KEY\_ESCAPE}}
+\index{COCOA\_KEY\_ESCAPE@{COCOA\_KEY\_ESCAPE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_ESCAPE}{COCOA\_KEY\_ESCAPE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+ESCAPE~256}
+
+\mbox{\Hypertarget{_core_8h_a7f0822fbe9efa820777e1116f18bdb24}\label{_core_8h_a7f0822fbe9efa820777e1116f18bdb24}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F@{COCOA\_KEY\_F}}
+\index{COCOA\_KEY\_F@{COCOA\_KEY\_F}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F}{COCOA\_KEY\_F}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+F~70}
+
+\mbox{\Hypertarget{_core_8h_a6c6e853792c550608fbae10c64502b49}\label{_core_8h_a6c6e853792c550608fbae10c64502b49}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F1@{COCOA\_KEY\_F1}}
+\index{COCOA\_KEY\_F1@{COCOA\_KEY\_F1}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F1}{COCOA\_KEY\_F1}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F1~290}
+
+\mbox{\Hypertarget{_core_8h_a12ecd246996fecb432b0b7731980ccc2}\label{_core_8h_a12ecd246996fecb432b0b7731980ccc2}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F10@{COCOA\_KEY\_F10}}
+\index{COCOA\_KEY\_F10@{COCOA\_KEY\_F10}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F10}{COCOA\_KEY\_F10}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F10~299}
+
+\mbox{\Hypertarget{_core_8h_a70445354480a1e6909d1c6d091740773}\label{_core_8h_a70445354480a1e6909d1c6d091740773}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F11@{COCOA\_KEY\_F11}}
+\index{COCOA\_KEY\_F11@{COCOA\_KEY\_F11}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F11}{COCOA\_KEY\_F11}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F11~300}
+
+\mbox{\Hypertarget{_core_8h_a79978bd3db0bddd563232aaebaf81a78}\label{_core_8h_a79978bd3db0bddd563232aaebaf81a78}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F12@{COCOA\_KEY\_F12}}
+\index{COCOA\_KEY\_F12@{COCOA\_KEY\_F12}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F12}{COCOA\_KEY\_F12}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F12~301}
+
+\mbox{\Hypertarget{_core_8h_a658ab92a83bb869da153dfc4bf7618b4}\label{_core_8h_a658ab92a83bb869da153dfc4bf7618b4}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F13@{COCOA\_KEY\_F13}}
+\index{COCOA\_KEY\_F13@{COCOA\_KEY\_F13}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F13}{COCOA\_KEY\_F13}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F13~302}
+
+\mbox{\Hypertarget{_core_8h_ae3dc7e66caed03ae993259834b30898a}\label{_core_8h_ae3dc7e66caed03ae993259834b30898a}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F14@{COCOA\_KEY\_F14}}
+\index{COCOA\_KEY\_F14@{COCOA\_KEY\_F14}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F14}{COCOA\_KEY\_F14}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F14~303}
+
+\mbox{\Hypertarget{_core_8h_aa716923ab7c04f9551d0d9febe4818ad}\label{_core_8h_aa716923ab7c04f9551d0d9febe4818ad}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F15@{COCOA\_KEY\_F15}}
+\index{COCOA\_KEY\_F15@{COCOA\_KEY\_F15}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F15}{COCOA\_KEY\_F15}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F15~304}
+
+\mbox{\Hypertarget{_core_8h_a7479f1c1a4f4bdf4f573c5b501bc5bca}\label{_core_8h_a7479f1c1a4f4bdf4f573c5b501bc5bca}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F16@{COCOA\_KEY\_F16}}
+\index{COCOA\_KEY\_F16@{COCOA\_KEY\_F16}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F16}{COCOA\_KEY\_F16}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F16~305}
+
+\mbox{\Hypertarget{_core_8h_a064a90955967d26ef62f14cf3ed2e37e}\label{_core_8h_a064a90955967d26ef62f14cf3ed2e37e}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F17@{COCOA\_KEY\_F17}}
+\index{COCOA\_KEY\_F17@{COCOA\_KEY\_F17}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F17}{COCOA\_KEY\_F17}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F17~306}
+
+\mbox{\Hypertarget{_core_8h_ab232aff28fbb6cded9dd152d9bd31007}\label{_core_8h_ab232aff28fbb6cded9dd152d9bd31007}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F18@{COCOA\_KEY\_F18}}
+\index{COCOA\_KEY\_F18@{COCOA\_KEY\_F18}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F18}{COCOA\_KEY\_F18}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F18~307}
+
+\mbox{\Hypertarget{_core_8h_ab7a586dd0dfacde3e42b8320ea58afff}\label{_core_8h_ab7a586dd0dfacde3e42b8320ea58afff}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F19@{COCOA\_KEY\_F19}}
+\index{COCOA\_KEY\_F19@{COCOA\_KEY\_F19}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F19}{COCOA\_KEY\_F19}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F19~308}
+
+\mbox{\Hypertarget{_core_8h_a445960b4fd68f23aa7100e96dad1eb48}\label{_core_8h_a445960b4fd68f23aa7100e96dad1eb48}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F2@{COCOA\_KEY\_F2}}
+\index{COCOA\_KEY\_F2@{COCOA\_KEY\_F2}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F2}{COCOA\_KEY\_F2}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F2~291}
+
+\mbox{\Hypertarget{_core_8h_a6f149c652bcbe9fd2d5a7536e7f12419}\label{_core_8h_a6f149c652bcbe9fd2d5a7536e7f12419}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F20@{COCOA\_KEY\_F20}}
+\index{COCOA\_KEY\_F20@{COCOA\_KEY\_F20}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F20}{COCOA\_KEY\_F20}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F20~309}
+
+\mbox{\Hypertarget{_core_8h_a55082c871bc88999b2969f9ee0bf648a}\label{_core_8h_a55082c871bc88999b2969f9ee0bf648a}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F21@{COCOA\_KEY\_F21}}
+\index{COCOA\_KEY\_F21@{COCOA\_KEY\_F21}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F21}{COCOA\_KEY\_F21}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F21~310}
+
+\mbox{\Hypertarget{_core_8h_a708fa165670a97ffd4d71243981d579a}\label{_core_8h_a708fa165670a97ffd4d71243981d579a}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F22@{COCOA\_KEY\_F22}}
+\index{COCOA\_KEY\_F22@{COCOA\_KEY\_F22}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F22}{COCOA\_KEY\_F22}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F22~311}
+
+\mbox{\Hypertarget{_core_8h_aa161a25dc5f6569651056c9a67162b68}\label{_core_8h_aa161a25dc5f6569651056c9a67162b68}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F23@{COCOA\_KEY\_F23}}
+\index{COCOA\_KEY\_F23@{COCOA\_KEY\_F23}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F23}{COCOA\_KEY\_F23}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F23~312}
+
+\mbox{\Hypertarget{_core_8h_a539ca4c3c207d0fa95d9f80db38e3172}\label{_core_8h_a539ca4c3c207d0fa95d9f80db38e3172}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F24@{COCOA\_KEY\_F24}}
+\index{COCOA\_KEY\_F24@{COCOA\_KEY\_F24}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F24}{COCOA\_KEY\_F24}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F24~313}
+
+\mbox{\Hypertarget{_core_8h_aa5a0a93d30784b9ff712eaa18ac3ea00}\label{_core_8h_aa5a0a93d30784b9ff712eaa18ac3ea00}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F25@{COCOA\_KEY\_F25}}
+\index{COCOA\_KEY\_F25@{COCOA\_KEY\_F25}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F25}{COCOA\_KEY\_F25}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F25~314}
+
+\mbox{\Hypertarget{_core_8h_ad76a4c2539dfa8ff4fcc99b7566cad45}\label{_core_8h_ad76a4c2539dfa8ff4fcc99b7566cad45}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F3@{COCOA\_KEY\_F3}}
+\index{COCOA\_KEY\_F3@{COCOA\_KEY\_F3}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F3}{COCOA\_KEY\_F3}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F3~292}
+
+\mbox{\Hypertarget{_core_8h_ac7af9b192a987ca0477fee0522d7cdf5}\label{_core_8h_ac7af9b192a987ca0477fee0522d7cdf5}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F4@{COCOA\_KEY\_F4}}
+\index{COCOA\_KEY\_F4@{COCOA\_KEY\_F4}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F4}{COCOA\_KEY\_F4}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F4~293}
+
+\mbox{\Hypertarget{_core_8h_a6207e448623875c74a99a81bdba2a0df}\label{_core_8h_a6207e448623875c74a99a81bdba2a0df}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F5@{COCOA\_KEY\_F5}}
+\index{COCOA\_KEY\_F5@{COCOA\_KEY\_F5}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F5}{COCOA\_KEY\_F5}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F5~294}
+
+\mbox{\Hypertarget{_core_8h_ad8f9737c4d0941b570c79aeae4729ad3}\label{_core_8h_ad8f9737c4d0941b570c79aeae4729ad3}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F6@{COCOA\_KEY\_F6}}
+\index{COCOA\_KEY\_F6@{COCOA\_KEY\_F6}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F6}{COCOA\_KEY\_F6}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F6~295}
+
+\mbox{\Hypertarget{_core_8h_a2d337b5ee44c215238beab2147e9267a}\label{_core_8h_a2d337b5ee44c215238beab2147e9267a}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F7@{COCOA\_KEY\_F7}}
+\index{COCOA\_KEY\_F7@{COCOA\_KEY\_F7}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F7}{COCOA\_KEY\_F7}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F7~296}
+
+\mbox{\Hypertarget{_core_8h_ad77438e256e7164d242211c5065519a6}\label{_core_8h_ad77438e256e7164d242211c5065519a6}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F8@{COCOA\_KEY\_F8}}
+\index{COCOA\_KEY\_F8@{COCOA\_KEY\_F8}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F8}{COCOA\_KEY\_F8}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F8~297}
+
+\mbox{\Hypertarget{_core_8h_a7017d183e10e4eb234376f8ba7c59e8c}\label{_core_8h_a7017d183e10e4eb234376f8ba7c59e8c}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_F9@{COCOA\_KEY\_F9}}
+\index{COCOA\_KEY\_F9@{COCOA\_KEY\_F9}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_F9}{COCOA\_KEY\_F9}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+F9~298}
+
+\mbox{\Hypertarget{_core_8h_a564becdc35eb67ff69346393a8d5c329}\label{_core_8h_a564becdc35eb67ff69346393a8d5c329}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_G@{COCOA\_KEY\_G}}
+\index{COCOA\_KEY\_G@{COCOA\_KEY\_G}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_G}{COCOA\_KEY\_G}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+G~71}
+
+\mbox{\Hypertarget{_core_8h_a54ec2bbd03ac6e6290ba6b63fe5d03ea}\label{_core_8h_a54ec2bbd03ac6e6290ba6b63fe5d03ea}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_GRAVE\_ACCENT@{COCOA\_KEY\_GRAVE\_ACCENT}}
+\index{COCOA\_KEY\_GRAVE\_ACCENT@{COCOA\_KEY\_GRAVE\_ACCENT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_GRAVE\_ACCENT}{COCOA\_KEY\_GRAVE\_ACCENT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+GRAVE\+\_\+\+ACCENT~96  /$\ast$ \`{} $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_acb73f591ca0ce6952e9e1e305cbccad0}\label{_core_8h_acb73f591ca0ce6952e9e1e305cbccad0}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_H@{COCOA\_KEY\_H}}
+\index{COCOA\_KEY\_H@{COCOA\_KEY\_H}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_H}{COCOA\_KEY\_H}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+H~72}
+
+\mbox{\Hypertarget{_core_8h_a89a2bfc709ac3740083701391e59a832}\label{_core_8h_a89a2bfc709ac3740083701391e59a832}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_HOME@{COCOA\_KEY\_HOME}}
+\index{COCOA\_KEY\_HOME@{COCOA\_KEY\_HOME}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_HOME}{COCOA\_KEY\_HOME}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+HOME~268}
+
+\mbox{\Hypertarget{_core_8h_a3df86598d558e1641ba0e13c1bb7942e}\label{_core_8h_a3df86598d558e1641ba0e13c1bb7942e}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_I@{COCOA\_KEY\_I}}
+\index{COCOA\_KEY\_I@{COCOA\_KEY\_I}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_I}{COCOA\_KEY\_I}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+I~73}
+
+\mbox{\Hypertarget{_core_8h_ab2ab337106ec8526609d3158be8ecf67}\label{_core_8h_ab2ab337106ec8526609d3158be8ecf67}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_INSERT@{COCOA\_KEY\_INSERT}}
+\index{COCOA\_KEY\_INSERT@{COCOA\_KEY\_INSERT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_INSERT}{COCOA\_KEY\_INSERT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+INSERT~260}
+
+\mbox{\Hypertarget{_core_8h_a235d6e652a0d8b6e128093016bbb5cf0}\label{_core_8h_a235d6e652a0d8b6e128093016bbb5cf0}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_J@{COCOA\_KEY\_J}}
+\index{COCOA\_KEY\_J@{COCOA\_KEY\_J}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_J}{COCOA\_KEY\_J}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+J~74}
+
+\mbox{\Hypertarget{_core_8h_a90750bbabd761ba0a1d8af3908daf149}\label{_core_8h_a90750bbabd761ba0a1d8af3908daf149}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_K@{COCOA\_KEY\_K}}
+\index{COCOA\_KEY\_K@{COCOA\_KEY\_K}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_K}{COCOA\_KEY\_K}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+K~75}
+
+\mbox{\Hypertarget{_core_8h_a8d885631a6d5c718093bd952a7cfaab6}\label{_core_8h_a8d885631a6d5c718093bd952a7cfaab6}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_0@{COCOA\_KEY\_KP\_0}}
+\index{COCOA\_KEY\_KP\_0@{COCOA\_KEY\_KP\_0}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_0}{COCOA\_KEY\_KP\_0}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+0~320}
+
+\mbox{\Hypertarget{_core_8h_afe353d557e3b5b67cbec0af0a870d3b2}\label{_core_8h_afe353d557e3b5b67cbec0af0a870d3b2}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_1@{COCOA\_KEY\_KP\_1}}
+\index{COCOA\_KEY\_KP\_1@{COCOA\_KEY\_KP\_1}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_1}{COCOA\_KEY\_KP\_1}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+1~321}
+
+\mbox{\Hypertarget{_core_8h_a84299921b30ff75de623755c630771a0}\label{_core_8h_a84299921b30ff75de623755c630771a0}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_2@{COCOA\_KEY\_KP\_2}}
+\index{COCOA\_KEY\_KP\_2@{COCOA\_KEY\_KP\_2}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_2}{COCOA\_KEY\_KP\_2}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+2~322}
+
+\mbox{\Hypertarget{_core_8h_a78cc5cc43993938bf5dd522ba3e0acde}\label{_core_8h_a78cc5cc43993938bf5dd522ba3e0acde}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_3@{COCOA\_KEY\_KP\_3}}
+\index{COCOA\_KEY\_KP\_3@{COCOA\_KEY\_KP\_3}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_3}{COCOA\_KEY\_KP\_3}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+3~323}
+
+\mbox{\Hypertarget{_core_8h_abf5de4db3ec04482711ddb2062833799}\label{_core_8h_abf5de4db3ec04482711ddb2062833799}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_4@{COCOA\_KEY\_KP\_4}}
+\index{COCOA\_KEY\_KP\_4@{COCOA\_KEY\_KP\_4}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_4}{COCOA\_KEY\_KP\_4}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+4~324}
+
+\mbox{\Hypertarget{_core_8h_a06238c8c21d67381db615d8df3a4a70a}\label{_core_8h_a06238c8c21d67381db615d8df3a4a70a}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_5@{COCOA\_KEY\_KP\_5}}
+\index{COCOA\_KEY\_KP\_5@{COCOA\_KEY\_KP\_5}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_5}{COCOA\_KEY\_KP\_5}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+5~325}
+
+\mbox{\Hypertarget{_core_8h_a7f527aa069528ba1d55bc020169a7164}\label{_core_8h_a7f527aa069528ba1d55bc020169a7164}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_6@{COCOA\_KEY\_KP\_6}}
+\index{COCOA\_KEY\_KP\_6@{COCOA\_KEY\_KP\_6}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_6}{COCOA\_KEY\_KP\_6}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+6~326}
+
+\mbox{\Hypertarget{_core_8h_aded16c254bb02cd89751d363f2220db1}\label{_core_8h_aded16c254bb02cd89751d363f2220db1}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_7@{COCOA\_KEY\_KP\_7}}
+\index{COCOA\_KEY\_KP\_7@{COCOA\_KEY\_KP\_7}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_7}{COCOA\_KEY\_KP\_7}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+7~327}
+
+\mbox{\Hypertarget{_core_8h_a5c5eebb6aa26809009f09fabc55b376e}\label{_core_8h_a5c5eebb6aa26809009f09fabc55b376e}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_8@{COCOA\_KEY\_KP\_8}}
+\index{COCOA\_KEY\_KP\_8@{COCOA\_KEY\_KP\_8}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_8}{COCOA\_KEY\_KP\_8}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+8~328}
+
+\mbox{\Hypertarget{_core_8h_a8ccc269abd311673906372fdf9b6a707}\label{_core_8h_a8ccc269abd311673906372fdf9b6a707}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_9@{COCOA\_KEY\_KP\_9}}
+\index{COCOA\_KEY\_KP\_9@{COCOA\_KEY\_KP\_9}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_9}{COCOA\_KEY\_KP\_9}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+9~329}
+
+\mbox{\Hypertarget{_core_8h_ad3af43a01a486ba7ff9b93e350c95ad3}\label{_core_8h_ad3af43a01a486ba7ff9b93e350c95ad3}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_ADD@{COCOA\_KEY\_KP\_ADD}}
+\index{COCOA\_KEY\_KP\_ADD@{COCOA\_KEY\_KP\_ADD}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_ADD}{COCOA\_KEY\_KP\_ADD}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+ADD~334}
+
+\mbox{\Hypertarget{_core_8h_ae18ffc2e5c13a7187ab07c76567360ba}\label{_core_8h_ae18ffc2e5c13a7187ab07c76567360ba}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_DECIMAL@{COCOA\_KEY\_KP\_DECIMAL}}
+\index{COCOA\_KEY\_KP\_DECIMAL@{COCOA\_KEY\_KP\_DECIMAL}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_DECIMAL}{COCOA\_KEY\_KP\_DECIMAL}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+DECIMAL~330}
+
+\mbox{\Hypertarget{_core_8h_afdb6ef38f7431aaaea80188dffceef4a}\label{_core_8h_afdb6ef38f7431aaaea80188dffceef4a}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_DIVIDE@{COCOA\_KEY\_KP\_DIVIDE}}
+\index{COCOA\_KEY\_KP\_DIVIDE@{COCOA\_KEY\_KP\_DIVIDE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_DIVIDE}{COCOA\_KEY\_KP\_DIVIDE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+DIVIDE~331}
+
+\mbox{\Hypertarget{_core_8h_a344bbc8c351c72583d907b23094272bf}\label{_core_8h_a344bbc8c351c72583d907b23094272bf}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_ENTER@{COCOA\_KEY\_KP\_ENTER}}
+\index{COCOA\_KEY\_KP\_ENTER@{COCOA\_KEY\_KP\_ENTER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_ENTER}{COCOA\_KEY\_KP\_ENTER}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+ENTER~335}
+
+\mbox{\Hypertarget{_core_8h_ac120a067675f8fb1018e71853716ab08}\label{_core_8h_ac120a067675f8fb1018e71853716ab08}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_EQUAL@{COCOA\_KEY\_KP\_EQUAL}}
+\index{COCOA\_KEY\_KP\_EQUAL@{COCOA\_KEY\_KP\_EQUAL}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_EQUAL}{COCOA\_KEY\_KP\_EQUAL}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+EQUAL~336}
+
+\mbox{\Hypertarget{_core_8h_a68e293049b52724c27a3ec92cfd72769}\label{_core_8h_a68e293049b52724c27a3ec92cfd72769}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_MULTIPLY@{COCOA\_KEY\_KP\_MULTIPLY}}
+\index{COCOA\_KEY\_KP\_MULTIPLY@{COCOA\_KEY\_KP\_MULTIPLY}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_MULTIPLY}{COCOA\_KEY\_KP\_MULTIPLY}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+MULTIPLY~332}
+
+\mbox{\Hypertarget{_core_8h_aa089cf48d13acbe4816e512c422ec308}\label{_core_8h_aa089cf48d13acbe4816e512c422ec308}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_KP\_SUBTRACT@{COCOA\_KEY\_KP\_SUBTRACT}}
+\index{COCOA\_KEY\_KP\_SUBTRACT@{COCOA\_KEY\_KP\_SUBTRACT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_KP\_SUBTRACT}{COCOA\_KEY\_KP\_SUBTRACT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+KP\+\_\+\+SUBTRACT~333}
+
+\mbox{\Hypertarget{_core_8h_a2cbb84477c51f71b7d1e366280dc94c3}\label{_core_8h_a2cbb84477c51f71b7d1e366280dc94c3}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_L@{COCOA\_KEY\_L}}
+\index{COCOA\_KEY\_L@{COCOA\_KEY\_L}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_L}{COCOA\_KEY\_L}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+L~76}
+
+\mbox{\Hypertarget{_core_8h_af93fbe027a45f177d673f584a553b00d}\label{_core_8h_af93fbe027a45f177d673f584a553b00d}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_LAST@{COCOA\_KEY\_LAST}}
+\index{COCOA\_KEY\_LAST@{COCOA\_KEY\_LAST}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_LAST}{COCOA\_KEY\_LAST}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+LAST~\mbox{\hyperlink{_core_8h_aaeb2cafb04cb6016207b5a3613ff2c91}{COCOA\+\_\+\+KEY\+\_\+\+MENU}}}
+
+\mbox{\Hypertarget{_core_8h_a9b6674740252cafb340a2588d7c5970b}\label{_core_8h_a9b6674740252cafb340a2588d7c5970b}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_LEFT@{COCOA\_KEY\_LEFT}}
+\index{COCOA\_KEY\_LEFT@{COCOA\_KEY\_LEFT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_LEFT}{COCOA\_KEY\_LEFT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+LEFT~263}
+
+\mbox{\Hypertarget{_core_8h_a7321f467483683c70c0fe3489c3fc927}\label{_core_8h_a7321f467483683c70c0fe3489c3fc927}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_LEFT\_ALT@{COCOA\_KEY\_LEFT\_ALT}}
+\index{COCOA\_KEY\_LEFT\_ALT@{COCOA\_KEY\_LEFT\_ALT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_LEFT\_ALT}{COCOA\_KEY\_LEFT\_ALT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+ALT~342}
+
+\mbox{\Hypertarget{_core_8h_ab7ff008df41832fc7ed3969ac374bd4d}\label{_core_8h_ab7ff008df41832fc7ed3969ac374bd4d}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_LEFT\_BRACKET@{COCOA\_KEY\_LEFT\_BRACKET}}
+\index{COCOA\_KEY\_LEFT\_BRACKET@{COCOA\_KEY\_LEFT\_BRACKET}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_LEFT\_BRACKET}{COCOA\_KEY\_LEFT\_BRACKET}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+BRACKET~91  /$\ast$ \mbox{[} $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_a0c92527a9a12f7d44f03a9213ecaf37d}\label{_core_8h_a0c92527a9a12f7d44f03a9213ecaf37d}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_LEFT\_CONTROL@{COCOA\_KEY\_LEFT\_CONTROL}}
+\index{COCOA\_KEY\_LEFT\_CONTROL@{COCOA\_KEY\_LEFT\_CONTROL}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_LEFT\_CONTROL}{COCOA\_KEY\_LEFT\_CONTROL}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+CONTROL~341}
+
+\mbox{\Hypertarget{_core_8h_ad82aff850196b809a4aed2254d691dd9}\label{_core_8h_ad82aff850196b809a4aed2254d691dd9}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_LEFT\_SHIFT@{COCOA\_KEY\_LEFT\_SHIFT}}
+\index{COCOA\_KEY\_LEFT\_SHIFT@{COCOA\_KEY\_LEFT\_SHIFT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_LEFT\_SHIFT}{COCOA\_KEY\_LEFT\_SHIFT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+SHIFT~340}
+
+\mbox{\Hypertarget{_core_8h_a21f14f621ff65dd3b4857584772be499}\label{_core_8h_a21f14f621ff65dd3b4857584772be499}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_LEFT\_SUPER@{COCOA\_KEY\_LEFT\_SUPER}}
+\index{COCOA\_KEY\_LEFT\_SUPER@{COCOA\_KEY\_LEFT\_SUPER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_LEFT\_SUPER}{COCOA\_KEY\_LEFT\_SUPER}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+LEFT\+\_\+\+SUPER~343}
+
+\mbox{\Hypertarget{_core_8h_adaccb5e5035b79dd2c7c262c4f7f66b4}\label{_core_8h_adaccb5e5035b79dd2c7c262c4f7f66b4}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_M@{COCOA\_KEY\_M}}
+\index{COCOA\_KEY\_M@{COCOA\_KEY\_M}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_M}{COCOA\_KEY\_M}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+M~77}
+
+\mbox{\Hypertarget{_core_8h_aaeb2cafb04cb6016207b5a3613ff2c91}\label{_core_8h_aaeb2cafb04cb6016207b5a3613ff2c91}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_MENU@{COCOA\_KEY\_MENU}}
+\index{COCOA\_KEY\_MENU@{COCOA\_KEY\_MENU}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_MENU}{COCOA\_KEY\_MENU}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+MENU~348}
+
+\mbox{\Hypertarget{_core_8h_a1c97b240e78a8f502f29a2168680d533}\label{_core_8h_a1c97b240e78a8f502f29a2168680d533}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_MINUS@{COCOA\_KEY\_MINUS}}
+\index{COCOA\_KEY\_MINUS@{COCOA\_KEY\_MINUS}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_MINUS}{COCOA\_KEY\_MINUS}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+MINUS~45  /$\ast$ -\/ $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_a33a8f503ba1b110b231b0c273d07e8ff}\label{_core_8h_a33a8f503ba1b110b231b0c273d07e8ff}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_N@{COCOA\_KEY\_N}}
+\index{COCOA\_KEY\_N@{COCOA\_KEY\_N}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_N}{COCOA\_KEY\_N}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+N~78}
+
+\mbox{\Hypertarget{_core_8h_a0024b32e1e4569f6a5f9391e4014b765}\label{_core_8h_a0024b32e1e4569f6a5f9391e4014b765}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUM\_LOCK@{COCOA\_KEY\_NUM\_LOCK}}
+\index{COCOA\_KEY\_NUM\_LOCK@{COCOA\_KEY\_NUM\_LOCK}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUM\_LOCK}{COCOA\_KEY\_NUM\_LOCK}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUM\+\_\+\+LOCK~282}
+
+\mbox{\Hypertarget{_core_8h_a29cab71ac2dc6b1448031db4108db3b6}\label{_core_8h_a29cab71ac2dc6b1448031db4108db3b6}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_0@{COCOA\_KEY\_NUMPAD\_0}}
+\index{COCOA\_KEY\_NUMPAD\_0@{COCOA\_KEY\_NUMPAD\_0}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_0}{COCOA\_KEY\_NUMPAD\_0}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+0~20}
+
+\mbox{\Hypertarget{_core_8h_a3019e70b29355dee0b5b7c87f2d79834}\label{_core_8h_a3019e70b29355dee0b5b7c87f2d79834}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_1@{COCOA\_KEY\_NUMPAD\_1}}
+\index{COCOA\_KEY\_NUMPAD\_1@{COCOA\_KEY\_NUMPAD\_1}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_1}{COCOA\_KEY\_NUMPAD\_1}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+1~21}
+
+\mbox{\Hypertarget{_core_8h_adfbbdc0d2abaf494d9fa4032031957c1}\label{_core_8h_adfbbdc0d2abaf494d9fa4032031957c1}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_2@{COCOA\_KEY\_NUMPAD\_2}}
+\index{COCOA\_KEY\_NUMPAD\_2@{COCOA\_KEY\_NUMPAD\_2}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_2}{COCOA\_KEY\_NUMPAD\_2}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+2~22}
+
+\mbox{\Hypertarget{_core_8h_a9aadfe09b5e89b3d59898a5b08a7504e}\label{_core_8h_a9aadfe09b5e89b3d59898a5b08a7504e}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_3@{COCOA\_KEY\_NUMPAD\_3}}
+\index{COCOA\_KEY\_NUMPAD\_3@{COCOA\_KEY\_NUMPAD\_3}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_3}{COCOA\_KEY\_NUMPAD\_3}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+3~23}
+
+\mbox{\Hypertarget{_core_8h_aef5218a692233b0602bcfefc670363d3}\label{_core_8h_aef5218a692233b0602bcfefc670363d3}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_4@{COCOA\_KEY\_NUMPAD\_4}}
+\index{COCOA\_KEY\_NUMPAD\_4@{COCOA\_KEY\_NUMPAD\_4}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_4}{COCOA\_KEY\_NUMPAD\_4}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+4~24}
+
+\mbox{\Hypertarget{_core_8h_a02f7c2216757ec4c8d36c2e59465e4dd}\label{_core_8h_a02f7c2216757ec4c8d36c2e59465e4dd}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_5@{COCOA\_KEY\_NUMPAD\_5}}
+\index{COCOA\_KEY\_NUMPAD\_5@{COCOA\_KEY\_NUMPAD\_5}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_5}{COCOA\_KEY\_NUMPAD\_5}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+5~25}
+
+\mbox{\Hypertarget{_core_8h_a2be8790d6d3451bb7abd229f1834bfae}\label{_core_8h_a2be8790d6d3451bb7abd229f1834bfae}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_6@{COCOA\_KEY\_NUMPAD\_6}}
+\index{COCOA\_KEY\_NUMPAD\_6@{COCOA\_KEY\_NUMPAD\_6}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_6}{COCOA\_KEY\_NUMPAD\_6}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+6~26}
+
+\mbox{\Hypertarget{_core_8h_a235c230ee81248620cdcd9657d65154c}\label{_core_8h_a235c230ee81248620cdcd9657d65154c}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_7@{COCOA\_KEY\_NUMPAD\_7}}
+\index{COCOA\_KEY\_NUMPAD\_7@{COCOA\_KEY\_NUMPAD\_7}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_7}{COCOA\_KEY\_NUMPAD\_7}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+7~27}
+
+\mbox{\Hypertarget{_core_8h_a19d6e7302726020e92f2ca7e7dc5d0bc}\label{_core_8h_a19d6e7302726020e92f2ca7e7dc5d0bc}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_8@{COCOA\_KEY\_NUMPAD\_8}}
+\index{COCOA\_KEY\_NUMPAD\_8@{COCOA\_KEY\_NUMPAD\_8}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_8}{COCOA\_KEY\_NUMPAD\_8}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+8~28}
+
+\mbox{\Hypertarget{_core_8h_ab58c5f1c127f781bae0c9cd54104c3e3}\label{_core_8h_ab58c5f1c127f781bae0c9cd54104c3e3}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_NUMPAD\_9@{COCOA\_KEY\_NUMPAD\_9}}
+\index{COCOA\_KEY\_NUMPAD\_9@{COCOA\_KEY\_NUMPAD\_9}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_NUMPAD\_9}{COCOA\_KEY\_NUMPAD\_9}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+NUMPAD\+\_\+9~29}
+
+\mbox{\Hypertarget{_core_8h_a5e1a82c7123c999e6318a3b64fc1012e}\label{_core_8h_a5e1a82c7123c999e6318a3b64fc1012e}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_O@{COCOA\_KEY\_O}}
+\index{COCOA\_KEY\_O@{COCOA\_KEY\_O}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_O}{COCOA\_KEY\_O}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+O~79}
+
+\mbox{\Hypertarget{_core_8h_ae588902a3655329194054460a6011745}\label{_core_8h_ae588902a3655329194054460a6011745}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_P@{COCOA\_KEY\_P}}
+\index{COCOA\_KEY\_P@{COCOA\_KEY\_P}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_P}{COCOA\_KEY\_P}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+P~80}
+
+\mbox{\Hypertarget{_core_8h_a5ee5d5c6657f5a0ca61faa0f3f225030}\label{_core_8h_a5ee5d5c6657f5a0ca61faa0f3f225030}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_PAGE\_DOWN@{COCOA\_KEY\_PAGE\_DOWN}}
+\index{COCOA\_KEY\_PAGE\_DOWN@{COCOA\_KEY\_PAGE\_DOWN}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_PAGE\_DOWN}{COCOA\_KEY\_PAGE\_DOWN}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+PAGE\+\_\+\+DOWN~267}
+
+\mbox{\Hypertarget{_core_8h_aa0791d7524de887935324541477a20fc}\label{_core_8h_aa0791d7524de887935324541477a20fc}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_PAGE\_UP@{COCOA\_KEY\_PAGE\_UP}}
+\index{COCOA\_KEY\_PAGE\_UP@{COCOA\_KEY\_PAGE\_UP}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_PAGE\_UP}{COCOA\_KEY\_PAGE\_UP}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+PAGE\+\_\+\+UP~266}
+
+\mbox{\Hypertarget{_core_8h_a4cbe74b8501dc60f8c886478c4c3385b}\label{_core_8h_a4cbe74b8501dc60f8c886478c4c3385b}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_PAUSE@{COCOA\_KEY\_PAUSE}}
+\index{COCOA\_KEY\_PAUSE@{COCOA\_KEY\_PAUSE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_PAUSE}{COCOA\_KEY\_PAUSE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+PAUSE~284}
+
+\mbox{\Hypertarget{_core_8h_a0566f8ba0476141e73ba4d6dbc2f9973}\label{_core_8h_a0566f8ba0476141e73ba4d6dbc2f9973}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_PERIOD@{COCOA\_KEY\_PERIOD}}
+\index{COCOA\_KEY\_PERIOD@{COCOA\_KEY\_PERIOD}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_PERIOD}{COCOA\_KEY\_PERIOD}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+PERIOD~46  /$\ast$ . $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_ae8e7e01be0d61d3aff4f349bad514f9c}\label{_core_8h_ae8e7e01be0d61d3aff4f349bad514f9c}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_PRINT\_SCREEN@{COCOA\_KEY\_PRINT\_SCREEN}}
+\index{COCOA\_KEY\_PRINT\_SCREEN@{COCOA\_KEY\_PRINT\_SCREEN}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_PRINT\_SCREEN}{COCOA\_KEY\_PRINT\_SCREEN}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+PRINT\+\_\+\+SCREEN~283}
+
+\mbox{\Hypertarget{_core_8h_a76332775856f9abdfb7662061390c992}\label{_core_8h_a76332775856f9abdfb7662061390c992}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_Q@{COCOA\_KEY\_Q}}
+\index{COCOA\_KEY\_Q@{COCOA\_KEY\_Q}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_Q}{COCOA\_KEY\_Q}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+Q~81}
+
+\mbox{\Hypertarget{_core_8h_ab9e75019fc5ca59b8e8b20a8511a8eff}\label{_core_8h_ab9e75019fc5ca59b8e8b20a8511a8eff}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_R@{COCOA\_KEY\_R}}
+\index{COCOA\_KEY\_R@{COCOA\_KEY\_R}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_R}{COCOA\_KEY\_R}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+R~82}
+
+\mbox{\Hypertarget{_core_8h_aee3e54b87b312bb8acedd5a00051b528}\label{_core_8h_aee3e54b87b312bb8acedd5a00051b528}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_RIGHT@{COCOA\_KEY\_RIGHT}}
+\index{COCOA\_KEY\_RIGHT@{COCOA\_KEY\_RIGHT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_RIGHT}{COCOA\_KEY\_RIGHT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+RIGHT~262}
+
+\mbox{\Hypertarget{_core_8h_a92ea3b084ee79ffa083dcc2b71d1eb8b}\label{_core_8h_a92ea3b084ee79ffa083dcc2b71d1eb8b}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_RIGHT\_ALT@{COCOA\_KEY\_RIGHT\_ALT}}
+\index{COCOA\_KEY\_RIGHT\_ALT@{COCOA\_KEY\_RIGHT\_ALT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_RIGHT\_ALT}{COCOA\_KEY\_RIGHT\_ALT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+ALT~346}
+
+\mbox{\Hypertarget{_core_8h_a567e608658b060fd777692bed612c113}\label{_core_8h_a567e608658b060fd777692bed612c113}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_RIGHT\_BRACKET@{COCOA\_KEY\_RIGHT\_BRACKET}}
+\index{COCOA\_KEY\_RIGHT\_BRACKET@{COCOA\_KEY\_RIGHT\_BRACKET}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_RIGHT\_BRACKET}{COCOA\_KEY\_RIGHT\_BRACKET}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+BRACKET~93  /$\ast$ \mbox{]} $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_af765dbdae1472046c8d12971e899b477}\label{_core_8h_af765dbdae1472046c8d12971e899b477}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_RIGHT\_CONTROL@{COCOA\_KEY\_RIGHT\_CONTROL}}
+\index{COCOA\_KEY\_RIGHT\_CONTROL@{COCOA\_KEY\_RIGHT\_CONTROL}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_RIGHT\_CONTROL}{COCOA\_KEY\_RIGHT\_CONTROL}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+CONTROL~345}
+
+\mbox{\Hypertarget{_core_8h_a71841d740ad21d0be41743d4b4e6177e}\label{_core_8h_a71841d740ad21d0be41743d4b4e6177e}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_RIGHT\_SHIFT@{COCOA\_KEY\_RIGHT\_SHIFT}}
+\index{COCOA\_KEY\_RIGHT\_SHIFT@{COCOA\_KEY\_RIGHT\_SHIFT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_RIGHT\_SHIFT}{COCOA\_KEY\_RIGHT\_SHIFT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+SHIFT~344}
+
+\mbox{\Hypertarget{_core_8h_ad354cca6597fbdae4151c0f7a6e7403c}\label{_core_8h_ad354cca6597fbdae4151c0f7a6e7403c}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_RIGHT\_SUPER@{COCOA\_KEY\_RIGHT\_SUPER}}
+\index{COCOA\_KEY\_RIGHT\_SUPER@{COCOA\_KEY\_RIGHT\_SUPER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_RIGHT\_SUPER}{COCOA\_KEY\_RIGHT\_SUPER}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+RIGHT\+\_\+\+SUPER~347}
+
+\mbox{\Hypertarget{_core_8h_ab144d1cc579862b4f17538ab83d7de05}\label{_core_8h_ab144d1cc579862b4f17538ab83d7de05}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_S@{COCOA\_KEY\_S}}
+\index{COCOA\_KEY\_S@{COCOA\_KEY\_S}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_S}{COCOA\_KEY\_S}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+S~83}
+
+\mbox{\Hypertarget{_core_8h_a6f3c04b8e7a030a8c777d46e16a0e1c0}\label{_core_8h_a6f3c04b8e7a030a8c777d46e16a0e1c0}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_SCROLL\_LOCK@{COCOA\_KEY\_SCROLL\_LOCK}}
+\index{COCOA\_KEY\_SCROLL\_LOCK@{COCOA\_KEY\_SCROLL\_LOCK}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_SCROLL\_LOCK}{COCOA\_KEY\_SCROLL\_LOCK}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+SCROLL\+\_\+\+LOCK~281}
+
+\mbox{\Hypertarget{_core_8h_aff591f603fb218e5a5fe6f9cf9556d42}\label{_core_8h_aff591f603fb218e5a5fe6f9cf9556d42}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_SEMICOLON@{COCOA\_KEY\_SEMICOLON}}
+\index{COCOA\_KEY\_SEMICOLON@{COCOA\_KEY\_SEMICOLON}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_SEMICOLON}{COCOA\_KEY\_SEMICOLON}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+SEMICOLON~59  /$\ast$ ; $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_a24bd5cce7327c1427387ce3b0a4074ce}\label{_core_8h_a24bd5cce7327c1427387ce3b0a4074ce}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_SLASH@{COCOA\_KEY\_SLASH}}
+\index{COCOA\_KEY\_SLASH@{COCOA\_KEY\_SLASH}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_SLASH}{COCOA\_KEY\_SLASH}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+SLASH~47  /$\ast$ / $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_a1bd3479b0ad420fbbca4ef6edb4acc9a}\label{_core_8h_a1bd3479b0ad420fbbca4ef6edb4acc9a}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_SPACE@{COCOA\_KEY\_SPACE}}
+\index{COCOA\_KEY\_SPACE@{COCOA\_KEY\_SPACE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_SPACE}{COCOA\_KEY\_SPACE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+SPACE~32}
+
+\mbox{\Hypertarget{_core_8h_a3ba7a115e733e27047f76781afade737}\label{_core_8h_a3ba7a115e733e27047f76781afade737}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_T@{COCOA\_KEY\_T}}
+\index{COCOA\_KEY\_T@{COCOA\_KEY\_T}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_T}{COCOA\_KEY\_T}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+T~84}
+
+\mbox{\Hypertarget{_core_8h_a156092487afb5e2e4824d4973a53ddcd}\label{_core_8h_a156092487afb5e2e4824d4973a53ddcd}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_TAB@{COCOA\_KEY\_TAB}}
+\index{COCOA\_KEY\_TAB@{COCOA\_KEY\_TAB}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_TAB}{COCOA\_KEY\_TAB}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+TAB~258}
+
+\mbox{\Hypertarget{_core_8h_acbab78c393843c1fa789428e3e144f22}\label{_core_8h_acbab78c393843c1fa789428e3e144f22}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_U@{COCOA\_KEY\_U}}
+\index{COCOA\_KEY\_U@{COCOA\_KEY\_U}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_U}{COCOA\_KEY\_U}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+U~85}
+
+\mbox{\Hypertarget{_core_8h_a4ef439d3dee4413a8e0683427bbb851c}\label{_core_8h_a4ef439d3dee4413a8e0683427bbb851c}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_UNKNOWN@{COCOA\_KEY\_UNKNOWN}}
+\index{COCOA\_KEY\_UNKNOWN@{COCOA\_KEY\_UNKNOWN}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_UNKNOWN}{COCOA\_KEY\_UNKNOWN}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+UNKNOWN~-\/1}
+
+\mbox{\Hypertarget{_core_8h_adb5df5d3793235ac5390ff4e25a31eb9}\label{_core_8h_adb5df5d3793235ac5390ff4e25a31eb9}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_UP@{COCOA\_KEY\_UP}}
+\index{COCOA\_KEY\_UP@{COCOA\_KEY\_UP}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_UP}{COCOA\_KEY\_UP}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+UP~265}
+
+\mbox{\Hypertarget{_core_8h_a584a15deec4b752337a05730dee5dffd}\label{_core_8h_a584a15deec4b752337a05730dee5dffd}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_V@{COCOA\_KEY\_V}}
+\index{COCOA\_KEY\_V@{COCOA\_KEY\_V}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_V}{COCOA\_KEY\_V}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+V~86}
+
+\mbox{\Hypertarget{_core_8h_a49acc060836677aa5821e4c6ae329522}\label{_core_8h_a49acc060836677aa5821e4c6ae329522}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_W@{COCOA\_KEY\_W}}
+\index{COCOA\_KEY\_W@{COCOA\_KEY\_W}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_W}{COCOA\_KEY\_W}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+W~87}
+
+\mbox{\Hypertarget{_core_8h_ab2944633e33f091fc9897b199baf906f}\label{_core_8h_ab2944633e33f091fc9897b199baf906f}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_WORLD\_1@{COCOA\_KEY\_WORLD\_1}}
+\index{COCOA\_KEY\_WORLD\_1@{COCOA\_KEY\_WORLD\_1}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_WORLD\_1}{COCOA\_KEY\_WORLD\_1}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+WORLD\+\_\+1~161 /$\ast$ non-\/US \#1 $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_adced3e2d6178e78d7298c2611e8c9d42}\label{_core_8h_adced3e2d6178e78d7298c2611e8c9d42}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_WORLD\_2@{COCOA\_KEY\_WORLD\_2}}
+\index{COCOA\_KEY\_WORLD\_2@{COCOA\_KEY\_WORLD\_2}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_WORLD\_2}{COCOA\_KEY\_WORLD\_2}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+\+WORLD\+\_\+2~162 /$\ast$ non-\/US \#2 $\ast$/}
+
+\mbox{\Hypertarget{_core_8h_ab91667653c4f7620c8cb4eab1e85b317}\label{_core_8h_ab91667653c4f7620c8cb4eab1e85b317}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_X@{COCOA\_KEY\_X}}
+\index{COCOA\_KEY\_X@{COCOA\_KEY\_X}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_X}{COCOA\_KEY\_X}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+X~88}
+
+\mbox{\Hypertarget{_core_8h_a2591384765719f0e05abed88e931e75f}\label{_core_8h_a2591384765719f0e05abed88e931e75f}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_Y@{COCOA\_KEY\_Y}}
+\index{COCOA\_KEY\_Y@{COCOA\_KEY\_Y}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_Y}{COCOA\_KEY\_Y}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+Y~89}
+
+\mbox{\Hypertarget{_core_8h_aac9a61f415d53425ffaa00b144b3a07e}\label{_core_8h_aac9a61f415d53425ffaa00b144b3a07e}} 
+\index{Core.h@{Core.h}!COCOA\_KEY\_Z@{COCOA\_KEY\_Z}}
+\index{COCOA\_KEY\_Z@{COCOA\_KEY\_Z}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_KEY\_Z}{COCOA\_KEY\_Z}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+KEY\+\_\+Z~90}
+
+\mbox{\Hypertarget{_core_8h_afac48a74acb47a3c338932dc3a1f99ea}\label{_core_8h_afac48a74acb47a3c338932dc3a1f99ea}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_ALT@{COCOA\_MOD\_ALT}}
+\index{COCOA\_MOD\_ALT@{COCOA\_MOD\_ALT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_ALT}{COCOA\_MOD\_ALT}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+ALT~0x0004}
+
+\mbox{\Hypertarget{_core_8h_afac48a74acb47a3c338932dc3a1f99ea}\label{_core_8h_afac48a74acb47a3c338932dc3a1f99ea}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_ALT@{COCOA\_MOD\_ALT}}
+\index{COCOA\_MOD\_ALT@{COCOA\_MOD\_ALT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_ALT}{COCOA\_MOD\_ALT}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+ALT~0x0004}
+
+\mbox{\Hypertarget{_core_8h_aeeb993574db8a9edb01d7e0ac642ed41}\label{_core_8h_aeeb993574db8a9edb01d7e0ac642ed41}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_CAPS\_LOCK@{COCOA\_MOD\_CAPS\_LOCK}}
+\index{COCOA\_MOD\_CAPS\_LOCK@{COCOA\_MOD\_CAPS\_LOCK}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_CAPS\_LOCK}{COCOA\_MOD\_CAPS\_LOCK}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+CAPS\+\_\+\+LOCK~0x0010}
+
+\mbox{\Hypertarget{_core_8h_aeeb993574db8a9edb01d7e0ac642ed41}\label{_core_8h_aeeb993574db8a9edb01d7e0ac642ed41}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_CAPS\_LOCK@{COCOA\_MOD\_CAPS\_LOCK}}
+\index{COCOA\_MOD\_CAPS\_LOCK@{COCOA\_MOD\_CAPS\_LOCK}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_CAPS\_LOCK}{COCOA\_MOD\_CAPS\_LOCK}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+CAPS\+\_\+\+LOCK~0x0010}
+
+\mbox{\Hypertarget{_core_8h_af381df505ef1251c894ef3298ccd9e36}\label{_core_8h_af381df505ef1251c894ef3298ccd9e36}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_CONTROL@{COCOA\_MOD\_CONTROL}}
+\index{COCOA\_MOD\_CONTROL@{COCOA\_MOD\_CONTROL}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_CONTROL}{COCOA\_MOD\_CONTROL}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+CONTROL~0x0002}
+
+\mbox{\Hypertarget{_core_8h_af381df505ef1251c894ef3298ccd9e36}\label{_core_8h_af381df505ef1251c894ef3298ccd9e36}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_CONTROL@{COCOA\_MOD\_CONTROL}}
+\index{COCOA\_MOD\_CONTROL@{COCOA\_MOD\_CONTROL}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_CONTROL}{COCOA\_MOD\_CONTROL}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+CONTROL~0x0002}
+
+\mbox{\Hypertarget{_core_8h_add3477166d2f085fe158355ff1b20e44}\label{_core_8h_add3477166d2f085fe158355ff1b20e44}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_NUM\_LOCK@{COCOA\_MOD\_NUM\_LOCK}}
+\index{COCOA\_MOD\_NUM\_LOCK@{COCOA\_MOD\_NUM\_LOCK}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_NUM\_LOCK}{COCOA\_MOD\_NUM\_LOCK}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+NUM\+\_\+\+LOCK~0x0020}
+
+\mbox{\Hypertarget{_core_8h_add3477166d2f085fe158355ff1b20e44}\label{_core_8h_add3477166d2f085fe158355ff1b20e44}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_NUM\_LOCK@{COCOA\_MOD\_NUM\_LOCK}}
+\index{COCOA\_MOD\_NUM\_LOCK@{COCOA\_MOD\_NUM\_LOCK}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_NUM\_LOCK}{COCOA\_MOD\_NUM\_LOCK}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+NUM\+\_\+\+LOCK~0x0020}
+
+\mbox{\Hypertarget{_core_8h_abf3ae96d18cb110ca681dbcbcce0619b}\label{_core_8h_abf3ae96d18cb110ca681dbcbcce0619b}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_SHIFT@{COCOA\_MOD\_SHIFT}}
+\index{COCOA\_MOD\_SHIFT@{COCOA\_MOD\_SHIFT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_SHIFT}{COCOA\_MOD\_SHIFT}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+SHIFT~0x0001}
+
+\mbox{\Hypertarget{_core_8h_abf3ae96d18cb110ca681dbcbcce0619b}\label{_core_8h_abf3ae96d18cb110ca681dbcbcce0619b}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_SHIFT@{COCOA\_MOD\_SHIFT}}
+\index{COCOA\_MOD\_SHIFT@{COCOA\_MOD\_SHIFT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_SHIFT}{COCOA\_MOD\_SHIFT}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+SHIFT~0x0001}
+
+\mbox{\Hypertarget{_core_8h_a458e7edc5a348881c61cedcb1429565d}\label{_core_8h_a458e7edc5a348881c61cedcb1429565d}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_SUPER@{COCOA\_MOD\_SUPER}}
+\index{COCOA\_MOD\_SUPER@{COCOA\_MOD\_SUPER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_SUPER}{COCOA\_MOD\_SUPER}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+SUPER~0x0008}
+
+\mbox{\Hypertarget{_core_8h_a458e7edc5a348881c61cedcb1429565d}\label{_core_8h_a458e7edc5a348881c61cedcb1429565d}} 
+\index{Core.h@{Core.h}!COCOA\_MOD\_SUPER@{COCOA\_MOD\_SUPER}}
+\index{COCOA\_MOD\_SUPER@{COCOA\_MOD\_SUPER}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOD\_SUPER}{COCOA\_MOD\_SUPER}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOD\+\_\+\+SUPER~0x0008}
+
+\mbox{\Hypertarget{_core_8h_ad4925fb160c1eb75751ab4c9fbb2dad4}\label{_core_8h_ad4925fb160c1eb75751ab4c9fbb2dad4}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_1@{COCOA\_MOUSE\_BUTTON\_1}}
+\index{COCOA\_MOUSE\_BUTTON\_1@{COCOA\_MOUSE\_BUTTON\_1}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_1}{COCOA\_MOUSE\_BUTTON\_1}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+1~0}
+
+\mbox{\Hypertarget{_core_8h_a21b99a21e266cef323b57a3d303ff34e}\label{_core_8h_a21b99a21e266cef323b57a3d303ff34e}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_2@{COCOA\_MOUSE\_BUTTON\_2}}
+\index{COCOA\_MOUSE\_BUTTON\_2@{COCOA\_MOUSE\_BUTTON\_2}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_2}{COCOA\_MOUSE\_BUTTON\_2}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+2~1}
+
+\mbox{\Hypertarget{_core_8h_a3d3228bb15f368c15afb481f826cbc56}\label{_core_8h_a3d3228bb15f368c15afb481f826cbc56}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_3@{COCOA\_MOUSE\_BUTTON\_3}}
+\index{COCOA\_MOUSE\_BUTTON\_3@{COCOA\_MOUSE\_BUTTON\_3}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_3}{COCOA\_MOUSE\_BUTTON\_3}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+3~2}
+
+\mbox{\Hypertarget{_core_8h_ac7d19a8949011ee4867e73fabf5fe827}\label{_core_8h_ac7d19a8949011ee4867e73fabf5fe827}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_4@{COCOA\_MOUSE\_BUTTON\_4}}
+\index{COCOA\_MOUSE\_BUTTON\_4@{COCOA\_MOUSE\_BUTTON\_4}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_4}{COCOA\_MOUSE\_BUTTON\_4}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+4~3}
+
+\mbox{\Hypertarget{_core_8h_a925d390bde58d99f25a44bea93d743ef}\label{_core_8h_a925d390bde58d99f25a44bea93d743ef}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_5@{COCOA\_MOUSE\_BUTTON\_5}}
+\index{COCOA\_MOUSE\_BUTTON\_5@{COCOA\_MOUSE\_BUTTON\_5}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_5}{COCOA\_MOUSE\_BUTTON\_5}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+5~4}
+
+\mbox{\Hypertarget{_core_8h_aeb15a53842786d095618fac06a3c21fe}\label{_core_8h_aeb15a53842786d095618fac06a3c21fe}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_6@{COCOA\_MOUSE\_BUTTON\_6}}
+\index{COCOA\_MOUSE\_BUTTON\_6@{COCOA\_MOUSE\_BUTTON\_6}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_6}{COCOA\_MOUSE\_BUTTON\_6}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+6~5}
+
+\mbox{\Hypertarget{_core_8h_aae734d6a6a3835b1ecc7d136b910ac7b}\label{_core_8h_aae734d6a6a3835b1ecc7d136b910ac7b}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_7@{COCOA\_MOUSE\_BUTTON\_7}}
+\index{COCOA\_MOUSE\_BUTTON\_7@{COCOA\_MOUSE\_BUTTON\_7}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_7}{COCOA\_MOUSE\_BUTTON\_7}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+7~6}
+
+\mbox{\Hypertarget{_core_8h_a4c8db4e4eb2fff0ac370e41adc1d844b}\label{_core_8h_a4c8db4e4eb2fff0ac370e41adc1d844b}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_8@{COCOA\_MOUSE\_BUTTON\_8}}
+\index{COCOA\_MOUSE\_BUTTON\_8@{COCOA\_MOUSE\_BUTTON\_8}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_8}{COCOA\_MOUSE\_BUTTON\_8}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+8~7}
+
+\mbox{\Hypertarget{_core_8h_ad88f98b62477435ef5afc556092664ac}\label{_core_8h_ad88f98b62477435ef5afc556092664ac}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_LAST@{COCOA\_MOUSE\_BUTTON\_LAST}}
+\index{COCOA\_MOUSE\_BUTTON\_LAST@{COCOA\_MOUSE\_BUTTON\_LAST}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_LAST}{COCOA\_MOUSE\_BUTTON\_LAST}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+\+LAST~\mbox{\hyperlink{_core_8h_a4c8db4e4eb2fff0ac370e41adc1d844b}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+8}}}
+
+\mbox{\Hypertarget{_core_8h_a671410941cbc7185decdfdd55ad91c3d}\label{_core_8h_a671410941cbc7185decdfdd55ad91c3d}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_LEFT@{COCOA\_MOUSE\_BUTTON\_LEFT}}
+\index{COCOA\_MOUSE\_BUTTON\_LEFT@{COCOA\_MOUSE\_BUTTON\_LEFT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_LEFT}{COCOA\_MOUSE\_BUTTON\_LEFT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+\+LEFT~\mbox{\hyperlink{_core_8h_ad4925fb160c1eb75751ab4c9fbb2dad4}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+1}}}
+
+\mbox{\Hypertarget{_core_8h_a26846716e26ba865c6d0f9c723f13a78}\label{_core_8h_a26846716e26ba865c6d0f9c723f13a78}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_MIDDLE@{COCOA\_MOUSE\_BUTTON\_MIDDLE}}
+\index{COCOA\_MOUSE\_BUTTON\_MIDDLE@{COCOA\_MOUSE\_BUTTON\_MIDDLE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_MIDDLE}{COCOA\_MOUSE\_BUTTON\_MIDDLE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+\+MIDDLE~\mbox{\hyperlink{_core_8h_a3d3228bb15f368c15afb481f826cbc56}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+3}}}
+
+\mbox{\Hypertarget{_core_8h_a7d229911489d40020bf2c213ee2e39fe}\label{_core_8h_a7d229911489d40020bf2c213ee2e39fe}} 
+\index{Core.h@{Core.h}!COCOA\_MOUSE\_BUTTON\_RIGHT@{COCOA\_MOUSE\_BUTTON\_RIGHT}}
+\index{COCOA\_MOUSE\_BUTTON\_RIGHT@{COCOA\_MOUSE\_BUTTON\_RIGHT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_MOUSE\_BUTTON\_RIGHT}{COCOA\_MOUSE\_BUTTON\_RIGHT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+\+RIGHT~\mbox{\hyperlink{_core_8h_a21b99a21e266cef323b57a3d303ff34e}{COCOA\+\_\+\+MOUSE\+\_\+\+BUTTON\+\_\+2}}}
+
+\mbox{\Hypertarget{_core_8h_a0a5d298e381aec4bb83c4eb3fe9bf2ba}\label{_core_8h_a0a5d298e381aec4bb83c4eb3fe9bf2ba}} 
+\index{Core.h@{Core.h}!COCOA\_PRESS@{COCOA\_PRESS}}
+\index{COCOA\_PRESS@{COCOA\_PRESS}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_PRESS}{COCOA\_PRESS}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+PRESS~1}
+
+\mbox{\Hypertarget{_core_8h_a86f9baa58824ee9424400dfe6e3c37db}\label{_core_8h_a86f9baa58824ee9424400dfe6e3c37db}} 
+\index{Core.h@{Core.h}!COCOA\_RELEASE@{COCOA\_RELEASE}}
+\index{COCOA\_RELEASE@{COCOA\_RELEASE}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_RELEASE}{COCOA\_RELEASE}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+RELEASE~0}
+
+\mbox{\Hypertarget{_core_8h_a50d63caa750f7e78efc94923fced656d}\label{_core_8h_a50d63caa750f7e78efc94923fced656d}} 
+\index{Core.h@{Core.h}!COCOA\_REPEAT@{COCOA\_REPEAT}}
+\index{COCOA\_REPEAT@{COCOA\_REPEAT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_REPEAT}{COCOA\_REPEAT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+REPEAT~2}
+
+\mbox{\Hypertarget{_core_8h_afb87a5cbe11a33825e3953d7c6dba257}\label{_core_8h_afb87a5cbe11a33825e3953d7c6dba257}} 
+\index{Core.h@{Core.h}!COCOA\_SCRIPT@{COCOA\_SCRIPT}}
+\index{COCOA\_SCRIPT@{COCOA\_SCRIPT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_SCRIPT}{COCOA\_SCRIPT}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+SCRIPT}
+
+\mbox{\Hypertarget{_core_8h_a853de1c5e7cb714c383472ad9c2255b1}\label{_core_8h_a853de1c5e7cb714c383472ad9c2255b1}} 
+\index{Core.h@{Core.h}!COCOA\_TEMPLATE\_EXTERN@{COCOA\_TEMPLATE\_EXTERN}}
+\index{COCOA\_TEMPLATE\_EXTERN@{COCOA\_TEMPLATE\_EXTERN}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{COCOA\_TEMPLATE\_EXTERN}{COCOA\_TEMPLATE\_EXTERN}}
+{\footnotesize\ttfamily \#define COCOA\+\_\+\+TEMPLATE\+\_\+\+EXTERN}
+
+\mbox{\Hypertarget{_core_8h_ae5f1e35d10ebc5ce3e5bf2f36bcc64f8}\label{_core_8h_ae5f1e35d10ebc5ce3e5bf2f36bcc64f8}} 
+\index{Core.h@{Core.h}!UCLASS@{UCLASS}}
+\index{UCLASS@{UCLASS}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{UCLASS}{UCLASS}}
+{\footnotesize\ttfamily \#define UCLASS(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~;}
+
+\mbox{\Hypertarget{_core_8h_a0f0b61260ab178e7df0069f14ecb9f82}\label{_core_8h_a0f0b61260ab178e7df0069f14ecb9f82}} 
+\index{Core.h@{Core.h}!UPROPERTY@{UPROPERTY}}
+\index{UPROPERTY@{UPROPERTY}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{UPROPERTY}{UPROPERTY}}
+{\footnotesize\ttfamily \#define UPROPERTY(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~;}
+
+\mbox{\Hypertarget{_core_8h_af3c7826680f0c0d7bc3434f9bb7c60e5}\label{_core_8h_af3c7826680f0c0d7bc3434f9bb7c60e5}} 
+\index{Core.h@{Core.h}!USTRUCT@{USTRUCT}}
+\index{USTRUCT@{USTRUCT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{USTRUCT}{USTRUCT}}
+{\footnotesize\ttfamily \#define USTRUCT(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~;}
+

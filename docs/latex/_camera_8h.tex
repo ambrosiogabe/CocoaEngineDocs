@@ -1,0 +1,46 @@
+\hypertarget{_camera_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/renderer/\+Camera.h File Reference}
+\label{_camera_8h}\index{CocoaEngine/include/cocoa/renderer/Camera.h@{CocoaEngine/include/cocoa/renderer/Camera.h}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/components/\+Transform.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Camera\+Struct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Framebuffer.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_n_camera}{Cocoa\+::\+NCamera}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_camera_system}{Cocoa\+::\+Camera\+System}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Camera \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a96d498ceb0f90a93c1ccea3ced708431}{Cocoa\+::\+NCamera\+::\+Create\+Camera}} ()
+\item 
+Camera \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a20314028a66a8634ead7be69a38673df}{Cocoa\+::\+NCamera\+::\+Create\+Camera}} (Framebuffer framebuffer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a466e35fc38c935059d7fa055edbd5b9a}{Cocoa\+::\+NCamera\+::\+Adjust\+Perspective}} (Camera \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_abca6b8e53d9f411039a96078e122b458}{Cocoa\+::\+NCamera\+::\+Calculate\+View\+Matrix}} (Entity entity, Camera \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a523c4b3846c7e861bbbb56e912547e7a}{Cocoa\+::\+NCamera\+::\+Calculate\+Ortho\+View\+Matrix}} (Entity entity, Camera \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a64abf8601ec84148c1c5799a35bcd663}{Cocoa\+::\+NCamera\+::\+Clear\+Color\+Rgb}} (const Camera \&camera, int attachment, glm\+::vec3 color)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a43b761b6de2425ff1eea2f67da909ad4}{Cocoa\+::\+NCamera\+::\+Clear\+Color\+Uint32}} (Camera \&camera, int attachment, uint32 color)
+\item 
+glm\+::vec2 \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_ab3c44352fa5ceb02ccb1f5db03caf8a3}{Cocoa\+::\+NCamera\+::\+Screen\+To\+Ortho}} (const Camera \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_afd1b6d1c394773ccacc900d1173f40b6}{Cocoa\+::\+NCamera\+::\+Serialize}} (\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} $\ast$j, Entity entity, const Camera \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a72b4409b4168a95dd3bd20ed879462c0}{Cocoa\+::\+NCamera\+::\+Deserialize}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_camera_system_a0b46cc12b0613d7379c538679b159738}{Cocoa\+::\+Camera\+System\+::\+Update}} (Scene\+Data \&scene, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_camera_system_a12f91f21c1768a59c734eb07ce33938a}{Cocoa\+::\+Camera\+System\+::\+Destroy}} (Scene\+Data \&scene)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_camera_system_a0bd1ef8ac90cf7ff605e51d45b3448cb}{Cocoa\+::\+Camera\+System\+::\+Delete\+Entity}} (Entity entity)
+\end{DoxyCompactItemize}

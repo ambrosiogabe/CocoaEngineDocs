@@ -1,0 +1,208 @@
+\hypertarget{class_cocoa_1_1_asset_manager}{}\doxysection{Cocoa\+::Asset\+Manager Class Reference}
+\label{class_cocoa_1_1_asset_manager}\index{Cocoa::AssetManager@{Cocoa::AssetManager}}
+
+
+{\ttfamily \#include $<$Asset\+Manager.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a6ae9e6620b73437f8aa6e8195c3e2fb1}{Load\+Texture\+From\+Json}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, bool is\+Default=false, int id=-\/1)
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_ac62c79f047fe2b8d6d0189fa4b642052}{Load\+Texture\+From\+File}} (\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&texture, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path, int id=-\/1)
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a4953b87244702b2adb6ade5e47eb0846}{Get\+Texture}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path)
+\item 
+static const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \& \mbox{\hyperlink{class_cocoa_1_1_asset_manager_afe8aa1eab8bf3069a6738f59da1c8c16}{Get\+Texture}} (\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} resource\+Id)
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_ad16a7f71356d1b2f9524b7381278ec1f}{Load\+Font\+From\+Json}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path, const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, bool is\+Default=false, int id=-\/1)
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a7c8367e1ac26bba808ae02da92006524}{Load\+Font\+From\+Ttf\+File}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&font\+File, int font\+Size, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&output\+File, int glyph\+Range\+Start, int glyph\+Range\+End, int padding, int upscale\+Resolution)
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_ad097cffc95387f82e333da0ea93d4a4b}{Get\+Font}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path)
+\item 
+static const \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} \& \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a7ce4b9d8f87e70c8b7aa9afbb297093b}{Get\+Font}} (\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} resource\+Id)
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_afdc85c112b49ca9ed01ac84119adafd2}{Load\+Shader\+From\+File}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path, bool is\+Default=false, int id=-\/1)
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a60a46e2103471f12be1379c2fa60b29e}{Get\+Shader}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&path)
+\item 
+static const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \& \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a9a984ad5c1ad1c2e0fa9920893698305}{Get\+Shader}} (\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} resource\+Id)
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a0278daa0dc853317e2fb9f70c456b456}{Load\+Textures\+From}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j)
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a6fcfd4644f205b6b5d16863c6de0a5ef}{Load\+Fonts\+From}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j)
+\item 
+static \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{class_cocoa_1_1_asset_manager_ade990b9d2f9d983ad20c541def65be84}{Serialize}} ()
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a5b1d0da85f952b459ef48b0abdde999e}{Clear}} ()
+\item 
+static void \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a546a70d7baf3736d1ff662b956ef5b96}{Init}} (\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} scene)
+\item 
+static const std\+::vector$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a48a11aacff7f8272333e75e0691d9683}{Get\+All\+Textures}} ()
+\item 
+static const std\+::vector$<$ \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} $>$ \& \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a8e0b44f10b52b9f860fee31a26d80993}{Get\+All\+Fonts}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{class_cocoa_1_1_asset_manager_a9f61c7b2ee0f8ac83f4a6fb260213208}{s\+\_\+\+Current\+Scene}} = 0
+\item 
+static \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{class_cocoa_1_1_asset_manager_aca37e2c423b4e9c8865c72ecc356e228}{s\+\_\+\+Resource\+Count}} = 0
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_ac458d9b715145a07cf61118d663b6c9f}{s\+\_\+\+Textures}} = std\+::vector$<$\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}}$>$()
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_aebadec6b84ada6d958da4a064a158f1f}{s\+\_\+\+Fonts}} = std\+::vector$<$\mbox{\hyperlink{class_cocoa_1_1_font}{Font}}$>$()
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} $>$ \mbox{\hyperlink{class_cocoa_1_1_asset_manager_ab3ca7a0ec111c71b85d3f8b86713cea7}{s\+\_\+\+Shaders}} = std\+::vector$<$\mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a5b1d0da85f952b459ef48b0abdde999e}\label{class_cocoa_1_1_asset_manager_a5b1d0da85f952b459ef48b0abdde999e}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!Clear@{Clear}}
+\index{Clear@{Clear}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Asset\+Manager\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a8e0b44f10b52b9f860fee31a26d80993}\label{class_cocoa_1_1_asset_manager_a8e0b44f10b52b9f860fee31a26d80993}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!GetAllFonts@{GetAllFonts}}
+\index{GetAllFonts@{GetAllFonts}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{GetAllFonts()}{GetAllFonts()}}
+{\footnotesize\ttfamily static const std\+::vector$<$\mbox{\hyperlink{class_cocoa_1_1_font}{Font}}$>$\& Cocoa\+::\+Asset\+Manager\+::\+Get\+All\+Fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a48a11aacff7f8272333e75e0691d9683}\label{class_cocoa_1_1_asset_manager_a48a11aacff7f8272333e75e0691d9683}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!GetAllTextures@{GetAllTextures}}
+\index{GetAllTextures@{GetAllTextures}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{GetAllTextures()}{GetAllTextures()}}
+{\footnotesize\ttfamily static const std\+::vector$<$\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}}$>$\& Cocoa\+::\+Asset\+Manager\+::\+Get\+All\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_ad097cffc95387f82e333da0ea93d4a4b}\label{class_cocoa_1_1_asset_manager_ad097cffc95387f82e333da0ea93d4a4b}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!GetFont@{GetFont}}
+\index{GetFont@{GetFont}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{GetFont()}{GetFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} $>$ Cocoa\+::\+Asset\+Manager\+::\+Get\+Font (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a7ce4b9d8f87e70c8b7aa9afbb297093b}\label{class_cocoa_1_1_asset_manager_a7ce4b9d8f87e70c8b7aa9afbb297093b}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!GetFont@{GetFont}}
+\index{GetFont@{GetFont}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{GetFont()}{GetFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} \& Cocoa\+::\+Asset\+Manager\+::\+Get\+Font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{resource\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a60a46e2103471f12be1379c2fa60b29e}\label{class_cocoa_1_1_asset_manager_a60a46e2103471f12be1379c2fa60b29e}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!GetShader@{GetShader}}
+\index{GetShader@{GetShader}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{GetShader()}{GetShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} $>$ Cocoa\+::\+Asset\+Manager\+::\+Get\+Shader (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a9a984ad5c1ad1c2e0fa9920893698305}\label{class_cocoa_1_1_asset_manager_a9a984ad5c1ad1c2e0fa9920893698305}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!GetShader@{GetShader}}
+\index{GetShader@{GetShader}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{GetShader()}{GetShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \& Cocoa\+::\+Asset\+Manager\+::\+Get\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{resource\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a4953b87244702b2adb6ade5e47eb0846}\label{class_cocoa_1_1_asset_manager_a4953b87244702b2adb6ade5e47eb0846}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{GetTexture()}{GetTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ Cocoa\+::\+Asset\+Manager\+::\+Get\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_afe8aa1eab8bf3069a6738f59da1c8c16}\label{class_cocoa_1_1_asset_manager_afe8aa1eab8bf3069a6738f59da1c8c16}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{GetTexture()}{GetTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \& Cocoa\+::\+Asset\+Manager\+::\+Get\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{resource\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a546a70d7baf3736d1ff662b956ef5b96}\label{class_cocoa_1_1_asset_manager_a546a70d7baf3736d1ff662b956ef5b96}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!Init@{Init}}
+\index{Init@{Init}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Asset\+Manager\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_ad16a7f71356d1b2f9524b7381278ec1f}\label{class_cocoa_1_1_asset_manager_ad16a7f71356d1b2f9524b7381278ec1f}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!LoadFontFromJson@{LoadFontFromJson}}
+\index{LoadFontFromJson@{LoadFontFromJson}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{LoadFontFromJson()}{LoadFontFromJson()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} $>$ Cocoa\+::\+Asset\+Manager\+::\+Load\+Font\+From\+Json (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path,  }\item[{const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j,  }\item[{bool}]{is\+Default = {\ttfamily false},  }\item[{int}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a7c8367e1ac26bba808ae02da92006524}\label{class_cocoa_1_1_asset_manager_a7c8367e1ac26bba808ae02da92006524}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!LoadFontFromTtfFile@{LoadFontFromTtfFile}}
+\index{LoadFontFromTtfFile@{LoadFontFromTtfFile}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{LoadFontFromTtfFile()}{LoadFontFromTtfFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} $>$ Cocoa\+::\+Asset\+Manager\+::\+Load\+Font\+From\+Ttf\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{font\+File,  }\item[{int}]{font\+Size,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{output\+File,  }\item[{int}]{glyph\+Range\+Start,  }\item[{int}]{glyph\+Range\+End,  }\item[{int}]{padding,  }\item[{int}]{upscale\+Resolution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a6fcfd4644f205b6b5d16863c6de0a5ef}\label{class_cocoa_1_1_asset_manager_a6fcfd4644f205b6b5d16863c6de0a5ef}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!LoadFontsFrom@{LoadFontsFrom}}
+\index{LoadFontsFrom@{LoadFontsFrom}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{LoadFontsFrom()}{LoadFontsFrom()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Asset\+Manager\+::\+Load\+Fonts\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_afdc85c112b49ca9ed01ac84119adafd2}\label{class_cocoa_1_1_asset_manager_afdc85c112b49ca9ed01ac84119adafd2}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!LoadShaderFromFile@{LoadShaderFromFile}}
+\index{LoadShaderFromFile@{LoadShaderFromFile}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{LoadShaderFromFile()}{LoadShaderFromFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} $>$ Cocoa\+::\+Asset\+Manager\+::\+Load\+Shader\+From\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path,  }\item[{bool}]{is\+Default = {\ttfamily false},  }\item[{int}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_ac62c79f047fe2b8d6d0189fa4b642052}\label{class_cocoa_1_1_asset_manager_ac62c79f047fe2b8d6d0189fa4b642052}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!LoadTextureFromFile@{LoadTextureFromFile}}
+\index{LoadTextureFromFile@{LoadTextureFromFile}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{LoadTextureFromFile()}{LoadTextureFromFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ Cocoa\+::\+Asset\+Manager\+::\+Load\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} \&}]{texture,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{path,  }\item[{int}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a6ae9e6620b73437f8aa6e8195c3e2fb1}\label{class_cocoa_1_1_asset_manager_a6ae9e6620b73437f8aa6e8195c3e2fb1}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!LoadTextureFromJson@{LoadTextureFromJson}}
+\index{LoadTextureFromJson@{LoadTextureFromJson}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{LoadTextureFromJson()}{LoadTextureFromJson()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ Cocoa\+::\+Asset\+Manager\+::\+Load\+Texture\+From\+Json (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j,  }\item[{bool}]{is\+Default = {\ttfamily false},  }\item[{int}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a0278daa0dc853317e2fb9f70c456b456}\label{class_cocoa_1_1_asset_manager_a0278daa0dc853317e2fb9f70c456b456}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!LoadTexturesFrom@{LoadTexturesFrom}}
+\index{LoadTexturesFrom@{LoadTexturesFrom}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{LoadTexturesFrom()}{LoadTexturesFrom()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Asset\+Manager\+::\+Load\+Textures\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_ade990b9d2f9d983ad20c541def65be84}\label{class_cocoa_1_1_asset_manager_ade990b9d2f9d983ad20c541def65be84}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} Cocoa\+::\+Asset\+Manager\+::\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_a9f61c7b2ee0f8ac83f4a6fb260213208}\label{class_cocoa_1_1_asset_manager_a9f61c7b2ee0f8ac83f4a6fb260213208}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!s\_CurrentScene@{s\_CurrentScene}}
+\index{s\_CurrentScene@{s\_CurrentScene}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{s\_CurrentScene}{s\_CurrentScene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+Asset\+Manager\+::s\+\_\+\+Current\+Scene = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_aebadec6b84ada6d958da4a064a158f1f}\label{class_cocoa_1_1_asset_manager_aebadec6b84ada6d958da4a064a158f1f}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!s\_Fonts@{s\_Fonts}}
+\index{s\_Fonts@{s\_Fonts}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{s\_Fonts}{s\_Fonts}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} $>$ Cocoa\+::\+Asset\+Manager\+::s\+\_\+\+Fonts = std\+::vector$<$\mbox{\hyperlink{class_cocoa_1_1_font}{Font}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_aca37e2c423b4e9c8865c72ecc356e228}\label{class_cocoa_1_1_asset_manager_aca37e2c423b4e9c8865c72ecc356e228}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!s\_ResourceCount@{s\_ResourceCount}}
+\index{s\_ResourceCount@{s\_ResourceCount}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{s\_ResourceCount}{s\_ResourceCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+Asset\+Manager\+::s\+\_\+\+Resource\+Count = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_ab3ca7a0ec111c71b85d3f8b86713cea7}\label{class_cocoa_1_1_asset_manager_ab3ca7a0ec111c71b85d3f8b86713cea7}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!s\_Shaders@{s\_Shaders}}
+\index{s\_Shaders@{s\_Shaders}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{s\_Shaders}{s\_Shaders}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} $>$ Cocoa\+::\+Asset\+Manager\+::s\+\_\+\+Shaders = std\+::vector$<$\mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_asset_manager_ac458d9b715145a07cf61118d663b6c9f}\label{class_cocoa_1_1_asset_manager_ac458d9b715145a07cf61118d663b6c9f}} 
+\index{Cocoa::AssetManager@{Cocoa::AssetManager}!s\_Textures@{s\_Textures}}
+\index{s\_Textures@{s\_Textures}!Cocoa::AssetManager@{Cocoa::AssetManager}}
+\doxysubsubsection{\texorpdfstring{s\_Textures}{s\_Textures}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ Cocoa\+::\+Asset\+Manager\+::s\+\_\+\+Textures = std\+::vector$<$\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/core/\mbox{\hyperlink{_asset_manager_8h}{Asset\+Manager.\+h}}\item 
+Cocoa\+Engine/cpp/cocoa/core/\mbox{\hyperlink{_asset_manager_8cpp}{Asset\+Manager.\+cpp}}\end{DoxyCompactItemize}

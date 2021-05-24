@@ -1,0 +1,103 @@
+\hypertarget{class_cocoa_1_1_event}{}\doxysection{Cocoa\+::Event Class Reference}
+\label{class_cocoa_1_1_event}\index{Cocoa::Event@{Cocoa::Event}}
+
+
+{\ttfamily \#include $<$Event.\+h$>$}
+
+Inheritance diagram for Cocoa\+::Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.848485cm]{class_cocoa_1_1_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{namespace_cocoa_aa684f538b098d2fdc1e4436da9bb7853}{Event\+Type}} \mbox{\hyperlink{class_cocoa_1_1_event_af9aaf528bb442ec8ddb8a532581d0410}{Get\+Type}} () const =0
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{class_cocoa_1_1_event_aac4e13eacdfb64ede08a37fc441090ed}{Get\+Name}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_cocoa_1_1_event_a36ac4be647f924aebfd00880f5ca2835}{Get\+Category\+Flags}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_cocoa_1_1_event_a5d75759e9d84be33996610a5f1b32edb}{To\+String}} () const
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_event_ad091b80ef9871e530efff96e257d4cf1}{Is\+In\+Category}} (\mbox{\hyperlink{namespace_cocoa_a509b67e436d7957df506cf30f229a6bd}{Event\+Category}} category)
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_event_a0262dff7e2a041f2cd728d3073812715}{Handled}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_event_aa815a1496c0c37fabde796f74038f787}{m\+\_\+\+Handled}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_cocoa_1_1_event_aad5f38ccd490ea17008460423f52325a}{Event\+Dispatcher}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_event_a36ac4be647f924aebfd00880f5ca2835}\label{class_cocoa_1_1_event_a36ac4be647f924aebfd00880f5ca2835}} 
+\index{Cocoa::Event@{Cocoa::Event}!GetCategoryFlags@{GetCategoryFlags}}
+\index{GetCategoryFlags@{GetCategoryFlags}!Cocoa::Event@{Cocoa::Event}}
+\doxysubsubsection{\texorpdfstring{GetCategoryFlags()}{GetCategoryFlags()}}
+{\footnotesize\ttfamily virtual int Cocoa\+::\+Event\+::\+Get\+Category\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_event_aac4e13eacdfb64ede08a37fc441090ed}\label{class_cocoa_1_1_event_aac4e13eacdfb64ede08a37fc441090ed}} 
+\index{Cocoa::Event@{Cocoa::Event}!GetName@{GetName}}
+\index{GetName@{GetName}!Cocoa::Event@{Cocoa::Event}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ Cocoa\+::\+Event\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_event_af9aaf528bb442ec8ddb8a532581d0410}\label{class_cocoa_1_1_event_af9aaf528bb442ec8ddb8a532581d0410}} 
+\index{Cocoa::Event@{Cocoa::Event}!GetType@{GetType}}
+\index{GetType@{GetType}!Cocoa::Event@{Cocoa::Event}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_cocoa_aa684f538b098d2fdc1e4436da9bb7853}{Event\+Type}} Cocoa\+::\+Event\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_event_a0262dff7e2a041f2cd728d3073812715}\label{class_cocoa_1_1_event_a0262dff7e2a041f2cd728d3073812715}} 
+\index{Cocoa::Event@{Cocoa::Event}!Handled@{Handled}}
+\index{Handled@{Handled}!Cocoa::Event@{Cocoa::Event}}
+\doxysubsubsection{\texorpdfstring{Handled()}{Handled()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Event\+::\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_event_ad091b80ef9871e530efff96e257d4cf1}\label{class_cocoa_1_1_event_ad091b80ef9871e530efff96e257d4cf1}} 
+\index{Cocoa::Event@{Cocoa::Event}!IsInCategory@{IsInCategory}}
+\index{IsInCategory@{IsInCategory}!Cocoa::Event@{Cocoa::Event}}
+\doxysubsubsection{\texorpdfstring{IsInCategory()}{IsInCategory()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Event\+::\+Is\+In\+Category (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_cocoa_a509b67e436d7957df506cf30f229a6bd}{Event\+Category}}}]{category }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_event_a5d75759e9d84be33996610a5f1b32edb}\label{class_cocoa_1_1_event_a5d75759e9d84be33996610a5f1b32edb}} 
+\index{Cocoa::Event@{Cocoa::Event}!ToString@{ToString}}
+\index{ToString@{ToString}!Cocoa::Event@{Cocoa::Event}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily virtual std\+::string Cocoa\+::\+Event\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_cocoa_1_1_window_resize_event_a66ab714edc88978a8278e58f7c80fd18}{Cocoa\+::\+Window\+Resize\+Event}}, \mbox{\hyperlink{class_cocoa_1_1_mouse_button_released_event_a81f4af812ec3b2b95eb95818abdfd82b}{Cocoa\+::\+Mouse\+Button\+Released\+Event}}, \mbox{\hyperlink{class_cocoa_1_1_mouse_button_pressed_event_acaf682739a50e3b39e1b86ea2618d5ed}{Cocoa\+::\+Mouse\+Button\+Pressed\+Event}}, \mbox{\hyperlink{class_cocoa_1_1_mouse_scrolled_event_a989c5289d6ea01cbda40ccedc4942231}{Cocoa\+::\+Mouse\+Scrolled\+Event}}, \mbox{\hyperlink{class_cocoa_1_1_mouse_moved_event_af7e2997d81281f646c60b2f9de012435}{Cocoa\+::\+Mouse\+Moved\+Event}}, \mbox{\hyperlink{class_cocoa_1_1_key_released_event_a18fd69ff8310a5debc0266905356e88e}{Cocoa\+::\+Key\+Released\+Event}}, and \mbox{\hyperlink{class_cocoa_1_1_key_pressed_event_a1879a51f7ae29aebd83eb6ad742f5740}{Cocoa\+::\+Key\+Pressed\+Event}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_event_aad5f38ccd490ea17008460423f52325a}\label{class_cocoa_1_1_event_aad5f38ccd490ea17008460423f52325a}} 
+\index{Cocoa::Event@{Cocoa::Event}!EventDispatcher@{EventDispatcher}}
+\index{EventDispatcher@{EventDispatcher}!Cocoa::Event@{Cocoa::Event}}
+\doxysubsubsection{\texorpdfstring{EventDispatcher}{EventDispatcher}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_cocoa_1_1_event_dispatcher}{Event\+Dispatcher}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_event_aa815a1496c0c37fabde796f74038f787}\label{class_cocoa_1_1_event_aa815a1496c0c37fabde796f74038f787}} 
+\index{Cocoa::Event@{Cocoa::Event}!m\_Handled@{m\_Handled}}
+\index{m\_Handled@{m\_Handled}!Cocoa::Event@{Cocoa::Event}}
+\doxysubsubsection{\texorpdfstring{m\_Handled}{m\_Handled}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Event\+::m\+\_\+\+Handled = false}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/events/\mbox{\hyperlink{_event_8h}{Event.\+h}}\end{DoxyCompactItemize}

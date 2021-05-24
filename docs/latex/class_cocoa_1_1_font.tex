@@ -1,0 +1,182 @@
+\hypertarget{class_cocoa_1_1_font}{}\doxysection{Cocoa\+::Font Class Reference}
+\label{class_cocoa_1_1_font}\index{Cocoa::Font@{Cocoa::Font}}
+
+
+{\ttfamily \#include $<$Font.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_font_a70379679f59e67b4b420621feaf29568}{Font}} (\mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&resource\+Path, bool is\+Default=false)
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_font_a27701e1a4e136445950b22a83faebc5e}{Font}} ()
+\item 
+const \mbox{\hyperlink{struct_cocoa_1_1_char_info}{Char\+Info}} \& \mbox{\hyperlink{class_cocoa_1_1_font_a020de175bf099b35c0b553dfd84a914f}{Get\+Character\+Info}} (int codepoint) const
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_font_a342c5a915ce99ee8cc0000bdc6fde50c}{Generate\+Sdf}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&font\+File, int font\+Size, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&output\+File, int glyph\+Range\+Start=0, int glyph\+Range\+End=\textquotesingle{}z\textquotesingle{}+1, int padding=5, int upscale\+Resolution=4096)
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_font_af041390077bb25aeaa190a1faa07c47f}{Free}} ()
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_font_ae85418f641d227f56c53d8e6ade06b7b}{Is\+Null}} () const
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_font_ae9551d81aa6ecfebfdcdf2bf4dc9f8f0}{Is\+Default}} () const
+\item 
+\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{class_cocoa_1_1_font_a4ed5fc3f111dd8cb232972af29a6cd91}{Serialize}} () const
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_font_acc9c6e3e00cdb8423489606746bf7d96}{Deserialize}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \mbox{\hyperlink{class_cocoa_1_1_font_a5be99ffa88e7179500290f1e36974836}{m\+\_\+\+Path}}
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ \mbox{\hyperlink{class_cocoa_1_1_font_a95608af5356377693093a241aa80fe27}{m\+\_\+\+Font\+Texture}}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_char_info}{Char\+Info}} $\ast$ \mbox{\hyperlink{class_cocoa_1_1_font_a3a763958f4f56b2a4c41944930653c99}{m\+\_\+\+Character\+Map}} = nullptr
+\item 
+int \mbox{\hyperlink{class_cocoa_1_1_font_ab3711c571b31881c24948451b56c79cf}{m\+\_\+\+Character\+Map\+Size}} = 0
+\item 
+int \mbox{\hyperlink{class_cocoa_1_1_font_aabbfbf1f488734497d14ef5c9b6fbf46}{m\+\_\+\+Glyph\+Range\+Start}} = 0
+\item 
+int \mbox{\hyperlink{class_cocoa_1_1_font_a5f7ba7bab4d8607d2052bcda069f49b9}{m\+\_\+\+Glyph\+Range\+End}} = 0
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_font_a6031b7fef8198def06eb68d655d86755}{m\+\_\+\+Is\+Default}}
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_font_ad62adf7c3dd7e7c022d5daf746f4bcc2}{m\+\_\+\+Is\+Null}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} \mbox{\hyperlink{class_cocoa_1_1_font_aede2f6537cbfc47d198002311aae66b0}{null\+Font}} = \mbox{\hyperlink{class_cocoa_1_1_font}{Font}}()
+\item 
+static \mbox{\hyperlink{struct_cocoa_1_1_char_info}{Char\+Info}} \mbox{\hyperlink{class_cocoa_1_1_font_ae7b08b3125e36706edd3e9e9e821fd09}{null\+Character}} = \{ 0, 0, 0, 0, 0, 0, 0, 0, 0 \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_font_a70379679f59e67b4b420621feaf29568}\label{class_cocoa_1_1_font_a70379679f59e67b4b420621feaf29568}} 
+\index{Cocoa::Font@{Cocoa::Font}!Font@{Font}}
+\index{Font@{Font}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{Font()}{Font()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cocoa\+::\+Font\+::\+Font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{resource\+Path,  }\item[{bool}]{is\+Default = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_a27701e1a4e136445950b22a83faebc5e}\label{class_cocoa_1_1_font_a27701e1a4e136445950b22a83faebc5e}} 
+\index{Cocoa::Font@{Cocoa::Font}!Font@{Font}}
+\index{Font@{Font}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{Font()}{Font()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cocoa\+::\+Font\+::\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_font_acc9c6e3e00cdb8423489606746bf7d96}\label{class_cocoa_1_1_font_acc9c6e3e00cdb8423489606746bf7d96}} 
+\index{Cocoa::Font@{Cocoa::Font}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Font\+::\+Deserialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_af041390077bb25aeaa190a1faa07c47f}\label{class_cocoa_1_1_font_af041390077bb25aeaa190a1faa07c47f}} 
+\index{Cocoa::Font@{Cocoa::Font}!Free@{Free}}
+\index{Free@{Free}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Font\+::\+Free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_a342c5a915ce99ee8cc0000bdc6fde50c}\label{class_cocoa_1_1_font_a342c5a915ce99ee8cc0000bdc6fde50c}} 
+\index{Cocoa::Font@{Cocoa::Font}!GenerateSdf@{GenerateSdf}}
+\index{GenerateSdf@{GenerateSdf}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{GenerateSdf()}{GenerateSdf()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Font\+::\+Generate\+Sdf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{font\+File,  }\item[{int}]{font\+Size,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{output\+File,  }\item[{int}]{glyph\+Range\+Start = {\ttfamily 0},  }\item[{int}]{glyph\+Range\+End = {\ttfamily \textquotesingle{}z\textquotesingle{}~+~1},  }\item[{int}]{padding = {\ttfamily 5},  }\item[{int}]{upscale\+Resolution = {\ttfamily 4096} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_a020de175bf099b35c0b553dfd84a914f}\label{class_cocoa_1_1_font_a020de175bf099b35c0b553dfd84a914f}} 
+\index{Cocoa::Font@{Cocoa::Font}!GetCharacterInfo@{GetCharacterInfo}}
+\index{GetCharacterInfo@{GetCharacterInfo}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{GetCharacterInfo()}{GetCharacterInfo()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_cocoa_1_1_char_info}{Char\+Info}} \& Cocoa\+::\+Font\+::\+Get\+Character\+Info (\begin{DoxyParamCaption}\item[{int}]{codepoint }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_ae9551d81aa6ecfebfdcdf2bf4dc9f8f0}\label{class_cocoa_1_1_font_ae9551d81aa6ecfebfdcdf2bf4dc9f8f0}} 
+\index{Cocoa::Font@{Cocoa::Font}!IsDefault@{IsDefault}}
+\index{IsDefault@{IsDefault}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{IsDefault()}{IsDefault()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Font\+::\+Is\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_ae85418f641d227f56c53d8e6ade06b7b}\label{class_cocoa_1_1_font_ae85418f641d227f56c53d8e6ade06b7b}} 
+\index{Cocoa::Font@{Cocoa::Font}!IsNull@{IsNull}}
+\index{IsNull@{IsNull}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{IsNull()}{IsNull()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Font\+::\+Is\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_a4ed5fc3f111dd8cb232972af29a6cd91}\label{class_cocoa_1_1_font_a4ed5fc3f111dd8cb232972af29a6cd91}} 
+\index{Cocoa::Font@{Cocoa::Font}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} Cocoa\+::\+Font\+::\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_font_a3a763958f4f56b2a4c41944930653c99}\label{class_cocoa_1_1_font_a3a763958f4f56b2a4c41944930653c99}} 
+\index{Cocoa::Font@{Cocoa::Font}!m\_CharacterMap@{m\_CharacterMap}}
+\index{m\_CharacterMap@{m\_CharacterMap}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{m\_CharacterMap}{m\_CharacterMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cocoa_1_1_char_info}{Char\+Info}}$\ast$ Cocoa\+::\+Font\+::m\+\_\+\+Character\+Map = nullptr}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_ab3711c571b31881c24948451b56c79cf}\label{class_cocoa_1_1_font_ab3711c571b31881c24948451b56c79cf}} 
+\index{Cocoa::Font@{Cocoa::Font}!m\_CharacterMapSize@{m\_CharacterMapSize}}
+\index{m\_CharacterMapSize@{m\_CharacterMapSize}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{m\_CharacterMapSize}{m\_CharacterMapSize}}
+{\footnotesize\ttfamily int Cocoa\+::\+Font\+::m\+\_\+\+Character\+Map\+Size = 0}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_a95608af5356377693093a241aa80fe27}\label{class_cocoa_1_1_font_a95608af5356377693093a241aa80fe27}} 
+\index{Cocoa::Font@{Cocoa::Font}!m\_FontTexture@{m\_FontTexture}}
+\index{m\_FontTexture@{m\_FontTexture}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{m\_FontTexture}{m\_FontTexture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}}$>$ Cocoa\+::\+Font\+::m\+\_\+\+Font\+Texture}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_a5f7ba7bab4d8607d2052bcda069f49b9}\label{class_cocoa_1_1_font_a5f7ba7bab4d8607d2052bcda069f49b9}} 
+\index{Cocoa::Font@{Cocoa::Font}!m\_GlyphRangeEnd@{m\_GlyphRangeEnd}}
+\index{m\_GlyphRangeEnd@{m\_GlyphRangeEnd}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{m\_GlyphRangeEnd}{m\_GlyphRangeEnd}}
+{\footnotesize\ttfamily int Cocoa\+::\+Font\+::m\+\_\+\+Glyph\+Range\+End = 0}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_aabbfbf1f488734497d14ef5c9b6fbf46}\label{class_cocoa_1_1_font_aabbfbf1f488734497d14ef5c9b6fbf46}} 
+\index{Cocoa::Font@{Cocoa::Font}!m\_GlyphRangeStart@{m\_GlyphRangeStart}}
+\index{m\_GlyphRangeStart@{m\_GlyphRangeStart}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{m\_GlyphRangeStart}{m\_GlyphRangeStart}}
+{\footnotesize\ttfamily int Cocoa\+::\+Font\+::m\+\_\+\+Glyph\+Range\+Start = 0}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_a6031b7fef8198def06eb68d655d86755}\label{class_cocoa_1_1_font_a6031b7fef8198def06eb68d655d86755}} 
+\index{Cocoa::Font@{Cocoa::Font}!m\_IsDefault@{m\_IsDefault}}
+\index{m\_IsDefault@{m\_IsDefault}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{m\_IsDefault}{m\_IsDefault}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Font\+::m\+\_\+\+Is\+Default}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_ad62adf7c3dd7e7c022d5daf746f4bcc2}\label{class_cocoa_1_1_font_ad62adf7c3dd7e7c022d5daf746f4bcc2}} 
+\index{Cocoa::Font@{Cocoa::Font}!m\_IsNull@{m\_IsNull}}
+\index{m\_IsNull@{m\_IsNull}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{m\_IsNull}{m\_IsNull}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Font\+::m\+\_\+\+Is\+Null = false}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_a5be99ffa88e7179500290f1e36974836}\label{class_cocoa_1_1_font_a5be99ffa88e7179500290f1e36974836}} 
+\index{Cocoa::Font@{Cocoa::Font}!m\_Path@{m\_Path}}
+\index{m\_Path@{m\_Path}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{m\_Path}{m\_Path}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} Cocoa\+::\+Font\+::m\+\_\+\+Path}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_ae7b08b3125e36706edd3e9e9e821fd09}\label{class_cocoa_1_1_font_ae7b08b3125e36706edd3e9e9e821fd09}} 
+\index{Cocoa::Font@{Cocoa::Font}!nullCharacter@{nullCharacter}}
+\index{nullCharacter@{nullCharacter}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{nullCharacter}{nullCharacter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cocoa_1_1_char_info}{Char\+Info}} Cocoa\+::\+Font\+::null\+Character = \{ 0, 0, 0, 0, 0, 0, 0, 0, 0 \}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_font_aede2f6537cbfc47d198002311aae66b0}\label{class_cocoa_1_1_font_aede2f6537cbfc47d198002311aae66b0}} 
+\index{Cocoa::Font@{Cocoa::Font}!nullFont@{nullFont}}
+\index{nullFont@{nullFont}!Cocoa::Font@{Cocoa::Font}}
+\doxysubsubsection{\texorpdfstring{nullFont}{nullFont}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_font}{Font}} Cocoa\+::\+Font\+::null\+Font = \mbox{\hyperlink{class_cocoa_1_1_font}{Font}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/renderer/\+Fonts/\mbox{\hyperlink{_font_8h}{Font.\+h}}\item 
+Cocoa\+Engine/cpp/cocoa/renderer/\+Fonts/\mbox{\hyperlink{_font_8cpp}{Font.\+cpp}}\end{DoxyCompactItemize}

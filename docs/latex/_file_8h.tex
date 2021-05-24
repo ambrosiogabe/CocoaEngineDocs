@@ -1,0 +1,55 @@
+\hypertarget{_file_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/file/\+File.h File Reference}
+\label{_file_8h}\index{CocoaEngine/include/cocoa/file/File.h@{CocoaEngine/include/cocoa/file/File.h}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/file/\+CPath.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cocoa_1_1_file_handle}{Cocoa\+::\+File\+Handle}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_file}{Cocoa\+::\+File}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} File\+Handle $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_file_a4d7a445902453376f779d2ecf0f520dc}{Cocoa\+::\+File\+::\+Open\+File}} (const CPath \&filename)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void \mbox{\hyperlink{namespace_cocoa_1_1_file_a266135df9e4d16db0a691315123a2170}{Cocoa\+::\+File\+::\+Close\+File}} (File\+Handle $\ast$file)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_afd67006fecd7a4626bad3306a8cbf342}{Cocoa\+::\+File\+::\+Write\+File}} (const char $\ast$data, const CPath \&filename)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_ad2dd3b469f627d3d238b0b7fd3d88c68}{Cocoa\+::\+File\+::\+Create\+File}} (const CPath \&filename, const char $\ast$ext\+To\+Append=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_a8520549fbaf46bca4437645489242a3e}{Cocoa\+::\+File\+::\+Delete\+File}} (const CPath \&filename)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_a12d08e64bef67a7c9a2748ca0d359cdc}{Cocoa\+::\+File\+::\+Copy\+File}} (const CPath \&file\+To\+Copy, const CPath \&new\+File\+Location, const char $\ast$new\+Filename=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} CPath \mbox{\hyperlink{namespace_cocoa_1_1_file_aa753a0acbac5cf7f17ea1a8823f94259}{Cocoa\+::\+File\+::\+Get\+Cwd}} ()
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} CPath \mbox{\hyperlink{namespace_cocoa_1_1_file_a2b22d2f19fda446cc22f656469eaebc2}{Cocoa\+::\+File\+::\+Get\+Special\+App\+Folder}} ()
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} CPath \mbox{\hyperlink{namespace_cocoa_1_1_file_a6d474e758573ec1b09a5eb01f9c51d3e}{Cocoa\+::\+File\+::\+Get\+Executable\+Directory}} ()
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} std\+::vector$<$ CPath $>$ \mbox{\hyperlink{namespace_cocoa_1_1_file_a878827b5b586358a83c27ae5de8e6646}{Cocoa\+::\+File\+::\+Get\+Files\+In\+Dir}} (const CPath \&directory)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} std\+::vector$<$ CPath $>$ \mbox{\hyperlink{namespace_cocoa_1_1_file_a2dce824d85e9240399069159ae0e929f}{Cocoa\+::\+File\+::\+Get\+Folders\+In\+Dir}} (const CPath \&directory)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void \mbox{\hyperlink{namespace_cocoa_1_1_file_a0dc33cc5b9798a6014fbe2d7401b78e4}{Cocoa\+::\+File\+::\+Create\+Dir\+If\+Not\+Exists}} (const CPath \&directory)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_af684a7739ba985bc2e556c845d22fa6d}{Cocoa\+::\+File\+::\+Is\+File}} (const CPath \&filepath)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_a6af2433ada4f2733ce69ed3a58fbbd5b}{Cocoa\+::\+File\+::\+Is\+Hidden}} (const CPath \&filepath)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_ae68d7871e660f850faeb96305082b44e}{Cocoa\+::\+File\+::\+Is\+Directory}} (const CPath \&directory)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} CPath \mbox{\hyperlink{namespace_cocoa_1_1_file_a4a76c2990167cf112e4afab0f7b51c15}{Cocoa\+::\+File\+::\+Get\+Absolute\+Path}} (const CPath \&path)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_ab38d905d2b1e9fd077954d5c784df4e7}{Cocoa\+::\+File\+::\+Run\+Program}} (const CPath \&path\+To\+Exe, const char $\ast$cmd\+Args=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool \mbox{\hyperlink{namespace_cocoa_1_1_file_a9bf9051d6626af3a3958ac0b91269011}{Cocoa\+::\+File\+::\+Run\+Program}} (const CPath \&path\+To\+Exe, const std\+::string \&cmd\+Args=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}

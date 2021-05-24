@@ -1,0 +1,47 @@
+\hypertarget{_render_batch_8cpp}{}\doxysection{Cocoa\+Engine/cpp/cocoa/renderer/\+Render\+Batch.cpp File Reference}
+\label{_render_batch_8cpp}\index{CocoaEngine/cpp/cocoa/renderer/RenderBatch.cpp@{CocoaEngine/cpp/cocoa/renderer/RenderBatch.cpp}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/systems/\+Render\+System.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Application.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Asset\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Memory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+CMath.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_render_batch}{Cocoa\+::\+Render\+Batch}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Render\+Batch\+Data \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_ad139dfa5a4a513853bd81b4619cb252d}{Cocoa\+::\+Render\+Batch\+::\+Create\+Render\+Batch}} (int max\+Batch\+Size, int z\+Index, Handle$<$ Shader $>$ shader, bool batch\+On\+Top)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a842cd9b7bfb30057493e13e25e86d64b}{Cocoa\+::\+Render\+Batch\+::\+Free}} (Render\+Batch\+Data \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a7bab2196134adf76ef0b6306e0364756}{Cocoa\+::\+Render\+Batch\+::\+Start}} (Render\+Batch\+Data \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_ace29ec726e71783b8835eaf3aafbd547}{Cocoa\+::\+Render\+Batch\+::\+Add}} (Render\+Batch\+Data \&data, const Transform\+Data \&transform, const Sprite\+Renderer \&spr)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a070dd1d751804ab09509be4cd2841481}{Cocoa\+::\+Render\+Batch\+::\+Add}} (Render\+Batch\+Data \&data, const Transform\+Data \&transform, const Font\+Renderer \&font\+Renderer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a246eda20167e51a69dd90c06617e29cd}{Cocoa\+::\+Render\+Batch\+::\+Add}} (Render\+Batch\+Data \&data, const glm\+::vec2 $\ast$vertices, const glm\+::vec3 \&color, const glm\+::vec2 \&position, int num\+Vertices, int num\+Elements)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a9c45e246992ec8b1e91fb86776e16d09}{Cocoa\+::\+Render\+Batch\+::\+Add}} (Render\+Batch\+Data \&data, Handle$<$ Texture $>$ texture\+Handle, const glm\+::vec3 \&position, const glm\+::vec3 \&scale, const glm\+::vec3 \&color, const glm\+::vec2 \&tex\+Coord\+Min, const glm\+::vec2 \&tex\+Coord\+Max, float rotation)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a0613e5ee66501b9816b0141cf2b3e01b}{Cocoa\+::\+Render\+Batch\+::\+Render}} (Render\+Batch\+Data \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_aec2fed46ea605c883d65b715c066f23a}{Cocoa\+::\+Render\+Batch\+::\+Clear}} (Render\+Batch\+Data \&data)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_aa2c8ceb93855af7737bfa2532a8b7bd2}{Cocoa\+::\+Render\+Batch\+::\+Has\+Room}} (const Render\+Batch\+Data \&data, int num\+Vertices)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a92ec75fd6cf4eb50903fa98611e18f6d}{Cocoa\+::\+Render\+Batch\+::\+Has\+Room}} (const Render\+Batch\+Data \&data, const Font\+Renderer \&font\+Renderer)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_ae09ed490ea05db79a292b643d315a74b}{Cocoa\+::\+Render\+Batch\+::\+Has\+Texture\+Room}} (const Render\+Batch\+Data \&data)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a2ab9428d3749fbec036a60f8d15f8d83}{Cocoa\+::\+Render\+Batch\+::\+Has\+Texture}} (const Render\+Batch\+Data \&data, Handle$<$ Texture $>$ texture)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a1ff4e17e782365249377fe6961abc1c9}{Cocoa\+::\+Render\+Batch\+::\+Compare}} (const Render\+Batch\+Data \&b1, const Render\+Batch\+Data \&b2)
+\end{DoxyCompactItemize}

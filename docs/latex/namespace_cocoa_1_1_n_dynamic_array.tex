@@ -1,0 +1,134 @@
+\hypertarget{namespace_cocoa_1_1_n_dynamic_array}{}\doxysection{Cocoa\+::NDynamic\+Array Namespace Reference}
+\label{namespace_cocoa_1_1_n_dynamic_array}\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a20342fe747f4c1f56031bb3e93002347}{Create}} (int size=0)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a656ea257938a7879a8b9195755041f42}{Free}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_ad795bbae37ea483ca0d519b2ced3b578}{Add}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data, const T \&element)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_aa09d3195fdc6b086e1644c96aac21adc}{Insert}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data, const T \&element, int index)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_ae495ffe3efc6aab6156d659802b13c3a}{Place}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data, int index, const T $\ast$data\+To\+Add, \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} num\+Elements\+To\+Overwrite)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a978a90049d07231f1665ab9fdb1b9e76}{Remove}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data, int index)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a2bbaec4b47f50bc61e4246ccfbe620e8}{Remove}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data, T \&element, \mbox{\hyperlink{namespace_cocoa_ad464c82a7032cc0238f25ea6bb8bbede}{Compare}}$<$ T $>$ compare\+Fn=\mbox{\hyperlink{namespace_cocoa_ab34ad0c76f805a76c6931e13f6a66ce0}{default\+Compare}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a565842421c4a829fdc2015288685bfc9}{Get}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data, int index)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T \& \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a9a83a04f358ea5467f82daf2cb5ecaee}{Get}} (const \mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data, int index)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_adeb27d349773cc96f57f112c5b1a0619}{Pop}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_ae6a77c0cb24c2b2b76695191d35e9c6b}{Begin}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a3f03d742499345b490669ffc64bcb601}{End}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a51a9f57e77206884922ae82685cc42a2}{Clear}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data, bool free\+Memory=true)
+\item 
+{\footnotesize template$<$typename T $>$ }\\int \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a02d9e308c65c46c0b3d5a6e717f11465}{Find\+Index\+Of}} (\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&data, T \&element)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_ad795bbae37ea483ca0d519b2ced3b578}\label{namespace_cocoa_1_1_n_dynamic_array_ad795bbae37ea483ca0d519b2ced3b578}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Add@{Add}}
+\index{Add@{Add}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cocoa\+::\+NDynamic\+Array\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data,  }\item[{const T \&}]{element }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_ae6a77c0cb24c2b2b76695191d35e9c6b}\label{namespace_cocoa_1_1_n_dynamic_array_ae6a77c0cb24c2b2b76695191d35e9c6b}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Begin@{Begin}}
+\index{Begin@{Begin}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ Cocoa\+::\+NDynamic\+Array\+::\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_a51a9f57e77206884922ae82685cc42a2}\label{namespace_cocoa_1_1_n_dynamic_array_a51a9f57e77206884922ae82685cc42a2}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Clear@{Clear}}
+\index{Clear@{Clear}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cocoa\+::\+NDynamic\+Array\+::\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data,  }\item[{bool}]{free\+Memory = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_a20342fe747f4c1f56031bb3e93002347}\label{namespace_cocoa_1_1_n_dynamic_array_a20342fe747f4c1f56031bb3e93002347}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Create@{Create}}
+\index{Create@{Create}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$T$>$ Cocoa\+::\+NDynamic\+Array\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{size = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_a3f03d742499345b490669ffc64bcb601}\label{namespace_cocoa_1_1_n_dynamic_array_a3f03d742499345b490669ffc64bcb601}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!End@{End}}
+\index{End@{End}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ Cocoa\+::\+NDynamic\+Array\+::\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_a02d9e308c65c46c0b3d5a6e717f11465}\label{namespace_cocoa_1_1_n_dynamic_array_a02d9e308c65c46c0b3d5a6e717f11465}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!FindIndexOf@{FindIndexOf}}
+\index{FindIndexOf@{FindIndexOf}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{FindIndexOf()}{FindIndexOf()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int Cocoa\+::\+NDynamic\+Array\+::\+Find\+Index\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data,  }\item[{T \&}]{element }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_a656ea257938a7879a8b9195755041f42}\label{namespace_cocoa_1_1_n_dynamic_array_a656ea257938a7879a8b9195755041f42}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Free@{Free}}
+\index{Free@{Free}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cocoa\+::\+NDynamic\+Array\+::\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_a9a83a04f358ea5467f82daf2cb5ecaee}\label{namespace_cocoa_1_1_n_dynamic_array_a9a83a04f358ea5467f82daf2cb5ecaee}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Get@{Get}}
+\index{Get@{Get}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& Cocoa\+::\+NDynamic\+Array\+::\+Get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_a565842421c4a829fdc2015288685bfc9}\label{namespace_cocoa_1_1_n_dynamic_array_a565842421c4a829fdc2015288685bfc9}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Get@{Get}}
+\index{Get@{Get}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& Cocoa\+::\+NDynamic\+Array\+::\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_aa09d3195fdc6b086e1644c96aac21adc}\label{namespace_cocoa_1_1_n_dynamic_array_aa09d3195fdc6b086e1644c96aac21adc}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Insert@{Insert}}
+\index{Insert@{Insert}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cocoa\+::\+NDynamic\+Array\+::\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data,  }\item[{const T \&}]{element,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_ae495ffe3efc6aab6156d659802b13c3a}\label{namespace_cocoa_1_1_n_dynamic_array_ae495ffe3efc6aab6156d659802b13c3a}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Place@{Place}}
+\index{Place@{Place}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Place()}{Place()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cocoa\+::\+NDynamic\+Array\+::\+Place (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data,  }\item[{int}]{index,  }\item[{const T $\ast$}]{data\+To\+Add,  }\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{num\+Elements\+To\+Overwrite }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_adeb27d349773cc96f57f112c5b1a0619}\label{namespace_cocoa_1_1_n_dynamic_array_adeb27d349773cc96f57f112c5b1a0619}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Pop@{Pop}}
+\index{Pop@{Pop}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T Cocoa\+::\+NDynamic\+Array\+::\+Pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_a978a90049d07231f1665ab9fdb1b9e76}\label{namespace_cocoa_1_1_n_dynamic_array_a978a90049d07231f1665ab9fdb1b9e76}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Remove@{Remove}}
+\index{Remove@{Remove}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cocoa\+::\+NDynamic\+Array\+::\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_dynamic_array_a2bbaec4b47f50bc61e4246ccfbe620e8}\label{namespace_cocoa_1_1_n_dynamic_array_a2bbaec4b47f50bc61e4246ccfbe620e8}} 
+\index{Cocoa::NDynamicArray@{Cocoa::NDynamicArray}!Remove@{Remove}}
+\index{Remove@{Remove}!Cocoa::NDynamicArray@{Cocoa::NDynamicArray}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cocoa\+::\+NDynamic\+Array\+::\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{data,  }\item[{T \&}]{element,  }\item[{\mbox{\hyperlink{namespace_cocoa_ad464c82a7032cc0238f25ea6bb8bbede}{Compare}}$<$ T $>$}]{compare\+Fn = {\ttfamily \mbox{\hyperlink{namespace_cocoa_ab34ad0c76f805a76c6931e13f6a66ce0}{default\+Compare}}} }\end{DoxyParamCaption})}
+

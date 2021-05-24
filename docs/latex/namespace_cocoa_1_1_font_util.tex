@@ -1,0 +1,40 @@
+\hypertarget{namespace_cocoa_1_1_font_util}{}\doxysection{Cocoa\+::Font\+Util Namespace Reference}
+\label{namespace_cocoa_1_1_font_util}\index{Cocoa::FontUtil@{Cocoa::FontUtil}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespace_cocoa_1_1_font_util_a3584cd14d5f8066b251131525a4970fe}{Get\+Pixel}} (int x, int y, \mbox{\hyperlink{namespace_cocoa_a28251d0df95506170548309eb69888e4}{uint8}} $\ast$bitmap, int width, int height)
+\item 
+float \mbox{\hyperlink{namespace_cocoa_1_1_font_util_a7e439590906f4b1940b5c6ebe6d5148a}{Find\+Nearest\+Pixel}} (int pixX, int pixY, \mbox{\hyperlink{namespace_cocoa_a28251d0df95506170548309eb69888e4}{uint8}} $\ast$bitmap, int width, int height, int spread)
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_sdf_bitmap_container}{Sdf\+Bitmap\+Container}} \mbox{\hyperlink{namespace_cocoa_1_1_font_util_a0b09d56362f5c025dfc0e6098c9e9e05}{Generate\+Sdf\+Codepoint\+Bitmap}} (int codepoint, FT\+\_\+\+Face font, int font\+Size, int padding, int upscale\+Resolution, bool flip\+Vertically)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_font_util_a4346a576b7677a2cff3dc439b6310fc8}{Create\+Sdf\+Font\+Texture}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&font\+File, int font\+Size, \mbox{\hyperlink{struct_cocoa_1_1_char_info}{Char\+Info}} $\ast$character\+Map, int character\+Map\+Size, const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&output\+File, int padding, int upscale\+Resolution, int glyph\+Offset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_font_util_a4346a576b7677a2cff3dc439b6310fc8}\label{namespace_cocoa_1_1_font_util_a4346a576b7677a2cff3dc439b6310fc8}} 
+\index{Cocoa::FontUtil@{Cocoa::FontUtil}!CreateSdfFontTexture@{CreateSdfFontTexture}}
+\index{CreateSdfFontTexture@{CreateSdfFontTexture}!Cocoa::FontUtil@{Cocoa::FontUtil}}
+\doxysubsubsection{\texorpdfstring{CreateSdfFontTexture()}{CreateSdfFontTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Font\+Util\+::\+Create\+Sdf\+Font\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{font\+File,  }\item[{int}]{font\+Size,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_char_info}{Char\+Info}} $\ast$}]{character\+Map,  }\item[{int}]{character\+Map\+Size,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{output\+File,  }\item[{int}]{padding,  }\item[{int}]{upscale\+Resolution,  }\item[{int}]{glyph\+Offset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_font_util_a7e439590906f4b1940b5c6ebe6d5148a}\label{namespace_cocoa_1_1_font_util_a7e439590906f4b1940b5c6ebe6d5148a}} 
+\index{Cocoa::FontUtil@{Cocoa::FontUtil}!FindNearestPixel@{FindNearestPixel}}
+\index{FindNearestPixel@{FindNearestPixel}!Cocoa::FontUtil@{Cocoa::FontUtil}}
+\doxysubsubsection{\texorpdfstring{FindNearestPixel()}{FindNearestPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} float Cocoa\+::\+Font\+Util\+::\+Find\+Nearest\+Pixel (\begin{DoxyParamCaption}\item[{int}]{pixX,  }\item[{int}]{pixY,  }\item[{\mbox{\hyperlink{namespace_cocoa_a28251d0df95506170548309eb69888e4}{uint8}} $\ast$}]{bitmap,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{spread }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_font_util_a0b09d56362f5c025dfc0e6098c9e9e05}\label{namespace_cocoa_1_1_font_util_a0b09d56362f5c025dfc0e6098c9e9e05}} 
+\index{Cocoa::FontUtil@{Cocoa::FontUtil}!GenerateSdfCodepointBitmap@{GenerateSdfCodepointBitmap}}
+\index{GenerateSdfCodepointBitmap@{GenerateSdfCodepointBitmap}!Cocoa::FontUtil@{Cocoa::FontUtil}}
+\doxysubsubsection{\texorpdfstring{GenerateSdfCodepointBitmap()}{GenerateSdfCodepointBitmap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_sdf_bitmap_container}{Sdf\+Bitmap\+Container}} Cocoa\+::\+Font\+Util\+::\+Generate\+Sdf\+Codepoint\+Bitmap (\begin{DoxyParamCaption}\item[{int}]{codepoint,  }\item[{FT\+\_\+\+Face}]{font,  }\item[{int}]{font\+Size,  }\item[{int}]{padding,  }\item[{int}]{upscale\+Resolution,  }\item[{bool}]{flip\+Vertically }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_font_util_a3584cd14d5f8066b251131525a4970fe}\label{namespace_cocoa_1_1_font_util_a3584cd14d5f8066b251131525a4970fe}} 
+\index{Cocoa::FontUtil@{Cocoa::FontUtil}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!Cocoa::FontUtil@{Cocoa::FontUtil}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} int Cocoa\+::\+Font\+Util\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{namespace_cocoa_a28251d0df95506170548309eb69888e4}{uint8}} $\ast$}]{bitmap,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+

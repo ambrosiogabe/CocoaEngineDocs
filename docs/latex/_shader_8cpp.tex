@@ -1,0 +1,57 @@
+\hypertarget{_shader_8cpp}{}\doxysection{Cocoa\+Engine/cpp/cocoa/renderer/\+Shader.cpp File Reference}
+\label{_shader_8cpp}\index{CocoaEngine/cpp/cocoa/renderer/Shader.cpp@{CocoaEngine/cpp/cocoa/renderer/Shader.cpp}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+CMath.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Memory.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cocoa_1_1_n_shader_1_1_shader_variable}{Cocoa\+::\+NShader\+::\+Shader\+Variable}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_n_shader}{Cocoa\+::\+NShader}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Shader \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_afe0bf852abf87292e5cb939852825978}{Cocoa\+::\+NShader\+::\+Create\+Shader}} ()
+\item 
+Shader \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a2868326e725338f229f0628a773cc290}{Cocoa\+::\+NShader\+::\+Create\+Shader}} (const CPath \&resource\+Name, bool is\+Default)
+\item 
+Shader \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a75584bc5bece5ea6bada88ec298c2175}{Cocoa\+::\+NShader\+::\+Compile}} (const CPath \&filepath, bool is\+Default)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a491e6f7df30c83bca34efcfbdfe6e451}{Cocoa\+::\+NShader\+::\+Delete}} (Shader \&shader)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a32bbf25f9b43d2116d5a53a7cda96465}{Cocoa\+::\+NShader\+::\+Bind}} (const Shader \&shader)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_af8e996ed7f37a2d868e46b3b82f8a721}{Cocoa\+::\+NShader\+::\+Unbind}} (const Shader \&shader)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a258cc2a09a89682b84f8bb4038edebe2}{Cocoa\+::\+NShader\+::\+Upload\+Vec4}} (const Shader \&shader, const char $\ast$var\+Name, const glm\+::vec4 \&vec4)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a510f88bb37bec723454dfe1fb4aec437}{Cocoa\+::\+NShader\+::\+Upload\+Vec3}} (const Shader \&shader, const char $\ast$var\+Name, const glm\+::vec3 \&vec3)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_ad03168bd69d7f8981284b865a84ae8db}{Cocoa\+::\+NShader\+::\+Upload\+Vec2}} (const Shader \&shader, const char $\ast$var\+Name, const glm\+::vec2 \&vec2)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a6b14206dcb3a78d64aec871b9e02d2ff}{Cocoa\+::\+NShader\+::\+Upload\+Float}} (const Shader \&shader, const char $\ast$var\+Name, float value)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_aff68121ad4a0727a7759038cf1b86971}{Cocoa\+::\+NShader\+::\+Upload\+Int}} (const Shader \&shader, const char $\ast$var\+Name, int value)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a70e1b70bd8f7f55e6471efce9df0ee1c}{Cocoa\+::\+NShader\+::\+Upload\+UInt}} (const Shader \&shader, const char $\ast$var\+Name, uint32 value)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_adc2fa8759c5cb9cf4631f41ff9215ab5}{Cocoa\+::\+NShader\+::\+Upload\+Mat4}} (const Shader \&shader, const char $\ast$var\+Name, const glm\+::mat4 \&mat4)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_aca71123f598efe036b201753679629d8}{Cocoa\+::\+NShader\+::\+Upload\+Mat3}} (const Shader \&shader, const char $\ast$var\+Name, const glm\+::mat3 \&mat3)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a0e9ea7d57470d41942fd486bcfcac99b}{Cocoa\+::\+NShader\+::\+Upload\+Int\+Array}} (const Shader \&shader, const char $\ast$var\+Name, int length, const int $\ast$array)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a24f6fa81cb88e8935d20bcd834b84653}{Cocoa\+::\+NShader\+::\+Is\+Null}} (const Shader \&shader)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a0659115cb9e67abcf8ab997a7f35e0a4}{Cocoa\+::\+NShader\+::\+Clear\+All\+Shader\+Variables}} ()
+\end{DoxyCompactItemize}

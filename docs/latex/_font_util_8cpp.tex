@@ -1,0 +1,26 @@
+\hypertarget{_font_util_8cpp}{}\doxysection{Cocoa\+Engine/cpp/cocoa/renderer/\+Fonts/\+Font\+Util.cpp File Reference}
+\label{_font_util_8cpp}\index{CocoaEngine/cpp/cocoa/renderer/Fonts/FontUtil.cpp@{CocoaEngine/cpp/cocoa/renderer/Fonts/FontUtil.cpp}}
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Fonts/\+Font\+Util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+CMath.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Memory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stb/stb\+\_\+image\+\_\+write.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_font_util}{Cocoa\+::\+Font\+Util}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespace_cocoa_1_1_font_util_a3584cd14d5f8066b251131525a4970fe}{Cocoa\+::\+Font\+Util\+::\+Get\+Pixel}} (int x, int y, uint8 $\ast$bitmap, int width, int height)
+\item 
+float \mbox{\hyperlink{namespace_cocoa_1_1_font_util_a7e439590906f4b1940b5c6ebe6d5148a}{Cocoa\+::\+Font\+Util\+::\+Find\+Nearest\+Pixel}} (int pixX, int pixY, uint8 $\ast$bitmap, int width, int height, int spread)
+\item 
+Sdf\+Bitmap\+Container \mbox{\hyperlink{namespace_cocoa_1_1_font_util_a0b09d56362f5c025dfc0e6098c9e9e05}{Cocoa\+::\+Font\+Util\+::\+Generate\+Sdf\+Codepoint\+Bitmap}} (int codepoint, FT\+\_\+\+Face font, int font\+Size, int padding, int upscale\+Resolution, bool flip\+Vertically)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_font_util_a4346a576b7677a2cff3dc439b6310fc8}{Cocoa\+::\+Font\+Util\+::\+Create\+Sdf\+Font\+Texture}} (const CPath \&font\+File, int font\+Size, Char\+Info $\ast$character\+Map, int character\+Map\+Size, const CPath \&output\+File, int padding, int upscale\+Resolution, int glyph\+Offset)
+\end{DoxyCompactItemize}

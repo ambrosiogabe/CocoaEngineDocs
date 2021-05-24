@@ -1,0 +1,56 @@
+\hypertarget{class_cocoa_1_1_contact_listener}{}\doxysection{Cocoa\+::Contact\+Listener Class Reference}
+\label{class_cocoa_1_1_contact_listener}\index{Cocoa::ContactListener@{Cocoa::ContactListener}}
+
+
+{\ttfamily \#include $<$Contact\+Listener.\+h$>$}
+
+Inheritance diagram for Cocoa\+::Contact\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cocoa_1_1_contact_listener}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_contact_listener_a46c0676ed6e98d844a1905b365e9cc10}{Begin\+Contact}} (b2\+Contact $\ast$contact) override
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_contact_listener_a285c8d9cfabcbd595f8bbffc5057831f}{End\+Contact}} (b2\+Contact $\ast$contact) override
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_contact_listener_a4637e2f70132d32b19e73a068cdcc796}{Pre\+Solve}} (b2\+Contact $\ast$contact, const b2\+Manifold $\ast$old\+Manifold) override
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_contact_listener_a10ba1b0a73df85b048eeffeb711e02a1}{Post\+Solve}} (b2\+Contact $\ast$contact, const b2\+Contact\+Impulse $\ast$impulse) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_contact_listener_a46c0676ed6e98d844a1905b365e9cc10}\label{class_cocoa_1_1_contact_listener_a46c0676ed6e98d844a1905b365e9cc10}} 
+\index{Cocoa::ContactListener@{Cocoa::ContactListener}!BeginContact@{BeginContact}}
+\index{BeginContact@{BeginContact}!Cocoa::ContactListener@{Cocoa::ContactListener}}
+\doxysubsubsection{\texorpdfstring{BeginContact()}{BeginContact()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Contact\+Listener\+::\+Begin\+Contact (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_contact_listener_a285c8d9cfabcbd595f8bbffc5057831f}\label{class_cocoa_1_1_contact_listener_a285c8d9cfabcbd595f8bbffc5057831f}} 
+\index{Cocoa::ContactListener@{Cocoa::ContactListener}!EndContact@{EndContact}}
+\index{EndContact@{EndContact}!Cocoa::ContactListener@{Cocoa::ContactListener}}
+\doxysubsubsection{\texorpdfstring{EndContact()}{EndContact()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Contact\+Listener\+::\+End\+Contact (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_contact_listener_a10ba1b0a73df85b048eeffeb711e02a1}\label{class_cocoa_1_1_contact_listener_a10ba1b0a73df85b048eeffeb711e02a1}} 
+\index{Cocoa::ContactListener@{Cocoa::ContactListener}!PostSolve@{PostSolve}}
+\index{PostSolve@{PostSolve}!Cocoa::ContactListener@{Cocoa::ContactListener}}
+\doxysubsubsection{\texorpdfstring{PostSolve()}{PostSolve()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Contact\+Listener\+::\+Post\+Solve (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact,  }\item[{const b2\+Contact\+Impulse $\ast$}]{impulse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_contact_listener_a4637e2f70132d32b19e73a068cdcc796}\label{class_cocoa_1_1_contact_listener_a4637e2f70132d32b19e73a068cdcc796}} 
+\index{Cocoa::ContactListener@{Cocoa::ContactListener}!PreSolve@{PreSolve}}
+\index{PreSolve@{PreSolve}!Cocoa::ContactListener@{Cocoa::ContactListener}}
+\doxysubsubsection{\texorpdfstring{PreSolve()}{PreSolve()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Contact\+Listener\+::\+Pre\+Solve (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact,  }\item[{const b2\+Manifold $\ast$}]{old\+Manifold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/physics2d/\mbox{\hyperlink{_contact_listener_8h}{Contact\+Listener.\+h}}\item 
+Cocoa\+Engine/cpp/cocoa/physics2d/\mbox{\hyperlink{_contact_listener_8cpp}{Contact\+Listener.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\hypertarget{_c_math_8cpp}{}\doxysection{Cocoa\+Engine/cpp/cocoa/util/\+CMath.cpp File Reference}
+\label{_c_math_8cpp}\index{CocoaEngine/cpp/cocoa/util/CMath.cpp@{CocoaEngine/cpp/cocoa/util/CMath.cpp}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+CMath.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Json\+Extended.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$nlohmann/json.\+hpp$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_c_math}{Cocoa\+::\+CMath}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_c_math_ad735735664096a4f63aa462ac1cfc271}{Cocoa\+::\+CMath\+::\+Compare}} (float x, float y, float epsilon)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_c_math_aeebe7ddf8442bcaab29d9af59c3b9447}{Cocoa\+::\+CMath\+::\+Compare}} (const glm\+::vec2 \&vec1, const glm\+::vec2 \&vec2, float epsilon)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_c_math_a6ddc9982b737b68ca2297e87d34c4264}{Cocoa\+::\+CMath\+::\+Compare}} (const glm\+::vec3 \&vec1, const glm\+::vec3 \&vec2, float epsilon)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_c_math_a4f2d23512b72efd44d8abbd196312bfb}{Cocoa\+::\+CMath\+::\+Compare}} (const glm\+::vec4 \&vec1, const glm\+::vec4 \&vec2, float epsilon)
+\item 
+glm\+::vec2 \mbox{\hyperlink{namespace_cocoa_1_1_c_math_a186098477a31d5f6960c8ca3c7354304}{Cocoa\+::\+CMath\+::\+Vector2\+From3}} (const glm\+::vec3 \&vec)
+\item 
+glm\+::vec3 \mbox{\hyperlink{namespace_cocoa_1_1_c_math_aa660f7ca12c7724774fb49e6e3587955}{Cocoa\+::\+CMath\+::\+Vector3\+From2}} (const glm\+::vec2 \&vec)
+\item 
+float \mbox{\hyperlink{namespace_cocoa_1_1_c_math_accb440d0cf3f6b87c2ad2e9a701b90ae}{Cocoa\+::\+CMath\+::\+To\+Radians}} (float degrees)
+\item 
+float \mbox{\hyperlink{namespace_cocoa_1_1_c_math_a6fe61d492c52f3d756621bec9d7cd169}{Cocoa\+::\+CMath\+::\+To\+Degrees}} (float radians)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_c_math_a7ee0b633fa34aa9b2d006ec94726fdd8}{Cocoa\+::\+CMath\+::\+Rotate}} (glm\+::vec2 \&vec, float angle\+Deg, const glm\+::vec2 \&origin)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_c_math_a89f5a0998449872faf94e6e64af5b849}{Cocoa\+::\+CMath\+::\+Rotate}} (glm\+::vec3 \&vec, float angle\+Deg, const glm\+::vec3 \&origin)
+\item 
+float \mbox{\hyperlink{namespace_cocoa_1_1_c_math_a4d021b2eedfa30406a077a5f7bae0944}{Cocoa\+::\+CMath\+::\+Map\+Range}} (float val, float in\+Min, float in\+Max, float out\+Min, float out\+Max)
+\item 
+int \mbox{\hyperlink{namespace_cocoa_1_1_c_math_ac4f70b52a6f14cc57674f29a051fd39c}{Cocoa\+::\+CMath\+::\+Max}} (int a, int b)
+\item 
+int \mbox{\hyperlink{namespace_cocoa_1_1_c_math_a88c0223e34f4a022836857d22a11a579}{Cocoa\+::\+CMath\+::\+Min}} (int a, int b)
+\item 
+float \mbox{\hyperlink{namespace_cocoa_1_1_c_math_a4cdff89c3a5578517957b8f98fb3cdb9}{Cocoa\+::\+CMath\+::\+Saturate}} (float val)
+\item 
+uint32 \mbox{\hyperlink{namespace_cocoa_1_1_c_math_ab120b83709ad78a94b8cab7891491ee8}{Cocoa\+::\+CMath\+::\+Hash\+String}} (const char $\ast$str)
+\end{DoxyCompactItemize}

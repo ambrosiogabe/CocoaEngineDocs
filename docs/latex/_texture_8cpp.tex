@@ -1,0 +1,51 @@
+\hypertarget{_texture_8cpp}{}\doxysection{Cocoa\+Engine/cpp/cocoa/renderer/\+Texture.cpp File Reference}
+\label{_texture_8cpp}\index{CocoaEngine/cpp/cocoa/renderer/Texture.cpp@{CocoaEngine/cpp/cocoa/renderer/Texture.cpp}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Texture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Json\+Extended.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Asset\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stb\+\_\+image.\+h$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_texture_util}{Cocoa\+::\+Texture\+Util}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32 \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a023f827970d6ebd9cecf5bc668323e22}{Cocoa\+::\+Texture\+Util\+::\+To\+Gl}} (Wrap\+Mode wrap\+Mode)
+\item 
+uint32 \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_ad1f12a88a10a89601a16f4df60679f05}{Cocoa\+::\+Texture\+Util\+::\+To\+Gl}} (Filter\+Mode filter\+Mode)
+\item 
+uint32 \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a54846aec2309f728682763916d578b2a}{Cocoa\+::\+Texture\+Util\+::\+To\+Gl}} (Byte\+Format format)
+\item 
+uint32 \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a5b3b6b8e07f6c49c0b341ac8f98b93dc}{Cocoa\+::\+Texture\+Util\+::\+To\+Gl\+Data\+Type}} (Byte\+Format format)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_abec5a0acd2a4684785a7146cfba59d2d}{Cocoa\+::\+Texture\+Util\+::\+Byte\+Format\+Is\+Int}} (Byte\+Format format)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a6752a1bdaffb51e64d07adfe930fb173}{Cocoa\+::\+Texture\+Util\+::\+Byte\+Format\+Is\+Rgb}} (Byte\+Format format)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_ad098ffb162ef4facbef78980fae3a6e1}{Cocoa\+::\+Texture\+Util\+::\+Generate}} (Texture \&texture, const CPath \&path)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a6e46ccba93e850e7e671c945044a7258}{Cocoa\+::\+Texture\+Util\+::\+Generate}} (Texture \&texture)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_aa52f37b944dc69b644c6772769f22743}{Cocoa\+::\+Texture\+Util\+::\+Is\+Null}} (const Texture \&texture)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a97771f34e7501ddd98d48124c66e12fd}{Cocoa\+::\+Texture\+Util\+::\+Bind}} (const Texture \&texture)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a989b4d96d8fba65ebe3990bd74266b6e}{Cocoa\+::\+Texture\+Util\+::\+Unbind}} (const Texture \&texture)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_ac9bd08ddddd16d613f94800967007ae2}{Cocoa\+::\+Texture\+Util\+::\+Delete}} (Texture \&texture)
+\item 
+\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a47f5a2745b816eed9b76b89d2722c388}{Cocoa\+::\+Texture\+Util\+::\+Serialize}} (const Texture \&texture)
+\item 
+Texture \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a579a3e6c4a619d8e52e19c4276aeda3c}{Cocoa\+::\+Texture\+Util\+::\+Deserialize}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const Texture \mbox{\hyperlink{namespace_cocoa_1_1_texture_util_a06283ddecb5f3be0edb0896ee3e4f61f}{Cocoa\+::\+Texture\+Util\+::\+Null\+Texture}} = \{\}
+\end{DoxyCompactItemize}

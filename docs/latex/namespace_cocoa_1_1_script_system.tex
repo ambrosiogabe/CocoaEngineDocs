@@ -1,0 +1,104 @@
+\hypertarget{namespace_cocoa_1_1_script_system}{}\doxysection{Cocoa\+::Script\+System Namespace Reference}
+\label{namespace_cocoa_1_1_script_system}\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_ad786d3e05b1632beaa114106f6b82a14}{Init}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a85ab38ea5d582af1ed6dcf00252fd275}{Update}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a18c0d7a629518aadd56bf05593eb7c24}{Editor\+Update}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a7e34e03c54015a8f22b5dc60a8274786}{Notify\+Begin\+Contact}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entityA, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entityB)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a20b7fb1069583f0f5fe485341f6aa788}{Notify\+End\+Contact}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entityA, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entityB)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_aa9ce03c68a9ba9d25dc0328a0af68d19}{Reload}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, bool delete\+Script\+Components)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_script_system_aef7a180ccbac92abf30a63a338015e4f}{Free\+Script\+Library}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, bool delete\+Script\+Components)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a97687cb54a27276fd28fe1a1fdb61e32}{Im\+Gui}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a95b95f4f782e708919450175c9080d47}{Init\+Im\+Gui}} (void $\ast$context)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a615fd81cfe4b5f7221cb8515726dde2c}{Save\+Scripts}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a148708635b47a09e8c29e6d2e9ac3e5f}{Add\+Component\+From\+String}} (std\+::string class\+Name, entt\+::entity entity, entt\+::registry \&registry)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_script_system_a99a97447336b02346101a6bf58a90f90}{Deserialize}} (\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&scene, const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_a148708635b47a09e8c29e6d2e9ac3e5f}\label{namespace_cocoa_1_1_script_system_a148708635b47a09e8c29e6d2e9ac3e5f}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!AddComponentFromString@{AddComponentFromString}}
+\index{AddComponentFromString@{AddComponentFromString}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{AddComponentFromString()}{AddComponentFromString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Add\+Component\+From\+String (\begin{DoxyParamCaption}\item[{std\+::string}]{class\+Name,  }\item[{entt\+::entity}]{entity,  }\item[{entt\+::registry \&}]{registry }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_a99a97447336b02346101a6bf58a90f90}\label{namespace_cocoa_1_1_script_system_a99a97447336b02346101a6bf58a90f90}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_a18c0d7a629518aadd56bf05593eb7c24}\label{namespace_cocoa_1_1_script_system_a18c0d7a629518aadd56bf05593eb7c24}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!EditorUpdate@{EditorUpdate}}
+\index{EditorUpdate@{EditorUpdate}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{EditorUpdate()}{EditorUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Editor\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{float}]{dt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_aef7a180ccbac92abf30a63a338015e4f}\label{namespace_cocoa_1_1_script_system_aef7a180ccbac92abf30a63a338015e4f}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!FreeScriptLibrary@{FreeScriptLibrary}}
+\index{FreeScriptLibrary@{FreeScriptLibrary}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{FreeScriptLibrary()}{FreeScriptLibrary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Script\+System\+::\+Free\+Script\+Library (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{bool}]{delete\+Script\+Components }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_a97687cb54a27276fd28fe1a1fdb61e32}\label{namespace_cocoa_1_1_script_system_a97687cb54a27276fd28fe1a1fdb61e32}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!ImGui@{ImGui}}
+\index{ImGui@{ImGui}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{ImGui()}{ImGui()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Im\+Gui (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_ad786d3e05b1632beaa114106f6b82a14}\label{namespace_cocoa_1_1_script_system_ad786d3e05b1632beaa114106f6b82a14}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!Init@{Init}}
+\index{Init@{Init}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_a95b95f4f782e708919450175c9080d47}\label{namespace_cocoa_1_1_script_system_a95b95f4f782e708919450175c9080d47}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!InitImGui@{InitImGui}}
+\index{InitImGui@{InitImGui}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{InitImGui()}{InitImGui()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Init\+Im\+Gui (\begin{DoxyParamCaption}\item[{void $\ast$}]{context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_a7e34e03c54015a8f22b5dc60a8274786}\label{namespace_cocoa_1_1_script_system_a7e34e03c54015a8f22b5dc60a8274786}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!NotifyBeginContact@{NotifyBeginContact}}
+\index{NotifyBeginContact@{NotifyBeginContact}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{NotifyBeginContact()}{NotifyBeginContact()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Notify\+Begin\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entityA,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entityB }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_a20b7fb1069583f0f5fe485341f6aa788}\label{namespace_cocoa_1_1_script_system_a20b7fb1069583f0f5fe485341f6aa788}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!NotifyEndContact@{NotifyEndContact}}
+\index{NotifyEndContact@{NotifyEndContact}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{NotifyEndContact()}{NotifyEndContact()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Notify\+End\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entityA,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entityB }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_aa9ce03c68a9ba9d25dc0328a0af68d19}\label{namespace_cocoa_1_1_script_system_aa9ce03c68a9ba9d25dc0328a0af68d19}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!Reload@{Reload}}
+\index{Reload@{Reload}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{Reload()}{Reload()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{bool}]{delete\+Script\+Components }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_a615fd81cfe4b5f7221cb8515726dde2c}\label{namespace_cocoa_1_1_script_system_a615fd81cfe4b5f7221cb8515726dde2c}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!SaveScripts@{SaveScripts}}
+\index{SaveScripts@{SaveScripts}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{SaveScripts()}{SaveScripts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Save\+Scripts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_script_system_a85ab38ea5d582af1ed6dcf00252fd275}\label{namespace_cocoa_1_1_script_system_a85ab38ea5d582af1ed6dcf00252fd275}} 
+\index{Cocoa::ScriptSystem@{Cocoa::ScriptSystem}!Update@{Update}}
+\index{Update@{Update}!Cocoa::ScriptSystem@{Cocoa::ScriptSystem}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Script\+System\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \&}]{scene,  }\item[{float}]{dt }\end{DoxyParamCaption})}
+

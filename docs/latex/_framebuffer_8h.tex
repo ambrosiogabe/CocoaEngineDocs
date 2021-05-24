@@ -1,0 +1,44 @@
+\hypertarget{_framebuffer_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/renderer/\+Framebuffer.h File Reference}
+\label{_framebuffer_8h}\index{CocoaEngine/include/cocoa/renderer/Framebuffer.h@{CocoaEngine/include/cocoa/renderer/Framebuffer.h}}
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Texture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Handle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Dynamic\+Array.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cocoa_1_1_framebuffer}{Cocoa\+::\+Framebuffer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer}{Cocoa\+::\+NFramebuffer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_a5ae42c12cc379e0267ff9c3673a0ede5}{Cocoa\+::\+NFramebuffer\+::\+Delete}} (Framebuffer \&framebuffer, bool clear\+Color\+Attachment\+Specs)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_a5fc51feb737f8f115b940f8be1a00660}{Cocoa\+::\+NFramebuffer\+::\+Generate}} (Framebuffer \&framebuffer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_ad7beeea7f0d81756a217cad350e535e3}{Cocoa\+::\+NFramebuffer\+::\+Regenerate}} (Framebuffer \&framebuffer)
+\item 
+const Texture \& \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_a58ad6b9f0afdab62587601a18adc764a}{Cocoa\+::\+NFramebuffer\+::\+Get\+Color\+Attachment}} (const Framebuffer \&framebuffer, int index)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_a30c101b28f489e8abc56e25d1296ca09}{Cocoa\+::\+NFramebuffer\+::\+Add\+Color\+Attachment}} (Framebuffer \&framebuffer, const Texture \&texture\+Specification)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_a0a81fcb1130302cce2f262a4722fb5a7}{Cocoa\+::\+NFramebuffer\+::\+Clear\+Color\+Attachment\+Rgb}} (const Framebuffer \&framebuffer, int color\+Attachment, glm\+::vec3 clear\+Color)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_a43d5cf20f0d2a4de6c06dfdee00b5d66}{Cocoa\+::\+NFramebuffer\+::\+Clear\+Color\+Attachment\+Uint32}} (const Framebuffer \&framebuffer, int color\+Attachment, uint32 clear\+Color)
+\item 
+uint32 \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_ac75c323689b756d7eecdaf5d12dbefce}{Cocoa\+::\+NFramebuffer\+::\+Read\+Pixel\+Uint32}} (const Framebuffer \&framebuffer, int color\+Attachment, int x, int y)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_a858ad66c347f79147e87fef80a22c827}{Cocoa\+::\+NFramebuffer\+::\+Bind}} (const Framebuffer \&framebuffer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_ada054b510d4748bdb472bc4f38c1e406}{Cocoa\+::\+NFramebuffer\+::\+Unbind}} (const Framebuffer \&framebuffer)
+\item 
+\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_a6a7ecaca4a145214722e8935f9035e91}{Cocoa\+::\+NFramebuffer\+::\+Serialize}} (const Framebuffer \&framebuffer)
+\item 
+Framebuffer \mbox{\hyperlink{namespace_cocoa_1_1_n_framebuffer_a185403b9ce583b28c9187f61f6884270}{Cocoa\+::\+NFramebuffer\+::\+Deserialize}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j)
+\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{_e_c_s_templates_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/core/\+ECSTemplates.h File Reference}
+\label{_e_c_s_templates_8h}\index{CocoaEngine/include/cocoa/core/ECSTemplates.h@{CocoaEngine/include/cocoa/core/ECSTemplates.h}}
+{\ttfamily \#include \char`\"{}cocoa/core/\+ECS.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/components/\+Transform\+Struct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/components/\+Tag.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/components/\+Sprite\+Renderer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/components/\+Font\+Renderer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/physics2d/\+Physics\+Components.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_internal}{Cocoa\+::\+ECSInternal}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s}{Cocoa\+::\+ECS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_internal_a52a31953bd3e00e0bd3d7bbb1dd6de27}{Cocoa\+::\+ECSInternal\+::\+Default\+Constructor}} ()
+\item 
+template$<$$>$ Transform\+Data \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_internal_a26f65edb52466938341ee1fedd0a7b49}{Cocoa\+::\+ECSInternal\+::\+Default\+Constructor$<$ Transform\+Data $>$}} ()
+\item 
+template$<$$>$ Tag \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_internal_a3ea372fda1e461e62bcf30c4d6c6f367}{Cocoa\+::\+ECSInternal\+::\+Default\+Constructor$<$ Tag $>$}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a9a1ad7fa9c0cfc4d865aeef77ffb5101}{Cocoa\+::\+ECS\+::\+Get\+Component}} (Entity\+Ex entity)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a92da27f37647e040c173077cfa769296}{Cocoa\+::\+ECS\+::\+Add\+Component}} (Entity\+Ex entity, T \&component=ECSInternal\+::\+Default\+Constructor$<$ T $>$())
+\item 
+template$<$$>$ Transform\+Data \& \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a2a19a46d058a94565ef8a3f6a626a456}{Cocoa\+::\+ECS\+::\+Get\+Component$<$ Transform\+Data $>$}} (Entity\+Ex entity)
+\item 
+template$<$$>$ Tag \& \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a623cc6191be2e07e3d183c3782762495}{Cocoa\+::\+ECS\+::\+Get\+Component$<$ Tag $>$}} (Entity\+Ex entity)
+\item 
+template$<$$>$ Sprite\+Renderer \& \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a46942ec926f26ea521e5c54487dbd2e3}{Cocoa\+::\+ECS\+::\+Get\+Component$<$ Sprite\+Renderer $>$}} (Entity\+Ex entity)
+\item 
+template$<$$>$ Font\+Renderer \& \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_afc5950791116a37e1c9c9dafb5a8159c}{Cocoa\+::\+ECS\+::\+Get\+Component$<$ Font\+Renderer $>$}} (Entity\+Ex entity)
+\item 
+template$<$$>$ Box2D \& \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a0a7e8b6c4a165f1a40a2cf87cd777355}{Cocoa\+::\+ECS\+::\+Get\+Component$<$ Box2\+D $>$}} (Entity\+Ex entity)
+\item 
+template$<$$>$ AABB \& \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a37b3ab2fac069afa8c370f7e2958bb91}{Cocoa\+::\+ECS\+::\+Get\+Component$<$ AABB $>$}} (Entity\+Ex entity)
+\item 
+template$<$$>$ Circle \& \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a3cb103474a4a624ab7e15f62dfd6bd1e}{Cocoa\+::\+ECS\+::\+Get\+Component$<$ Circle $>$}} (Entity\+Ex entity)
+\item 
+template$<$$>$ Rigidbody2D \& \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_acf58d17550c2654e82e2145893733a5d}{Cocoa\+::\+ECS\+::\+Get\+Component$<$ Rigidbody2\+D $>$}} (Entity\+Ex entity)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a5d2772b24e23222a7bb16e9222655ff3}{Cocoa\+::\+ECS\+::\+Add\+Component$<$ Transform\+Data $>$}} (Entity\+Ex entity, Transform\+Data \&component)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a00765f44f983d50b069074c40ece5e20}{Cocoa\+::\+ECS\+::\+Add\+Component$<$ Tag $>$}} (Entity\+Ex entity, Tag \&component)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_ac0266b24c328982bf72bf2534439c9f5}{Cocoa\+::\+ECS\+::\+Add\+Component$<$ Sprite\+Renderer $>$}} (Entity\+Ex entity, Sprite\+Renderer \&component)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_aab16ec1dd1ffc9f965a67ad56ae2269a}{Cocoa\+::\+ECS\+::\+Add\+Component$<$ Font\+Renderer $>$}} (Entity\+Ex entity, Font\+Renderer \&component)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_ac27311a224edacefa1c43f0e9ac9b9f0}{Cocoa\+::\+ECS\+::\+Add\+Component$<$ Box2\+D $>$}} (Entity\+Ex entity, Box2D \&component)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_aa276bfd3e5b7fd6b321bc92c4470c023}{Cocoa\+::\+ECS\+::\+Add\+Component$<$ AABB $>$}} (Entity\+Ex entity, AABB \&component)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_a6fe066f38ff2da309d0e8061813ef132}{Cocoa\+::\+ECS\+::\+Add\+Component$<$ Circle $>$}} (Entity\+Ex entity, Circle \&component)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespace_cocoa_1_1_e_c_s_ac3a3858278b654f984dc2408f28a823e}{Cocoa\+::\+ECS\+::\+Add\+Component$<$ Rigidbody2\+D $>$}} (Entity\+Ex entity, Rigidbody2D \&component)
+\end{DoxyCompactItemize}

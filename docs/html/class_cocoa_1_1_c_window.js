@@ -1,0 +1,25 @@
+var class_cocoa_1_1_c_window =
+[
+    [ "EventCallbackFn", "class_cocoa_1_1_c_window.html#a3a4a7c443e503897198d4b52f075e4d6", null ],
+    [ "CWindow", "class_cocoa_1_1_c_window.html#a66b11ff106381586a9bcf2308db5bda9", null ],
+    [ "~CWindow", "class_cocoa_1_1_c_window.html#ad4dcd8d089008e56d7fc53772c1cc937", null ],
+    [ "Destroy", "class_cocoa_1_1_c_window.html#a3c31ae52ac82f5010d879288756f5228", null ],
+    [ "GetHeight", "class_cocoa_1_1_c_window.html#a8d05a6056a24b4d093bfdc653dd376a7", null ],
+    [ "GetMonitorSize", "class_cocoa_1_1_c_window.html#affa906831e58d5bdb9217e9e83e52639", null ],
+    [ "GetNativeWindow", "class_cocoa_1_1_c_window.html#a305598256c2afc59c85247ff90fd80b9", null ],
+    [ "GetSize", "class_cocoa_1_1_c_window.html#af01f0a572b8220efe78f711f290fb9ff", null ],
+    [ "GetTargetAspectRatio", "class_cocoa_1_1_c_window.html#a3cf9f6a067e8b38a01a759c1675b58f1", null ],
+    [ "GetWidth", "class_cocoa_1_1_c_window.html#a3a1ea439ca13a16e8bb2a22858978c91", null ],
+    [ "GetWindowPos", "class_cocoa_1_1_c_window.html#a18592e12414d664a5e848692f3ef5946", null ],
+    [ "Init", "class_cocoa_1_1_c_window.html#a4f975186d06b3573d3047f5f60fe7598", null ],
+    [ "IsRunning", "class_cocoa_1_1_c_window.html#a1cb59d52f7ef4f090c4bbfff2bd1a6fb", null ],
+    [ "IsVSync", "class_cocoa_1_1_c_window.html#a5c6902eeeb0bd95ad8c2db48d7cef936", null ],
+    [ "OnUpdate", "class_cocoa_1_1_c_window.html#a6f5473d23072c47ec90a4a094e67aca9", null ],
+    [ "Render", "class_cocoa_1_1_c_window.html#a172dec4c5707a6f64f8051c0caab0217", null ],
+    [ "SetEventCallback", "class_cocoa_1_1_c_window.html#a90248e3032125bdde7959cbf34cb0cfa", null ],
+    [ "SetHeight", "class_cocoa_1_1_c_window.html#aaa0bafe80e1b8d9865f4d42630ac8adb", null ],
+    [ "SetSize", "class_cocoa_1_1_c_window.html#ae385006efc692f1c85f16b7c1cf35ab2", null ],
+    [ "SetTitle", "class_cocoa_1_1_c_window.html#aa45c5ff5bf1f38504fd3e971caacd100", null ],
+    [ "SetVSync", "class_cocoa_1_1_c_window.html#a74ba361eb1b27e40e95d740b6c58aaaf", null ],
+    [ "SetWidth", "class_cocoa_1_1_c_window.html#a9b0d05a7ffdd41ce73de92667d583f0a", null ]
+];

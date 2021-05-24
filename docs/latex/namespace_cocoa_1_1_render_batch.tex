@@ -1,0 +1,120 @@
+\hypertarget{namespace_cocoa_1_1_render_batch}{}\doxysection{Cocoa\+::Render\+Batch Namespace Reference}
+\label{namespace_cocoa_1_1_render_batch}\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_ad139dfa5a4a513853bd81b4619cb252d}{Create\+Render\+Batch}} (int max\+Batch\+Size, int z\+Index, \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} $>$ shader, bool batch\+On\+Top)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a842cd9b7bfb30057493e13e25e86d64b}{Free}} (\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a7bab2196134adf76ef0b6306e0364756}{Start}} (\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_ace29ec726e71783b8835eaf3aafbd547}{Add}} (\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data, const \mbox{\hyperlink{struct_cocoa_1_1_transform_data}{Transform\+Data}} \&transform, const \mbox{\hyperlink{struct_cocoa_1_1_sprite_renderer}{Sprite\+Renderer}} \&spr)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a070dd1d751804ab09509be4cd2841481}{Add}} (\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data, const \mbox{\hyperlink{struct_cocoa_1_1_transform_data}{Transform\+Data}} \&transform, const \mbox{\hyperlink{struct_cocoa_1_1_font_renderer}{Font\+Renderer}} \&font\+Renderer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a246eda20167e51a69dd90c06617e29cd}{Add}} (\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data, const glm\+::vec2 $\ast$vertices, const glm\+::vec3 \&color, const glm\+::vec2 \&position, int num\+Vertices, int num\+Elements)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a9c45e246992ec8b1e91fb86776e16d09}{Add}} (\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data, \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ texture\+Handle, const glm\+::vec3 \&position, const glm\+::vec3 \&scale, const glm\+::vec3 \&color, const glm\+::vec2 \&tex\+Coord\+Min, const glm\+::vec2 \&tex\+Coord\+Max, float rotation)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a0613e5ee66501b9816b0141cf2b3e01b}{Render}} (\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_aec2fed46ea605c883d65b715c066f23a}{Clear}} (\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_aa2c8ceb93855af7737bfa2532a8b7bd2}{Has\+Room}} (const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data, int num\+Vertices)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a92ec75fd6cf4eb50903fa98611e18f6d}{Has\+Room}} (const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data, const \mbox{\hyperlink{struct_cocoa_1_1_font_renderer}{Font\+Renderer}} \&font\+Renderer)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_ae09ed490ea05db79a292b643d315a74b}{Has\+Texture\+Room}} (const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a2ab9428d3749fbec036a60f8d15f8d83}{Has\+Texture}} (const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&data, \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$ texture)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_render_batch_a1ff4e17e782365249377fe6961abc1c9}{Compare}} (const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&b1, const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&b2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_a246eda20167e51a69dd90c06617e29cd}\label{namespace_cocoa_1_1_render_batch_a246eda20167e51a69dd90c06617e29cd}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!Add@{Add}}
+\index{Add@{Add}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Render\+Batch\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data,  }\item[{const glm\+::vec2 $\ast$}]{vertices,  }\item[{const glm\+::vec3 \&}]{color,  }\item[{const glm\+::vec2 \&}]{position,  }\item[{int}]{num\+Vertices,  }\item[{int}]{num\+Elements }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_a070dd1d751804ab09509be4cd2841481}\label{namespace_cocoa_1_1_render_batch_a070dd1d751804ab09509be4cd2841481}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!Add@{Add}}
+\index{Add@{Add}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Render\+Batch\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_transform_data}{Transform\+Data}} \&}]{transform,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_font_renderer}{Font\+Renderer}} \&}]{font\+Renderer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_ace29ec726e71783b8835eaf3aafbd547}\label{namespace_cocoa_1_1_render_batch_ace29ec726e71783b8835eaf3aafbd547}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!Add@{Add}}
+\index{Add@{Add}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Render\+Batch\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_transform_data}{Transform\+Data}} \&}]{transform,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_sprite_renderer}{Sprite\+Renderer}} \&}]{spr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_a9c45e246992ec8b1e91fb86776e16d09}\label{namespace_cocoa_1_1_render_batch_a9c45e246992ec8b1e91fb86776e16d09}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!Add@{Add}}
+\index{Add@{Add}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Render\+Batch\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data,  }\item[{\mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$}]{texture\+Handle,  }\item[{const glm\+::vec3 \&}]{position,  }\item[{const glm\+::vec3 \&}]{scale,  }\item[{const glm\+::vec3 \&}]{color,  }\item[{const glm\+::vec2 \&}]{tex\+Coord\+Min,  }\item[{const glm\+::vec2 \&}]{tex\+Coord\+Max,  }\item[{float}]{rotation }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_aec2fed46ea605c883d65b715c066f23a}\label{namespace_cocoa_1_1_render_batch_aec2fed46ea605c883d65b715c066f23a}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!Clear@{Clear}}
+\index{Clear@{Clear}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Render\+Batch\+::\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_a1ff4e17e782365249377fe6961abc1c9}\label{namespace_cocoa_1_1_render_batch_a1ff4e17e782365249377fe6961abc1c9}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!Compare@{Compare}}
+\index{Compare@{Compare}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{Compare()}{Compare()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Render\+Batch\+::\+Compare (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{b1,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{b2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_ad139dfa5a4a513853bd81b4619cb252d}\label{namespace_cocoa_1_1_render_batch_ad139dfa5a4a513853bd81b4619cb252d}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!CreateRenderBatch@{CreateRenderBatch}}
+\index{CreateRenderBatch@{CreateRenderBatch}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{CreateRenderBatch()}{CreateRenderBatch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} Cocoa\+::\+Render\+Batch\+::\+Create\+Render\+Batch (\begin{DoxyParamCaption}\item[{int}]{max\+Batch\+Size,  }\item[{int}]{z\+Index,  }\item[{\mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} $>$}]{shader,  }\item[{bool}]{batch\+On\+Top }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_a842cd9b7bfb30057493e13e25e86d64b}\label{namespace_cocoa_1_1_render_batch_a842cd9b7bfb30057493e13e25e86d64b}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!Free@{Free}}
+\index{Free@{Free}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Render\+Batch\+::\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_a92ec75fd6cf4eb50903fa98611e18f6d}\label{namespace_cocoa_1_1_render_batch_a92ec75fd6cf4eb50903fa98611e18f6d}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!HasRoom@{HasRoom}}
+\index{HasRoom@{HasRoom}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{HasRoom()}{HasRoom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Render\+Batch\+::\+Has\+Room (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_font_renderer}{Font\+Renderer}} \&}]{font\+Renderer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_aa2c8ceb93855af7737bfa2532a8b7bd2}\label{namespace_cocoa_1_1_render_batch_aa2c8ceb93855af7737bfa2532a8b7bd2}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!HasRoom@{HasRoom}}
+\index{HasRoom@{HasRoom}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{HasRoom()}{HasRoom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Render\+Batch\+::\+Has\+Room (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data,  }\item[{int}]{num\+Vertices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_a2ab9428d3749fbec036a60f8d15f8d83}\label{namespace_cocoa_1_1_render_batch_a2ab9428d3749fbec036a60f8d15f8d83}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!HasTexture@{HasTexture}}
+\index{HasTexture@{HasTexture}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{HasTexture()}{HasTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Render\+Batch\+::\+Has\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data,  }\item[{\mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_ae09ed490ea05db79a292b643d315a74b}\label{namespace_cocoa_1_1_render_batch_ae09ed490ea05db79a292b643d315a74b}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!HasTextureRoom@{HasTextureRoom}}
+\index{HasTextureRoom@{HasTextureRoom}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{HasTextureRoom()}{HasTextureRoom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+Render\+Batch\+::\+Has\+Texture\+Room (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_a0613e5ee66501b9816b0141cf2b3e01b}\label{namespace_cocoa_1_1_render_batch_a0613e5ee66501b9816b0141cf2b3e01b}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!Render@{Render}}
+\index{Render@{Render}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Render\+Batch\+::\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_render_batch_a7bab2196134adf76ef0b6306e0364756}\label{namespace_cocoa_1_1_render_batch_a7bab2196134adf76ef0b6306e0364756}} 
+\index{Cocoa::RenderBatch@{Cocoa::RenderBatch}!Start@{Start}}
+\index{Start@{Start}!Cocoa::RenderBatch@{Cocoa::RenderBatch}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+Render\+Batch\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_render_batch_data}{Render\+Batch\+Data}} \&}]{data }\end{DoxyParamCaption})}
+

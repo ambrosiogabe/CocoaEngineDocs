@@ -1,0 +1,155 @@
+\hypertarget{class_cocoa_1_1_application}{}\doxysection{Cocoa\+::Application Class Reference}
+\label{class_cocoa_1_1_application}\index{Cocoa::Application@{Cocoa::Application}}
+
+
+The main application class.  
+
+
+
+
+{\ttfamily \#include $<$Application.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_application_a74b56040b652157a03c93b631974536d}{Application}} ()
+\item 
+virtual \mbox{\hyperlink{class_cocoa_1_1_application_a4678b5d9ec920149d1372337f61c5320}{$\sim$\+Application}} ()
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_application_ab4206486f85c6b9b43336ffe7a17aca9}{Init}} ()
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_application_a89579a2dc2b7ea183091350b65ed2a7c}{Shutdown}} ()
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_application_a5e2831e21248686455852da8ad2872dd}{Run}} ()
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_application_a6adac9621b9babdb31d8bb96e480de83}{Stop}} ()
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_application_a655ec8374408ce5e7d9742ae26871e35}{On\+Event}} (\mbox{\hyperlink{class_cocoa_1_1_event}{Event}} \&e)
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_c_window}{CWindow}} $\ast$ \mbox{\hyperlink{class_cocoa_1_1_application_a8c0cf2f271196c45e06cc6bfb3d5aa67}{Get\+Window}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cocoa_1_1_application}{Application}} $\ast$ \mbox{\hyperlink{class_cocoa_1_1_application_a11ef606ae6e154589cb5e5ddb4a19ab5}{Get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_application_a056e6cd04fac64248ebfde15fa6c9dba}{Begin\+Frame}} ()
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_application_af03d3364f22d78073230bcaba7cf339f}{End\+Frame}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} \mbox{\hyperlink{class_cocoa_1_1_application_a98fe5b3b9e5fbacc4cc47026fe151f2b}{m\+\_\+\+Current\+Scene}}
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_c_window}{CWindow}} $\ast$ \mbox{\hyperlink{class_cocoa_1_1_application_a67249333b1015deff73f64a41ca23268}{m\+\_\+\+Window}}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_application_data}{Application\+Data}} \mbox{\hyperlink{class_cocoa_1_1_application_ae2c3440f587b710974d4b3649f38f832}{m\+\_\+\+App\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main application class. 
+
+This class represents the application and holds is the main entry point for the application. It links into the DLL and calls all the callbacks at the appropriate times. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_application_a74b56040b652157a03c93b631974536d}\label{class_cocoa_1_1_application_a74b56040b652157a03c93b631974536d}} 
+\index{Cocoa::Application@{Cocoa::Application}!Application@{Application}}
+\index{Application@{Application}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily Cocoa\+::\+Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_a4678b5d9ec920149d1372337f61c5320}\label{class_cocoa_1_1_application_a4678b5d9ec920149d1372337f61c5320}} 
+\index{Cocoa::Application@{Cocoa::Application}!````~Application@{$\sim$Application}}
+\index{````~Application@{$\sim$Application}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{$\sim$Application()}{~Application()}}
+{\footnotesize\ttfamily Cocoa\+::\+Application\+::$\sim$\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_application_a056e6cd04fac64248ebfde15fa6c9dba}\label{class_cocoa_1_1_application_a056e6cd04fac64248ebfde15fa6c9dba}} 
+\index{Cocoa::Application@{Cocoa::Application}!BeginFrame@{BeginFrame}}
+\index{BeginFrame@{BeginFrame}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{BeginFrame()}{BeginFrame()}}
+{\footnotesize\ttfamily virtual void Cocoa\+::\+Application\+::\+Begin\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_af03d3364f22d78073230bcaba7cf339f}\label{class_cocoa_1_1_application_af03d3364f22d78073230bcaba7cf339f}} 
+\index{Cocoa::Application@{Cocoa::Application}!EndFrame@{EndFrame}}
+\index{EndFrame@{EndFrame}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{EndFrame()}{EndFrame()}}
+{\footnotesize\ttfamily virtual void Cocoa\+::\+Application\+::\+End\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_a11ef606ae6e154589cb5e5ddb4a19ab5}\label{class_cocoa_1_1_application_a11ef606ae6e154589cb5e5ddb4a19ab5}} 
+\index{Cocoa::Application@{Cocoa::Application}!Get@{Get}}
+\index{Get@{Get}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_application}{Application}} $\ast$ Cocoa\+::\+Application\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_a8c0cf2f271196c45e06cc6bfb3d5aa67}\label{class_cocoa_1_1_application_a8c0cf2f271196c45e06cc6bfb3d5aa67}} 
+\index{Cocoa::Application@{Cocoa::Application}!GetWindow@{GetWindow}}
+\index{GetWindow@{GetWindow}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{GetWindow()}{GetWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_c_window}{CWindow}} $\ast$ Cocoa\+::\+Application\+::\+Get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_ab4206486f85c6b9b43336ffe7a17aca9}\label{class_cocoa_1_1_application_ab4206486f85c6b9b43336ffe7a17aca9}} 
+\index{Cocoa::Application@{Cocoa::Application}!Init@{Init}}
+\index{Init@{Init}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual void Cocoa\+::\+Application\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_a655ec8374408ce5e7d9742ae26871e35}\label{class_cocoa_1_1_application_a655ec8374408ce5e7d9742ae26871e35}} 
+\index{Cocoa::Application@{Cocoa::Application}!OnEvent@{OnEvent}}
+\index{OnEvent@{OnEvent}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{OnEvent()}{OnEvent()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Application\+::\+On\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cocoa_1_1_event}{Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_a5e2831e21248686455852da8ad2872dd}\label{class_cocoa_1_1_application_a5e2831e21248686455852da8ad2872dd}} 
+\index{Cocoa::Application@{Cocoa::Application}!Run@{Run}}
+\index{Run@{Run}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Application\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_a89579a2dc2b7ea183091350b65ed2a7c}\label{class_cocoa_1_1_application_a89579a2dc2b7ea183091350b65ed2a7c}} 
+\index{Cocoa::Application@{Cocoa::Application}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily virtual void Cocoa\+::\+Application\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_a6adac9621b9babdb31d8bb96e480de83}\label{class_cocoa_1_1_application_a6adac9621b9babdb31d8bb96e480de83}} 
+\index{Cocoa::Application@{Cocoa::Application}!Stop@{Stop}}
+\index{Stop@{Stop}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Cocoa\+::\+Application\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_application_ae2c3440f587b710974d4b3649f38f832}\label{class_cocoa_1_1_application_ae2c3440f587b710974d4b3649f38f832}} 
+\index{Cocoa::Application@{Cocoa::Application}!m\_AppData@{m\_AppData}}
+\index{m\_AppData@{m\_AppData}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{m\_AppData}{m\_AppData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cocoa_1_1_application_data}{Application\+Data}} Cocoa\+::\+Application\+::m\+\_\+\+App\+Data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_a98fe5b3b9e5fbacc4cc47026fe151f2b}\label{class_cocoa_1_1_application_a98fe5b3b9e5fbacc4cc47026fe151f2b}} 
+\index{Cocoa::Application@{Cocoa::Application}!m\_CurrentScene@{m\_CurrentScene}}
+\index{m\_CurrentScene@{m\_CurrentScene}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{m\_CurrentScene}{m\_CurrentScene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cocoa_1_1_scene_data}{Scene\+Data}} Cocoa\+::\+Application\+::m\+\_\+\+Current\+Scene\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_application_a67249333b1015deff73f64a41ca23268}\label{class_cocoa_1_1_application_a67249333b1015deff73f64a41ca23268}} 
+\index{Cocoa::Application@{Cocoa::Application}!m\_Window@{m\_Window}}
+\index{m\_Window@{m\_Window}!Cocoa::Application@{Cocoa::Application}}
+\doxysubsubsection{\texorpdfstring{m\_Window}{m\_Window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_c_window}{CWindow}}$\ast$ Cocoa\+::\+Application\+::m\+\_\+\+Window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/core/\mbox{\hyperlink{_application_8h}{Application.\+h}}\item 
+Cocoa\+Engine/cpp/cocoa/core/\mbox{\hyperlink{_application_8cpp}{Application.\+cpp}}\end{DoxyCompactItemize}

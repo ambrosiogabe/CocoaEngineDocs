@@ -1,0 +1,100 @@
+\hypertarget{class_cocoa_1_1_i_command}{}\doxysection{Cocoa\+::ICommand Class Reference}
+\label{class_cocoa_1_1_i_command}\index{Cocoa::ICommand@{Cocoa::ICommand}}
+
+
+{\ttfamily \#include $<$ICommand.\+h$>$}
+
+Inheritance diagram for Cocoa\+::ICommand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_cocoa_1_1_i_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_cocoa_1_1_i_command_a72f269f7720ef9ce120a54aa572eb6eb}{$\sim$\+ICommand}} ()
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_i_command_afcd4d37880f45bbe8dbef4114f6fe07c}{execute}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_cocoa_1_1_i_command_af3660dfd484a050cb4dff979ab19cbaa}{undo}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_cocoa_1_1_i_command_ac85dd34b471d0d2eaf0fdd3a8fbceb46}{merge\+With}} (\mbox{\hyperlink{class_cocoa_1_1_i_command}{ICommand}} $\ast$other)=0
+\item 
+void \mbox{\hyperlink{class_cocoa_1_1_i_command_a93a172c5ea7e3c0e9bb03bc5ccba3f49}{Set\+No\+Merge}} ()
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_i_command_a128fcc80f919cf9bf342d88c72227460}{Can\+Merge}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_cocoa_1_1_i_command_afd9c30a8aa3c740ed5e492a414d74433}{m\+\_\+\+Can\+Merge}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_i_command_a72f269f7720ef9ce120a54aa572eb6eb}\label{class_cocoa_1_1_i_command_a72f269f7720ef9ce120a54aa572eb6eb}} 
+\index{Cocoa::ICommand@{Cocoa::ICommand}!````~ICommand@{$\sim$ICommand}}
+\index{````~ICommand@{$\sim$ICommand}!Cocoa::ICommand@{Cocoa::ICommand}}
+\doxysubsubsection{\texorpdfstring{$\sim$ICommand()}{~ICommand()}}
+{\footnotesize\ttfamily virtual Cocoa\+::\+ICommand\+::$\sim$\+ICommand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_i_command_a128fcc80f919cf9bf342d88c72227460}\label{class_cocoa_1_1_i_command_a128fcc80f919cf9bf342d88c72227460}} 
+\index{Cocoa::ICommand@{Cocoa::ICommand}!CanMerge@{CanMerge}}
+\index{CanMerge@{CanMerge}!Cocoa::ICommand@{Cocoa::ICommand}}
+\doxysubsubsection{\texorpdfstring{CanMerge()}{CanMerge()}}
+{\footnotesize\ttfamily bool Cocoa\+::\+ICommand\+::\+Can\+Merge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_i_command_afcd4d37880f45bbe8dbef4114f6fe07c}\label{class_cocoa_1_1_i_command_afcd4d37880f45bbe8dbef4114f6fe07c}} 
+\index{Cocoa::ICommand@{Cocoa::ICommand}!execute@{execute}}
+\index{execute@{execute}!Cocoa::ICommand@{Cocoa::ICommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Cocoa\+::\+ICommand\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_cocoa_1_1_change_vec4_command_aff602e1c0594779fe493e90fb9dcbf0b}{Cocoa\+::\+Change\+Vec4\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_vec3_command_aa71d017dbe176bdc5567e9cea381043f}{Cocoa\+::\+Change\+Vec3\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_vec2_command_ad73cb7f03892aa8f58fcc4dc3614f3fe}{Cocoa\+::\+Change\+Vec2\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_uint8_command_a0d5d0d0bc4dbb02ef5cd63301c30e137}{Cocoa\+::\+Change\+Uint8\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_int_command_ad8b9cbc8620a0e45d4a4929380aa9d00}{Cocoa\+::\+Change\+Int\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_int2_command_a32ce92e6eb577638221d9bb82d232bb7}{Cocoa\+::\+Change\+Int2\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_float_command_a220a0b82e371ca02cf29449760628508}{Cocoa\+::\+Change\+Float\+Command}}, and \mbox{\hyperlink{class_cocoa_1_1_change_enum_command_a691d189941c757e6c86d8e2f764e296d}{Cocoa\+::\+Change\+Enum\+Command$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_cocoa_1_1_i_command_ac85dd34b471d0d2eaf0fdd3a8fbceb46}\label{class_cocoa_1_1_i_command_ac85dd34b471d0d2eaf0fdd3a8fbceb46}} 
+\index{Cocoa::ICommand@{Cocoa::ICommand}!mergeWith@{mergeWith}}
+\index{mergeWith@{mergeWith}!Cocoa::ICommand@{Cocoa::ICommand}}
+\doxysubsubsection{\texorpdfstring{mergeWith()}{mergeWith()}}
+{\footnotesize\ttfamily virtual bool Cocoa\+::\+ICommand\+::merge\+With (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cocoa_1_1_i_command}{ICommand}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_cocoa_1_1_change_vec4_command_aefe8dba0b4e8c18503ff51d16f88a257}{Cocoa\+::\+Change\+Vec4\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_vec3_command_a67e251462473f0c9b0600694b302bf96}{Cocoa\+::\+Change\+Vec3\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_vec2_command_a0477e65d04a284eeb6e9bc8154af30a4}{Cocoa\+::\+Change\+Vec2\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_uint8_command_a5825d7b6fd618bb581c1d5f9999e9fc1}{Cocoa\+::\+Change\+Uint8\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_int_command_a9252fa8be69e46da6fe4b35d9f66bd7c}{Cocoa\+::\+Change\+Int\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_int2_command_a91904cca8189c474065179f842f426f9}{Cocoa\+::\+Change\+Int2\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_float_command_af3b60dcc9f396be0a7a998fc89be62fa}{Cocoa\+::\+Change\+Float\+Command}}, and \mbox{\hyperlink{class_cocoa_1_1_change_enum_command_ac6a63b5045617fa78f8ba97977276c92}{Cocoa\+::\+Change\+Enum\+Command$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_cocoa_1_1_i_command_a93a172c5ea7e3c0e9bb03bc5ccba3f49}\label{class_cocoa_1_1_i_command_a93a172c5ea7e3c0e9bb03bc5ccba3f49}} 
+\index{Cocoa::ICommand@{Cocoa::ICommand}!SetNoMerge@{SetNoMerge}}
+\index{SetNoMerge@{SetNoMerge}!Cocoa::ICommand@{Cocoa::ICommand}}
+\doxysubsubsection{\texorpdfstring{SetNoMerge()}{SetNoMerge()}}
+{\footnotesize\ttfamily void Cocoa\+::\+ICommand\+::\+Set\+No\+Merge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_cocoa_1_1_i_command_af3660dfd484a050cb4dff979ab19cbaa}\label{class_cocoa_1_1_i_command_af3660dfd484a050cb4dff979ab19cbaa}} 
+\index{Cocoa::ICommand@{Cocoa::ICommand}!undo@{undo}}
+\index{undo@{undo}!Cocoa::ICommand@{Cocoa::ICommand}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily virtual void Cocoa\+::\+ICommand\+::undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_cocoa_1_1_change_vec4_command_a159deacd7d0ebcbf7906a4cfd98a9469}{Cocoa\+::\+Change\+Vec4\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_vec3_command_a9b182be3c36d90dde5bb74df63f0e167}{Cocoa\+::\+Change\+Vec3\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_vec2_command_aea714e4b1a8c1da9591ebe12793097fc}{Cocoa\+::\+Change\+Vec2\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_uint8_command_a8f041ecfd402e1d438f2b73705312eca}{Cocoa\+::\+Change\+Uint8\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_int_command_af43fb794b6c449827db0d1584a708df6}{Cocoa\+::\+Change\+Int\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_int2_command_a6d1ec91253589b37880106b9145a58e8}{Cocoa\+::\+Change\+Int2\+Command}}, \mbox{\hyperlink{class_cocoa_1_1_change_float_command_adaa81b3f932d813990caef7d3200f6ac}{Cocoa\+::\+Change\+Float\+Command}}, and \mbox{\hyperlink{class_cocoa_1_1_change_enum_command_a9cd440cc9a9b0e90b7b911b314fdf480}{Cocoa\+::\+Change\+Enum\+Command$<$ T $>$}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_cocoa_1_1_i_command_afd9c30a8aa3c740ed5e492a414d74433}\label{class_cocoa_1_1_i_command_afd9c30a8aa3c740ed5e492a414d74433}} 
+\index{Cocoa::ICommand@{Cocoa::ICommand}!m\_CanMerge@{m\_CanMerge}}
+\index{m\_CanMerge@{m\_CanMerge}!Cocoa::ICommand@{Cocoa::ICommand}}
+\doxysubsubsection{\texorpdfstring{m\_CanMerge}{m\_CanMerge}}
+{\footnotesize\ttfamily bool Cocoa\+::\+ICommand\+::m\+\_\+\+Can\+Merge = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/commands/\mbox{\hyperlink{_i_command_8h}{ICommand.\+h}}\end{DoxyCompactItemize}

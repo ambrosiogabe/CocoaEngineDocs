@@ -1,0 +1,88 @@
+\hypertarget{namespace_cocoa_1_1_n_camera}{}\doxysection{Cocoa\+::NCamera Namespace Reference}
+\label{namespace_cocoa_1_1_n_camera}\index{Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a96d498ceb0f90a93c1ccea3ced708431}{Create\+Camera}} ()
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a20314028a66a8634ead7be69a38673df}{Create\+Camera}} (\mbox{\hyperlink{struct_cocoa_1_1_framebuffer}{Framebuffer}} framebuffer)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a466e35fc38c935059d7fa055edbd5b9a}{Adjust\+Perspective}} (\mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_abca6b8e53d9f411039a96078e122b458}{Calculate\+View\+Matrix}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity, \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a523c4b3846c7e861bbbb56e912547e7a}{Calculate\+Ortho\+View\+Matrix}} (\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity, \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a64abf8601ec84148c1c5799a35bcd663}{Clear\+Color\+Rgb}} (const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera, int attachment, glm\+::vec3 color)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a43b761b6de2425ff1eea2f67da909ad4}{Clear\+Color\+Uint32}} (\mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera, int attachment, \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} color)
+\item 
+glm\+::vec2 \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_ab3c44352fa5ceb02ccb1f5db03caf8a3}{Screen\+To\+Ortho}} (const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_afd1b6d1c394773ccacc900d1173f40b6}{Serialize}} (\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} $\ast$j, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity, const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_camera_a72b4409b4168a95dd3bd20ed879462c0}{Deserialize}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, \mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}} entity)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_a466e35fc38c935059d7fa055edbd5b9a}\label{namespace_cocoa_1_1_n_camera_a466e35fc38c935059d7fa055edbd5b9a}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!AdjustPerspective@{AdjustPerspective}}
+\index{AdjustPerspective@{AdjustPerspective}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{AdjustPerspective()}{AdjustPerspective()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NCamera\+::\+Adjust\+Perspective (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_a523c4b3846c7e861bbbb56e912547e7a}\label{namespace_cocoa_1_1_n_camera_a523c4b3846c7e861bbbb56e912547e7a}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!CalculateOrthoViewMatrix@{CalculateOrthoViewMatrix}}
+\index{CalculateOrthoViewMatrix@{CalculateOrthoViewMatrix}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{CalculateOrthoViewMatrix()}{CalculateOrthoViewMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NCamera\+::\+Calculate\+Ortho\+View\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_abca6b8e53d9f411039a96078e122b458}\label{namespace_cocoa_1_1_n_camera_abca6b8e53d9f411039a96078e122b458}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!CalculateViewMatrix@{CalculateViewMatrix}}
+\index{CalculateViewMatrix@{CalculateViewMatrix}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{CalculateViewMatrix()}{CalculateViewMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NCamera\+::\+Calculate\+View\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_a64abf8601ec84148c1c5799a35bcd663}\label{namespace_cocoa_1_1_n_camera_a64abf8601ec84148c1c5799a35bcd663}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!ClearColorRgb@{ClearColorRgb}}
+\index{ClearColorRgb@{ClearColorRgb}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{ClearColorRgb()}{ClearColorRgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NCamera\+::\+Clear\+Color\+Rgb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera,  }\item[{int}]{attachment,  }\item[{glm\+::vec3}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_a43b761b6de2425ff1eea2f67da909ad4}\label{namespace_cocoa_1_1_n_camera_a43b761b6de2425ff1eea2f67da909ad4}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!ClearColorUint32@{ClearColorUint32}}
+\index{ClearColorUint32@{ClearColorUint32}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{ClearColorUint32()}{ClearColorUint32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NCamera\+::\+Clear\+Color\+Uint32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera,  }\item[{int}]{attachment,  }\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_a96d498ceb0f90a93c1ccea3ced708431}\label{namespace_cocoa_1_1_n_camera_a96d498ceb0f90a93c1ccea3ced708431}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!CreateCamera@{CreateCamera}}
+\index{CreateCamera@{CreateCamera}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{CreateCamera()}{CreateCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} Cocoa\+::\+NCamera\+::\+Create\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_a20314028a66a8634ead7be69a38673df}\label{namespace_cocoa_1_1_n_camera_a20314028a66a8634ead7be69a38673df}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!CreateCamera@{CreateCamera}}
+\index{CreateCamera@{CreateCamera}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{CreateCamera()}{CreateCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} Cocoa\+::\+NCamera\+::\+Create\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_framebuffer}{Framebuffer}}}]{framebuffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_a72b4409b4168a95dd3bd20ed879462c0}\label{namespace_cocoa_1_1_n_camera_a72b4409b4168a95dd3bd20ed879462c0}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NCamera\+::\+Deserialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{j,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_ab3c44352fa5ceb02ccb1f5db03caf8a3}\label{namespace_cocoa_1_1_n_camera_ab3c44352fa5ceb02ccb1f5db03caf8a3}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!ScreenToOrtho@{ScreenToOrtho}}
+\index{ScreenToOrtho@{ScreenToOrtho}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{ScreenToOrtho()}{ScreenToOrtho()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} glm\+::vec2 Cocoa\+::\+NCamera\+::\+Screen\+To\+Ortho (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_camera_afd1b6d1c394773ccacc900d1173f40b6}\label{namespace_cocoa_1_1_n_camera_afd1b6d1c394773ccacc900d1173f40b6}} 
+\index{Cocoa::NCamera@{Cocoa::NCamera}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!Cocoa::NCamera@{Cocoa::NCamera}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NCamera\+::\+Serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} $\ast$}]{j,  }\item[{\mbox{\hyperlink{struct_cocoa_1_1_entity}{Entity}}}]{entity,  }\item[{const \mbox{\hyperlink{struct_cocoa_1_1_camera}{Camera}} \&}]{camera }\end{DoxyParamCaption})}
+

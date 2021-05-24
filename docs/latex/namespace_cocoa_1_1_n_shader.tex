@@ -1,0 +1,149 @@
+\hypertarget{namespace_cocoa_1_1_n_shader}{}\doxysection{Cocoa\+::NShader Namespace Reference}
+\label{namespace_cocoa_1_1_n_shader}\index{Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cocoa_1_1_n_shader_1_1_shader_variable}{Shader\+Variable}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_afe0bf852abf87292e5cb939852825978}{Create\+Shader}} ()
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a2868326e725338f229f0628a773cc290}{Create\+Shader}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&resource\+Name, bool is\+Default)
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a75584bc5bece5ea6bada88ec298c2175}{Compile}} (const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&filepath, bool is\+Default)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a491e6f7df30c83bca34efcfbdfe6e451}{Delete}} (\mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a32bbf25f9b43d2116d5a53a7cda96465}{Bind}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_af8e996ed7f37a2d868e46b3b82f8a721}{Unbind}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a258cc2a09a89682b84f8bb4038edebe2}{Upload\+Vec4}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader, const char $\ast$var\+Name, const glm\+::vec4 \&vec4)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a510f88bb37bec723454dfe1fb4aec437}{Upload\+Vec3}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader, const char $\ast$var\+Name, const glm\+::vec3 \&vec3)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_ad03168bd69d7f8981284b865a84ae8db}{Upload\+Vec2}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader, const char $\ast$var\+Name, const glm\+::vec2 \&vec2)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a6b14206dcb3a78d64aec871b9e02d2ff}{Upload\+Float}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader, const char $\ast$var\+Name, float value)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_aff68121ad4a0727a7759038cf1b86971}{Upload\+Int}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader, const char $\ast$var\+Name, int value)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a70e1b70bd8f7f55e6471efce9df0ee1c}{Upload\+UInt}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader, const char $\ast$var\+Name, \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} value)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_adc2fa8759c5cb9cf4631f41ff9215ab5}{Upload\+Mat4}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader, const char $\ast$var\+Name, const glm\+::mat4 \&mat4)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_aca71123f598efe036b201753679629d8}{Upload\+Mat3}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader, const char $\ast$var\+Name, const glm\+::mat3 \&mat3)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a0e9ea7d57470d41942fd486bcfcac99b}{Upload\+Int\+Array}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader, const char $\ast$var\+Name, int length, const int $\ast$array)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a24f6fa81cb88e8935d20bcd834b84653}{Is\+Null}} (const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&shader)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_n_shader_a0659115cb9e67abcf8ab997a7f35e0a4}{Clear\+All\+Shader\+Variables}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a32bbf25f9b43d2116d5a53a7cda96465}\label{namespace_cocoa_1_1_n_shader_a32bbf25f9b43d2116d5a53a7cda96465}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!Bind@{Bind}}
+\index{Bind@{Bind}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Bind (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a0659115cb9e67abcf8ab997a7f35e0a4}\label{namespace_cocoa_1_1_n_shader_a0659115cb9e67abcf8ab997a7f35e0a4}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!ClearAllShaderVariables@{ClearAllShaderVariables}}
+\index{ClearAllShaderVariables@{ClearAllShaderVariables}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{ClearAllShaderVariables()}{ClearAllShaderVariables()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Clear\+All\+Shader\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a75584bc5bece5ea6bada88ec298c2175}\label{namespace_cocoa_1_1_n_shader_a75584bc5bece5ea6bada88ec298c2175}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!Compile@{Compile}}
+\index{Compile@{Compile}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{Compile()}{Compile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} Cocoa\+::\+NShader\+::\+Compile (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{filepath,  }\item[{bool}]{is\+Default }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_afe0bf852abf87292e5cb939852825978}\label{namespace_cocoa_1_1_n_shader_afe0bf852abf87292e5cb939852825978}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!CreateShader@{CreateShader}}
+\index{CreateShader@{CreateShader}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{CreateShader()}{CreateShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} Cocoa\+::\+NShader\+::\+Create\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a2868326e725338f229f0628a773cc290}\label{namespace_cocoa_1_1_n_shader_a2868326e725338f229f0628a773cc290}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!CreateShader@{CreateShader}}
+\index{CreateShader@{CreateShader}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{CreateShader()}{CreateShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} Cocoa\+::\+NShader\+::\+Create\+Shader (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_c_path}{CPath}} \&}]{resource\+Name,  }\item[{bool}]{is\+Default }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a491e6f7df30c83bca34efcfbdfe6e451}\label{namespace_cocoa_1_1_n_shader_a491e6f7df30c83bca34efcfbdfe6e451}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!Delete@{Delete}}
+\index{Delete@{Delete}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a24f6fa81cb88e8935d20bcd834b84653}\label{namespace_cocoa_1_1_n_shader_a24f6fa81cb88e8935d20bcd834b84653}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!IsNull@{IsNull}}
+\index{IsNull@{IsNull}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{IsNull()}{IsNull()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} bool Cocoa\+::\+NShader\+::\+Is\+Null (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_af8e996ed7f37a2d868e46b3b82f8a721}\label{namespace_cocoa_1_1_n_shader_af8e996ed7f37a2d868e46b3b82f8a721}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!Unbind@{Unbind}}
+\index{Unbind@{Unbind}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{Unbind()}{Unbind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Unbind (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a6b14206dcb3a78d64aec871b9e02d2ff}\label{namespace_cocoa_1_1_n_shader_a6b14206dcb3a78d64aec871b9e02d2ff}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!UploadFloat@{UploadFloat}}
+\index{UploadFloat@{UploadFloat}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{UploadFloat()}{UploadFloat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Upload\+Float (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{var\+Name,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_aff68121ad4a0727a7759038cf1b86971}\label{namespace_cocoa_1_1_n_shader_aff68121ad4a0727a7759038cf1b86971}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!UploadInt@{UploadInt}}
+\index{UploadInt@{UploadInt}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{UploadInt()}{UploadInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Upload\+Int (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{var\+Name,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a0e9ea7d57470d41942fd486bcfcac99b}\label{namespace_cocoa_1_1_n_shader_a0e9ea7d57470d41942fd486bcfcac99b}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!UploadIntArray@{UploadIntArray}}
+\index{UploadIntArray@{UploadIntArray}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{UploadIntArray()}{UploadIntArray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Upload\+Int\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{var\+Name,  }\item[{int}]{length,  }\item[{const int $\ast$}]{array }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_aca71123f598efe036b201753679629d8}\label{namespace_cocoa_1_1_n_shader_aca71123f598efe036b201753679629d8}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!UploadMat3@{UploadMat3}}
+\index{UploadMat3@{UploadMat3}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{UploadMat3()}{UploadMat3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Upload\+Mat3 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{var\+Name,  }\item[{const glm\+::mat3 \&}]{mat3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_adc2fa8759c5cb9cf4631f41ff9215ab5}\label{namespace_cocoa_1_1_n_shader_adc2fa8759c5cb9cf4631f41ff9215ab5}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!UploadMat4@{UploadMat4}}
+\index{UploadMat4@{UploadMat4}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{UploadMat4()}{UploadMat4()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Upload\+Mat4 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{var\+Name,  }\item[{const glm\+::mat4 \&}]{mat4 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a70e1b70bd8f7f55e6471efce9df0ee1c}\label{namespace_cocoa_1_1_n_shader_a70e1b70bd8f7f55e6471efce9df0ee1c}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!UploadUInt@{UploadUInt}}
+\index{UploadUInt@{UploadUInt}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{UploadUInt()}{UploadUInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Upload\+UInt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{var\+Name,  }\item[{\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_ad03168bd69d7f8981284b865a84ae8db}\label{namespace_cocoa_1_1_n_shader_ad03168bd69d7f8981284b865a84ae8db}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!UploadVec2@{UploadVec2}}
+\index{UploadVec2@{UploadVec2}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{UploadVec2()}{UploadVec2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Upload\+Vec2 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{var\+Name,  }\item[{const glm\+::vec2 \&}]{vec2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a510f88bb37bec723454dfe1fb4aec437}\label{namespace_cocoa_1_1_n_shader_a510f88bb37bec723454dfe1fb4aec437}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!UploadVec3@{UploadVec3}}
+\index{UploadVec3@{UploadVec3}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{UploadVec3()}{UploadVec3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Upload\+Vec3 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{var\+Name,  }\item[{const glm\+::vec3 \&}]{vec3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_cocoa_1_1_n_shader_a258cc2a09a89682b84f8bb4038edebe2}\label{namespace_cocoa_1_1_n_shader_a258cc2a09a89682b84f8bb4038edebe2}} 
+\index{Cocoa::NShader@{Cocoa::NShader}!UploadVec4@{UploadVec4}}
+\index{UploadVec4@{UploadVec4}!Cocoa::NShader@{Cocoa::NShader}}
+\doxysubsubsection{\texorpdfstring{UploadVec4()}{UploadVec4()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void Cocoa\+::\+NShader\+::\+Upload\+Vec4 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{var\+Name,  }\item[{const glm\+::vec4 \&}]{vec4 }\end{DoxyParamCaption})}
+

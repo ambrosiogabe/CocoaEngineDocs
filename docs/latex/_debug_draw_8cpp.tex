@@ -1,0 +1,45 @@
+\hypertarget{_debug_draw_8cpp}{}\doxysection{Cocoa\+Engine/cpp/cocoa/renderer/\+Debug\+Draw.cpp File Reference}
+\label{_debug_draw_8cpp}\index{CocoaEngine/cpp/cocoa/renderer/DebugDraw.cpp@{CocoaEngine/cpp/cocoa/renderer/DebugDraw.cpp}}
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Debug\+Draw.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Dynamic\+Array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Settings.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+CMath.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Render\+Batch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Line2\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Debug\+Sprite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/renderer/\+Debug\+Shape.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Asset\+Manager.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw}{Cocoa\+::\+Debug\+Draw}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_a80172b99454724debf48dc192014931a}{Cocoa\+::\+Debug\+Draw\+::\+Init}} ()
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_a5cc87328291c1152377bac3722a94b5c}{Cocoa\+::\+Debug\+Draw\+::\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_ae629a582d4cb209a011d0b6bedd3c69f}{Cocoa\+::\+Debug\+Draw\+::\+Begin\+Frame}} ()
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_adf88760983f7c91b064d1c4599687526}{Cocoa\+::\+Debug\+Draw\+::\+Add\+Debug\+Objects\+To\+Batches}} ()
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_a72b837faaeaf917a447b5a205c6da64e}{Cocoa\+::\+Debug\+Draw\+::\+Draw\+Bottom\+Batches}} (const Camera \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_a8c9df71bc9f4a36e2f92a6adc7e8a336}{Cocoa\+::\+Debug\+Draw\+::\+Clear\+All\+Batches}} ()
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_abbeaa1c32d824e44cbea8c858d1445ec}{Cocoa\+::\+Debug\+Draw\+::\+Draw\+Top\+Batches}} (const Camera \&camera)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_a13b0741909a01b454cc8bc233f148b01}{Cocoa\+::\+Debug\+Draw\+::\+Add\+Line2D}} (glm\+::vec2 \&from, glm\+::vec2 \&to, float stroke\+Width, glm\+::vec3 color, int lifetime, bool on\+Top)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_a6df5092e7f85684a26ec4109b14306b2}{Cocoa\+::\+Debug\+Draw\+::\+Add\+Box2D}} (glm\+::vec2 \&center, glm\+::vec2 \&dimensions, float rotation, float stroke\+Width, glm\+::vec3 color, int lifetime, bool on\+Top)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_a05056aba8da524afadbd7fff311c9465}{Cocoa\+::\+Debug\+Draw\+::\+Add\+Filled\+Box}} (const glm\+::vec2 \&center, const glm\+::vec2 \&dimensions, float rotation, const glm\+::vec3 color, int lifetime, bool on\+Top)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_a56d7582699b10063e7698747fffdb1e8}{Cocoa\+::\+Debug\+Draw\+::\+Add\+Sprite}} (Handle$<$ Texture $>$ sprite\+Texture, glm\+::vec2 size, glm\+::vec2 position, glm\+::vec3 tint, glm\+::vec2 tex\+Coord\+Min, glm\+::vec2 tex\+Coord\+Max, float rotation, int lifetime, bool on\+Top)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_debug_draw_a6795f4d40b4597efbe26620a6e027d3c}{Cocoa\+::\+Debug\+Draw\+::\+Add\+Shape}} (const glm\+::vec2 $\ast$vertices, int num\+Vertices, int num\+Elements, const glm\+::vec3 \&color, const glm\+::vec2 \&position, const glm\+::vec2 \&scale, float rotation, int lifetime, bool on\+Top)
+\end{DoxyCompactItemize}

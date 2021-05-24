@@ -1,0 +1,121 @@
+\hypertarget{struct_cocoa_1_1_render_batch_data}{}\doxysection{Cocoa\+::Render\+Batch\+Data Struct Reference}
+\label{struct_cocoa_1_1_render_batch_data}\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+
+
+{\ttfamily \#include $<$Render\+Batch.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}} $>$ \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_aac605324f2a43b95d19e8a282cef39c8}{Batch\+Shader}}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_a2346bd852cf1aa7728bfda75ac9281c9}{Vertex\+Buffer\+Base}}
+\item 
+\mbox{\hyperlink{struct_cocoa_1_1_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_a6b4aa360c7e8f49d28f28e3d697e0980}{Vertex\+Stack\+Pointer}}
+\item 
+\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} $\ast$ \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_a0d22c21a7b49c13e4e00a7bfac50372b}{Indices}}
+\item 
+std\+::array$<$ \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$ \mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}} $>$, 16 $>$ \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_a742d5c17be69ed0f618fa3254c798857}{Textures}}
+\item 
+\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_a6a159471bd92ce341dba2e14098c6c3a}{VAO}}
+\item 
+\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_a1abeccc9a49716914ba35d64d5cb65c0}{VBO}}
+\item 
+\mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_ab4cca1fc3bdb513e448c16e01f53cdf8}{EBO}}
+\item 
+\mbox{\hyperlink{namespace_cocoa_a4d8bf9b37c51d49658140646b02eec52}{int16}} \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_a26c7392eda0e2d1c29f9f9284584bb0f}{ZIndex}} = 0
+\item 
+\mbox{\hyperlink{namespace_cocoa_a095ba1e02a381d7c6736f93a31eae624}{uint16}} \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_aeb922bc8b95550a0b708bd8ac949c394}{Num\+Used\+Elements}} = 0
+\item 
+\mbox{\hyperlink{namespace_cocoa_a095ba1e02a381d7c6736f93a31eae624}{uint16}} \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_a89bc18131c788522519f342adcb70563}{Num\+Textures}} = 0
+\item 
+int \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_acc35245db41eb37fe72570ec99e2a6b9}{Max\+Batch\+Size}}
+\item 
+bool \mbox{\hyperlink{struct_cocoa_1_1_render_batch_data_aadb5bcfadfdcc7851a17d99bb82c32fb}{Batch\+On\+Top}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_aadb5bcfadfdcc7851a17d99bb82c32fb}\label{struct_cocoa_1_1_render_batch_data_aadb5bcfadfdcc7851a17d99bb82c32fb}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!BatchOnTop@{BatchOnTop}}
+\index{BatchOnTop@{BatchOnTop}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{BatchOnTop}{BatchOnTop}}
+{\footnotesize\ttfamily bool Cocoa\+::\+Render\+Batch\+Data\+::\+Batch\+On\+Top}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_aac605324f2a43b95d19e8a282cef39c8}\label{struct_cocoa_1_1_render_batch_data_aac605324f2a43b95d19e8a282cef39c8}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!BatchShader@{BatchShader}}
+\index{BatchShader@{BatchShader}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{BatchShader}{BatchShader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$\mbox{\hyperlink{struct_cocoa_1_1_shader}{Shader}}$>$ Cocoa\+::\+Render\+Batch\+Data\+::\+Batch\+Shader}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_ab4cca1fc3bdb513e448c16e01f53cdf8}\label{struct_cocoa_1_1_render_batch_data_ab4cca1fc3bdb513e448c16e01f53cdf8}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!EBO@{EBO}}
+\index{EBO@{EBO}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{EBO}{EBO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+Render\+Batch\+Data\+::\+EBO}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_a0d22c21a7b49c13e4e00a7bfac50372b}\label{struct_cocoa_1_1_render_batch_data_a0d22c21a7b49c13e4e00a7bfac50372b}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!Indices@{Indices}}
+\index{Indices@{Indices}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{Indices}{Indices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}}$\ast$ Cocoa\+::\+Render\+Batch\+Data\+::\+Indices}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_acc35245db41eb37fe72570ec99e2a6b9}\label{struct_cocoa_1_1_render_batch_data_acc35245db41eb37fe72570ec99e2a6b9}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!MaxBatchSize@{MaxBatchSize}}
+\index{MaxBatchSize@{MaxBatchSize}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{MaxBatchSize}{MaxBatchSize}}
+{\footnotesize\ttfamily int Cocoa\+::\+Render\+Batch\+Data\+::\+Max\+Batch\+Size}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_a89bc18131c788522519f342adcb70563}\label{struct_cocoa_1_1_render_batch_data_a89bc18131c788522519f342adcb70563}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!NumTextures@{NumTextures}}
+\index{NumTextures@{NumTextures}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{NumTextures}{NumTextures}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a095ba1e02a381d7c6736f93a31eae624}{uint16}} Cocoa\+::\+Render\+Batch\+Data\+::\+Num\+Textures = 0}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_aeb922bc8b95550a0b708bd8ac949c394}\label{struct_cocoa_1_1_render_batch_data_aeb922bc8b95550a0b708bd8ac949c394}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!NumUsedElements@{NumUsedElements}}
+\index{NumUsedElements@{NumUsedElements}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{NumUsedElements}{NumUsedElements}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a095ba1e02a381d7c6736f93a31eae624}{uint16}} Cocoa\+::\+Render\+Batch\+Data\+::\+Num\+Used\+Elements = 0}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_a742d5c17be69ed0f618fa3254c798857}\label{struct_cocoa_1_1_render_batch_data_a742d5c17be69ed0f618fa3254c798857}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!Textures@{Textures}}
+\index{Textures@{Textures}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{Textures}{Textures}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{class_cocoa_1_1_handle}{Handle}}$<$\mbox{\hyperlink{struct_cocoa_1_1_texture}{Texture}}$>$, 16$>$ Cocoa\+::\+Render\+Batch\+Data\+::\+Textures}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_a6a159471bd92ce341dba2e14098c6c3a}\label{struct_cocoa_1_1_render_batch_data_a6a159471bd92ce341dba2e14098c6c3a}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!VAO@{VAO}}
+\index{VAO@{VAO}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{VAO}{VAO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+Render\+Batch\+Data\+::\+VAO}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_a1abeccc9a49716914ba35d64d5cb65c0}\label{struct_cocoa_1_1_render_batch_data_a1abeccc9a49716914ba35d64d5cb65c0}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!VBO@{VBO}}
+\index{VBO@{VBO}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{VBO}{VBO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a1789022764116795674b009af1f30f45}{uint32}} Cocoa\+::\+Render\+Batch\+Data\+::\+VBO}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_a2346bd852cf1aa7728bfda75ac9281c9}\label{struct_cocoa_1_1_render_batch_data_a2346bd852cf1aa7728bfda75ac9281c9}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!VertexBufferBase@{VertexBufferBase}}
+\index{VertexBufferBase@{VertexBufferBase}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{VertexBufferBase}{VertexBufferBase}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cocoa_1_1_vertex}{Vertex}}$\ast$ Cocoa\+::\+Render\+Batch\+Data\+::\+Vertex\+Buffer\+Base}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_a6b4aa360c7e8f49d28f28e3d697e0980}\label{struct_cocoa_1_1_render_batch_data_a6b4aa360c7e8f49d28f28e3d697e0980}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!VertexStackPointer@{VertexStackPointer}}
+\index{VertexStackPointer@{VertexStackPointer}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{VertexStackPointer}{VertexStackPointer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cocoa_1_1_vertex}{Vertex}}$\ast$ Cocoa\+::\+Render\+Batch\+Data\+::\+Vertex\+Stack\+Pointer}
+
+\mbox{\Hypertarget{struct_cocoa_1_1_render_batch_data_a26c7392eda0e2d1c29f9f9284584bb0f}\label{struct_cocoa_1_1_render_batch_data_a26c7392eda0e2d1c29f9f9284584bb0f}} 
+\index{Cocoa::RenderBatchData@{Cocoa::RenderBatchData}!ZIndex@{ZIndex}}
+\index{ZIndex@{ZIndex}!Cocoa::RenderBatchData@{Cocoa::RenderBatchData}}
+\doxysubsubsection{\texorpdfstring{ZIndex}{ZIndex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_cocoa_a4d8bf9b37c51d49658140646b02eec52}{int16}} Cocoa\+::\+Render\+Batch\+Data\+::\+ZIndex = 0}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cocoa\+Engine/include/cocoa/renderer/\mbox{\hyperlink{_render_batch_8h}{Render\+Batch.\+h}}\end{DoxyCompactItemize}

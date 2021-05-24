@@ -1,0 +1,68 @@
+\hypertarget{_log_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/util/\+Log.h File Reference}
+\label{_log_8h}\index{CocoaEngine/include/cocoa/util/Log.h@{CocoaEngine/include/cocoa/util/Log.h}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_log}{Cocoa\+::\+Log}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_log_8h_a0c38ca677b912fa03329447f5e235dc2}{Log}}(format, ...)~\+\_\+\+Log(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{_log_8h_a683e9708128cddbebddd4d27f05f4654}{Info}}(format, ...)~\+\_\+\+Info(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{_log_8h_ace962c40797961fcf7ddd3511d607caa}{Warning}}(format, ...)~\+\_\+\+Warning(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{_log_8h_a91d5daa06c90b5c7d081d4a8e857b234}{Error}}(format, ...)~\+\_\+\+Error(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{_log_8h_a415072bbd23096aae172615da300733c}{Assert}}(condition,  format, ...)~\+\_\+\+Assert(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, condition, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_log_a3a3cfb57eb36fff20176f137c64d81a1}{Cocoa\+::\+Log\+::\+\_\+\+Log}} (const char $\ast$filename, int line, const char $\ast$format,...)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_log_ad147c65e5db4232bf4a7ad138c434278}{Cocoa\+::\+Log\+::\+\_\+\+Info}} (const char $\ast$filename, int line, const char $\ast$format,...)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_log_ab4e35672e81eb830a514079153ab6829}{Cocoa\+::\+Log\+::\+\_\+\+Warning}} (const char $\ast$filename, int line, const char $\ast$format,...)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_log_a697ca2499d52b45001bdf54be8343862}{Cocoa\+::\+Log\+::\+\_\+\+Error}} (const char $\ast$filename, int line, const char $\ast$format,...)
+\item 
+\mbox{\hyperlink{_core_8h_a8040f01d272e531943005957fa9929b8}{COCOA}} void \mbox{\hyperlink{namespace_cocoa_1_1_log_ae20c5cd6c155dcb087be3dcda0d16d8e}{Cocoa\+::\+Log\+::\+\_\+\+Assert}} (const char $\ast$filename, int line, int condition, const char $\ast$format,...)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_log_8h_a415072bbd23096aae172615da300733c}\label{_log_8h_a415072bbd23096aae172615da300733c}} 
+\index{Log.h@{Log.h}!Assert@{Assert}}
+\index{Assert@{Assert}!Log.h@{Log.h}}
+\doxysubsubsection{\texorpdfstring{Assert}{Assert}}
+{\footnotesize\ttfamily \#define Assert(\begin{DoxyParamCaption}\item[{}]{condition,  }\item[{}]{format,  }\item[{}]{... }\end{DoxyParamCaption})~\+\_\+\+Assert(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, condition, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{_log_8h_a91d5daa06c90b5c7d081d4a8e857b234}\label{_log_8h_a91d5daa06c90b5c7d081d4a8e857b234}} 
+\index{Log.h@{Log.h}!Error@{Error}}
+\index{Error@{Error}!Log.h@{Log.h}}
+\doxysubsubsection{\texorpdfstring{Error}{Error}}
+{\footnotesize\ttfamily \#define Error(\begin{DoxyParamCaption}\item[{}]{format,  }\item[{}]{... }\end{DoxyParamCaption})~\+\_\+\+Error(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{_log_8h_a683e9708128cddbebddd4d27f05f4654}\label{_log_8h_a683e9708128cddbebddd4d27f05f4654}} 
+\index{Log.h@{Log.h}!Info@{Info}}
+\index{Info@{Info}!Log.h@{Log.h}}
+\doxysubsubsection{\texorpdfstring{Info}{Info}}
+{\footnotesize\ttfamily \#define Info(\begin{DoxyParamCaption}\item[{}]{format,  }\item[{}]{... }\end{DoxyParamCaption})~\+\_\+\+Info(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{_log_8h_a0c38ca677b912fa03329447f5e235dc2}\label{_log_8h_a0c38ca677b912fa03329447f5e235dc2}} 
+\index{Log.h@{Log.h}!Log@{Log}}
+\index{Log@{Log}!Log.h@{Log.h}}
+\doxysubsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily \#define Log(\begin{DoxyParamCaption}\item[{}]{format,  }\item[{}]{... }\end{DoxyParamCaption})~\+\_\+\+Log(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{_log_8h_ace962c40797961fcf7ddd3511d607caa}\label{_log_8h_ace962c40797961fcf7ddd3511d607caa}} 
+\index{Log.h@{Log.h}!Warning@{Warning}}
+\index{Warning@{Warning}!Log.h@{Log.h}}
+\doxysubsubsection{\texorpdfstring{Warning}{Warning}}
+{\footnotesize\ttfamily \#define Warning(\begin{DoxyParamCaption}\item[{}]{format,  }\item[{}]{... }\end{DoxyParamCaption})~\+\_\+\+Warning(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, format, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)}
+

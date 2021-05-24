@@ -1,0 +1,59 @@
+\hypertarget{_dynamic_array_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/util/\+Dynamic\+Array.h File Reference}
+\label{_dynamic_array_8h}\index{CocoaEngine/include/cocoa/util/DynamicArray.h@{CocoaEngine/include/cocoa/util/DynamicArray.h}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/util/\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Memory.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cocoa_1_1_dynamic_array}{Cocoa\+::\+Dynamic\+Array$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_private}{Cocoa\+::\+NDynamic\+Array\+Private}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array}{Cocoa\+::\+NDynamic\+Array}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespace_cocoa_ad464c82a7032cc0238f25ea6bb8bbede}{Cocoa\+::\+Compare}} = bool($\ast$)(T \&e1, T \&e2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespace_cocoa_ab34ad0c76f805a76c6931e13f6a66ce0}{Cocoa\+::default\+Compare}} (T \&e1, T \&e2)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_private_aa2e3ebd6cd76235395d5d6546cd94133}{Cocoa\+::\+NDynamic\+Array\+Private\+::\+Check\+Resize}} (Dynamic\+Array$<$ T $>$ \&data, int num\+Elements\+To\+Add)
+\item 
+{\footnotesize template$<$typename T $>$ }\\Dynamic\+Array$<$ T $>$ \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a20342fe747f4c1f56031bb3e93002347}{Cocoa\+::\+NDynamic\+Array\+::\+Create}} (int size=0)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a656ea257938a7879a8b9195755041f42}{Cocoa\+::\+NDynamic\+Array\+::\+Free}} (Dynamic\+Array$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_ad795bbae37ea483ca0d519b2ced3b578}{Cocoa\+::\+NDynamic\+Array\+::\+Add}} (Dynamic\+Array$<$ T $>$ \&data, const T \&element)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_aa09d3195fdc6b086e1644c96aac21adc}{Cocoa\+::\+NDynamic\+Array\+::\+Insert}} (Dynamic\+Array$<$ T $>$ \&data, const T \&element, int index)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_ae495ffe3efc6aab6156d659802b13c3a}{Cocoa\+::\+NDynamic\+Array\+::\+Place}} (Dynamic\+Array$<$ T $>$ \&data, int index, const T $\ast$data\+To\+Add, uint32 num\+Elements\+To\+Overwrite)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a978a90049d07231f1665ab9fdb1b9e76}{Cocoa\+::\+NDynamic\+Array\+::\+Remove}} (Dynamic\+Array$<$ T $>$ \&data, int index)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a2bbaec4b47f50bc61e4246ccfbe620e8}{Cocoa\+::\+NDynamic\+Array\+::\+Remove}} (Dynamic\+Array$<$ T $>$ \&data, T \&element, Compare$<$ T $>$ compare\+Fn=default\+Compare)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a565842421c4a829fdc2015288685bfc9}{Cocoa\+::\+NDynamic\+Array\+::\+Get}} (Dynamic\+Array$<$ T $>$ \&data, int index)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T \& \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a9a83a04f358ea5467f82daf2cb5ecaee}{Cocoa\+::\+NDynamic\+Array\+::\+Get}} (const Dynamic\+Array$<$ T $>$ \&data, int index)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_adeb27d349773cc96f57f112c5b1a0619}{Cocoa\+::\+NDynamic\+Array\+::\+Pop}} (Dynamic\+Array$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_ae6a77c0cb24c2b2b76695191d35e9c6b}{Cocoa\+::\+NDynamic\+Array\+::\+Begin}} (Dynamic\+Array$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a3f03d742499345b490669ffc64bcb601}{Cocoa\+::\+NDynamic\+Array\+::\+End}} (Dynamic\+Array$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a51a9f57e77206884922ae82685cc42a2}{Cocoa\+::\+NDynamic\+Array\+::\+Clear}} (Dynamic\+Array$<$ T $>$ \&data, bool free\+Memory=true)
+\item 
+{\footnotesize template$<$typename T $>$ }\\int \mbox{\hyperlink{namespace_cocoa_1_1_n_dynamic_array_a02d9e308c65c46c0b3d5a6e717f11465}{Cocoa\+::\+NDynamic\+Array\+::\+Find\+Index\+Of}} (Dynamic\+Array$<$ T $>$ \&data, T \&element)
+\end{DoxyCompactItemize}

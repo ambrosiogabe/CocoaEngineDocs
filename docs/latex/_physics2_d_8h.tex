@@ -1,0 +1,49 @@
+\hypertarget{_physics2_d_8h}{}\doxysection{Cocoa\+Engine/include/cocoa/physics2d/\+Physics2D.h File Reference}
+\label{_physics2_d_8h}\index{CocoaEngine/include/cocoa/physics2d/Physics2D.h@{CocoaEngine/include/cocoa/physics2d/Physics2D.h}}
+{\ttfamily \#include \char`\"{}external\+Libs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/physics2d/\+Physics\+Components.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/core/\+Entity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cocoa/scenes/\+Scene\+Data.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_cocoa}{Cocoa}}
+\item 
+ \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d}{Cocoa\+::\+Physics2D}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a8bd48c38c2bd51d6d46f482c698d8d44}{Cocoa\+::\+Physics2\+D\+::\+Init}} (const glm\+::vec2 \&gravity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_aca312e5de5f4b9f2e9925adf04cd0c11}{Cocoa\+::\+Physics2\+D\+::\+Destroy}} (Scene\+Data \&scene)
+\item 
+bool \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a28e34f00e06a5113a9ba3d4d57ce655b}{Cocoa\+::\+Physics2\+D\+::\+Point\+In\+Box}} (const glm\+::vec2 \&point, const glm\+::vec2 \&half\+Size, const glm\+::vec2 \&position, float rotation\+Degrees)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a94de919934e3363849c5cbb0e5f27d3d}{Cocoa\+::\+Physics2\+D\+::\+Add\+Entity}} (Entity entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a24847cf8600bedcd36e26d1ba10590aa}{Cocoa\+::\+Physics2\+D\+::\+Delete\+Entity}} (Entity entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_aa3db013a7d808f7b0c190d5d94661548}{Cocoa\+::\+Physics2\+D\+::\+Update}} (Scene\+Data \&scene, float dt)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a52a93c699c112af38b35319713c0f724}{Cocoa\+::\+Physics2\+D\+::\+Apply\+Force\+To\+Center}} (const Rigidbody2D \&rigidbody, const glm\+::vec2 \&force)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a918a2a89139aade63f7e0dbe6218347f}{Cocoa\+::\+Physics2\+D\+::\+Apply\+Force}} (const Rigidbody2D \&rigidbody, const glm\+::vec2 \&force, const glm\+::vec2 \&point)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a1ef34d3be8aa149b42b5c899c422c06b}{Cocoa\+::\+Physics2\+D\+::\+Apply\+Linear\+Impulse\+To\+Center}} (const Rigidbody2D \&rigidbody, const glm\+::vec2 \&impulse)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_acf097c648f4b6316b655d6a2b964de30}{Cocoa\+::\+Physics2\+D\+::\+Apply\+Linear\+Impulse}} (const Rigidbody2D \&rigidbody, const glm\+::vec2 \&impulse, const glm\+::vec2 \&point)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a6cff12dbc6d6a43f2dd8f87787d0e058}{Cocoa\+::\+Physics2\+D\+::\+Serialize}} (\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity, const AABB \&box)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a7e49a8bc2d3476ca9276a99d2c34dd31}{Cocoa\+::\+Physics2\+D\+::\+Deserialize\+AABB}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_abbdabf224201e185eee1bcabb08c53d9}{Cocoa\+::\+Physics2\+D\+::\+Serialize}} (\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity, const Box2D \&box)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a0a42fd45f5bee24d6146ab8f3ae35659}{Cocoa\+::\+Physics2\+D\+::\+Deserialize\+Box2D}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_afe341600ca4707349ff4e0ba9fd76d82}{Cocoa\+::\+Physics2\+D\+::\+Serialize}} (\mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity, const Rigidbody2D \&rb)
+\item 
+void \mbox{\hyperlink{namespace_cocoa_1_1_physics2_d_a959169557067ab5e40154b8199fdf15d}{Cocoa\+::\+Physics2\+D\+::\+Deserialize\+Rigidbody2D}} (const \mbox{\hyperlink{external_libs_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&j, Entity entity)
+\end{DoxyCompactItemize}
