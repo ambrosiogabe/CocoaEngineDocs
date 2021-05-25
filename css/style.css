@@ -1,0 +1,299 @@
+body
+{
+	font-family: var(--font-family) !important;
+	overflow-x: hidden;
+}
+
+.main_heading {
+    margin: 50px 0px;
+}
+
+.main_heading h1
+{
+	font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 45px;
+    color: var(--page-foreground-color);
+}
+
+.underline
+{
+    display: inline-block;
+    width: 160px;
+    height: 2px;
+    background-color: var(--primary-light-color);
+}
+
+/* Header CSS */
+
+.header-div
+{
+	height: 550px;
+    background-color: var(--primary-bg-color);
+}
+
+.logo-div a
+{
+    color: var(--page-background-text-color) !important;
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+.top-right-menu-ul
+{
+	margin-top: 10px;
+}
+
+.slide-text
+{
+	color: var(--page-background-text-color);
+	margin-top: 80px;
+}
+
+.slide-text h1
+{
+    line-height: 60px;
+    font-size: 60px;
+    margin-bottom: 18px;
+}
+
+.slide-text p
+{
+	font-size: 17px;
+}
+
+
+/* Features CSS */
+.features-div
+{
+	text-align: center;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -ms-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+}
+
+.features-div:hover
+{
+	margin-top: -10px;
+}
+
+
+.features-div i
+{
+	font-size: 35px;
+    font-weight: 300;
+    color: var(--primary-light-color);
+}
+
+.features-div h4
+{
+    color: var(--page-foreground-color);
+    font-weight: 400;
+}
+
+.features-div p
+{
+    color: var(--page-foreground-color);
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.more-features-div
+{
+    margin-top: 40px;
+	overflow: hidden;
+}
+
+.more-feature-div
+{
+    background: var(--blockquote-background);
+    margin: 70px 0px;
+    margin-bottom: 0px;
+    padding: 50px 0px;
+}
+
+.more-feature-div .col-md-6 img
+{
+    width: 100%;
+}
+
+
+.more-features-div-icon {
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding-top: 6px;
+    background: var(--primary-light-color);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--page-background-color);
+    line-height: 45px;
+    text-align: center;
+}
+
+.more-features-div-heading {
+    float: right;
+    width: 86%;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.more-features-div-description
+{
+	float: right;
+    width: 86%;
+    font-weight: 300;
+}
+
+/* Services CSS */
+.services-box-gray {
+    background: var(--blockquote-background);
+}
+
+.services-box
+{
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.services-box i
+{
+    line-height: 75px;
+    font-size: 50px;
+}
+
+.services-box h4
+{
+	font-size: 18px;
+    font-weight: 400;
+}
+
+.services-box p
+{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+
+/* Footer */
+footer {
+    padding: 40px 0 35px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.footer-social  a
+{
+    color: #878787;
+}
+
+
+
+/* Bootstrap CSS */
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-nav li a
+{
+	color: var(--page-background-text-color) !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: var(--page-background-color);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--page-background-color);
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+@media (max-width: 480px) {
+	.more-features-div-description, .more-features-div-heading
+	{
+		width: 80%;
+	}
+
+    .header-div
+	{
+		height: 350px;
+	}
+
+	.slide-text {
+	    color: var(--page-background-text-color);
+    	margin-top: 35px;
+	}
+	.slide-text p {
+    	font-size: 12px;
+	}
+
+	.slide-text h1 {
+	    line-height: 25px;
+    	font-size: 25px;
+	}
+}
+
+@media (max-width: 767px) {
+	.slide-text h1
+	 {
+	 	line-height: 30px;
+    	font-size: 30px;
+	 }
+
+	 .slide-text p {
+    	font-size: 13px;
+	}
+}
+
+@media (min-width: 768px) {
+	 .pricing-box
+	 {
+	 	margin-bottom: 20px;
+	 }
+
+	 .slide-text h1
+	 {
+	 	line-height: 45px;
+    	font-size: 45px;
+	 }
+
+	 .slide-text p {
+    	font-size: 15px;
+	}
+}
+
+@media (min-width: 1200px) {
+    body
+    {
+        font-family: var(--font-family) !important;
+        overflow-x: hidden;
+    }
+
+    .main_heading {
+        margin: 50px 0px;
+    }
+
+    .underline
+    {
+        display: inline-block;
+        width: 160px;
+        height: 2px;
+        background-color: var(--primary-light-color);
+    }
+}
