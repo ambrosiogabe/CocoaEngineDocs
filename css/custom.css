@@ -40,7 +40,7 @@
 }
 
 input:checked + .slider {
-  background-color: #1C1D1F;
+  background-color: #000000;
 }
 
 input:focus + .slider {
@@ -64,4 +64,15 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#main-nav {
+  background-image: url("/images/cocoaEngine.png");
+  background-size: cover;
+  padding: 0;
+}
+
+#main-nav-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(0, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
 }

@@ -17,49 +17,56 @@
 </head>
 
 <body>
-	<div class="header-div">
+	<div id="main-nav">
+		<div id="main-nav-overlay">
+			<div class="header-div">
+				<nav class="navbar navbar-default navbar-expand-lg">
+					<div class="container">
+						<a class="navbar-brand" href="#">Cocoa Engine</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-		<nav class="navbar navbar-default navbar-expand-lg">
-			<div class="container">
-				<a class="navbar-brand" href="#">Cocoa Engine</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+						<div class="collapse navbar-collapse top-right-menu-ul" id="navbarNav">
+							<ul class="navbar-nav navbar-right ml-auto">
+								<li class="nav-item"><a class="nav-link" href="docs/html/index.html">Documentation</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+								<li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+								<li class="nav-item">
+									<a href="#" class="nav-link d-inline-block">
+										<label class="switch">
+											<input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+											<span class="slider round"></span>
+										</label>
+									</a>
+									<a class="nav-link d-inline-block" href="#">Dark Mode</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 
-				<div class="collapse navbar-collapse top-right-menu-ul" id="navbarNav">
-					<ul class="navbar-nav navbar-right ml-auto">
-						<li class="nav-item"><a class="nav-link" href="docs/html/index.html">Documentation</a></li>
-						<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-						<li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
-						<li class="nav-item">
-							<a href="#" class="nav-link d-inline-block">
-								<label class="switch">
-									<input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
-									<span class="slider round"></span>
-								</label>
-							</a>
-							<a class="nav-link d-inline-block" href="#">Dark Mode</a>
-						</li>
-					</ul>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-8 text-center slide-text">
+							<h1>Cocoa Engine</h1>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+								has
+								been
+								the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+								galley
+								of type and scrambled it to make a type specimen book. It has survived not only five
+								centuries,
+								but also the leap into electronic typesetting</p>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
 				</div>
-			</div>
-		</nav>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8 text-center slide-text">
-					<h1>Cocoa Engine</h1>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-						the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-						of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-						but also the leap into electronic typesetting</p>
-				</div>
-				<div class="col-md-2"></div>
 			</div>
 		</div>
-
 	</div>
 
 	<div class="container" id="features">

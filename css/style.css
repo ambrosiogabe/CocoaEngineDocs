@@ -30,7 +30,6 @@ body
 .header-div
 {
 	min-height: 30em;
-    background-color: var(--primary-bg-color);
 }
 
 .logo-div a
