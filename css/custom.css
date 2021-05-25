@@ -65,10 +65,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-.switch-a {
-  padding-top: 11px !important;
-  padding-bottom: 11px !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
