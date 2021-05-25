@@ -4,6 +4,7 @@
   display: inline-block;
   width: 60px;
   height: 27px;
+  top: -14px;
 }
 
 /* Hide default HTML checkbox */
@@ -66,13 +67,17 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#main-nav {
+#main-nav-title {
   background-image: url("/images/cocoaEngine.png");
   background-size: cover;
   padding: 0;
 }
 
-#main-nav-overlay {
+#main-nav-title-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   background: linear-gradient(0, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.dark-mode-switch p {
+  display: inline-block;
 }
