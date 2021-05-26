@@ -25,6 +25,14 @@ body
     background-color: var(--primary-light-color);
 }
 
+.features.underline
+{
+    display: inline-block;
+    width: 360px;
+    height: 2px;
+    background-color: var(--primary-light-color);
+}
+
 /* Header CSS */
 
 .header-div
@@ -83,21 +91,18 @@ body
 .features-div i
 {
 	font-size: 3em;
-    font-weight: 300;
     color: var(--primary-light-color);
 }
 
 .features-div h4
 {
     color: var(--page-foreground-color);
-    font-weight: 300;
 }
 
 .features-div p
 {
     color: var(--page-foreground-color);
     font-size: 1.1em;
-    font-weight: 300;
     line-height: 1.5em;
 }
 
@@ -140,14 +145,12 @@ body
     float: right;
     width: 86%;
     margin-top: 0;
-    font-weight: 400;
 }
 
 .more-features-div-description
 {
 	float: right;
     width: 86%;
-    font-weight: 300;
 }
 
 /* Services CSS */
